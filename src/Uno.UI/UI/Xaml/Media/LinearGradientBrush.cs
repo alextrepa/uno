@@ -1,7 +1,7 @@
-﻿using Windows.UI.Xaml.Markup;
+﻿using Microsoft.UI.Xaml.Markup;
 using Windows.Foundation;
 
-namespace Windows.UI.Xaml.Media
+namespace Microsoft.UI.Xaml.Media
 {
 	public partial class LinearGradientBrush : GradientBrush
 	{

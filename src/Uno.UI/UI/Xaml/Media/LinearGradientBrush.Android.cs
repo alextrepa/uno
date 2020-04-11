@@ -7,7 +7,7 @@ using System.Drawing;
 using Uno.Extensions;
 using Rect = Windows.Foundation.Rect;
 
-namespace Windows.UI.Xaml.Media
+namespace Microsoft.UI.Xaml.Media
 {
 	public partial class LinearGradientBrush
 	{

@@ -5,10 +5,10 @@ using Android.Graphics;
 using Uno.Extensions;
 using Uno.Disposables;
 using Windows.Foundation;
-using Windows.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Media;
 using Rect = Windows.Foundation.Rect;
 
-namespace Windows.UI.Xaml.Media
+namespace Microsoft.UI.Xaml.Media
 {
 	//Android partial for Brush
 	public partial class Brush
