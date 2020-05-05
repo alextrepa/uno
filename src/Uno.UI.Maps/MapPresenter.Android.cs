@@ -19,9 +19,9 @@ using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Foundation.Metadata;
-using Windows.UI.Xaml.Markup;
+using Microsoft.UI.Xaml.Markup;
 
-namespace Windows.UI.Xaml.Controls.Maps.Presenter
+namespace Microsoft.UI.Xaml.Controls.Maps.Presenter
 {
 	public sealed partial class MapPresenter : Control
 	{

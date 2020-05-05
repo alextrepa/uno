@@ -8,6 +8,7 @@ using UIKit;
 using Uno.Extensions;
 using Microsoft.UI.Xaml.Media;
 using Uno.UI.Controls;
+using Windows.UI;
 
 namespace Microsoft.UI.Xaml.Controls
 {

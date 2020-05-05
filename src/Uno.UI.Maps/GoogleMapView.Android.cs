@@ -13,7 +13,7 @@ using Android.Views;
 using Android.Widget;
 using Size = System.Drawing.Size;
 
-namespace Windows.UI.Xaml.Controls.Maps.Presenter
+namespace Microsoft.UI.Xaml.Controls.Maps.Presenter
 {
 	public class GoogleMapView : MapView
 	{

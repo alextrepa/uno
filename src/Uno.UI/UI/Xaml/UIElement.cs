@@ -26,6 +26,7 @@ using Microsoft.UI.Xaml.Controls.Primitives;
 
 #if __IOS__
 using UIKit;
+using Windows.UI.Core;
 #endif
 
 namespace Microsoft.UI.Xaml
@@ -547,7 +548,7 @@ namespace Microsoft.UI.Xaml
 		public void StartBringIntoView(BringIntoViewOptions options)
 		{
 #if __IOS__ || __ANDROID__
-			Dispatcher.RunAsync(Core.CoreDispatcherPriority.Normal, () =>
+			Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
 			{
 				// This currently doesn't support nested scrolling.
 				// This currently doesn't support BringIntoViewOptions.AnimationDesired.

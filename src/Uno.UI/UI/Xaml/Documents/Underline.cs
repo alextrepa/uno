@@ -1,3 +1,5 @@
+using Windows.UI.Text;
+
 namespace Microsoft.UI.Xaml.Documents
 {
 	public  partial class Underline : Span
@@ -5,7 +7,7 @@ namespace Microsoft.UI.Xaml.Documents
 #if !__WASM__
 		public Underline()
 		{
-			TextDecorations = Text.TextDecorations.Underline; // TODO
+			TextDecorations = TextDecorations.Underline; // TODO
 		}
 #endif
 

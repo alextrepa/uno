@@ -693,7 +693,7 @@ namespace Microsoft.UI.Xaml.Controls
 			{
 				GC.ReRegisterForFinalize(this);
 
-				Core.CoreDispatcher.Main.RunIdleAsync(_ => Dispose());
+				CoreDispatcher.Main.RunIdleAsync(_ => Dispose());
 			}
 			else
 			{
