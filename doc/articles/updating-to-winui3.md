@@ -7,3 +7,8 @@
 { "Windows", LogLevel.Warning },
 { "Microsoft", LogLevel.Warning },
 ```
+
+
+## API Changes
+
+Thickness is missing a constructor.
