@@ -35,7 +35,7 @@ namespace UITests.Shared.Windows_UI_Xaml_Controls
             this.InitializeComponent();
         }
 
-		public ICommand ClickCommand => new DelegateCommand<object>(o => resultCommand.Text = $"Command {o} ({++commandActionsCounter})");
+		public System.Windows.Input.ICommand ClickCommand => new DelegateCommand<object>(o => resultCommand.Text = $"Command {o} ({++commandActionsCounter})");
 
 		private void OnClick(object sender, object args)
 		{

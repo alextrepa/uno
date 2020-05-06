@@ -9,6 +9,7 @@ namespace UITests.Shared.Lottie
 	[SampleControlInfo("Lottie", "Sample animation", ignoreInSnapshotTests: true /* Fails for Android # */)]
 	public sealed partial class SampleLottieAnimation : Page
 	{
+#if HAS_UNO
 		public SampleLottieAnimation()
 		{
 			this.InitializeComponent();
@@ -36,5 +37,6 @@ namespace UITests.Shared.Lottie
 
 			file.SelectedIndex = 0;
 		}
+#endif
 	}
 }

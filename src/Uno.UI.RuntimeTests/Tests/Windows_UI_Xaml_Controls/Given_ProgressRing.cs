@@ -55,7 +55,7 @@ namespace Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Controls
 				{
 					Width = 10,
 					Height = 10,
-					Margin = new Thickness(5)
+					Margin = ThicknessHelper.FromUniformLength(5)
 				};
 
 				var root = new Grid

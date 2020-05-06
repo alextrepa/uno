@@ -36,7 +36,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace SampleControl.Presentation
 {
-	public partial class SampleChooserViewModel : INotifyPropertyChanged
+	public partial class SampleChooserViewModel : System.ComponentModel.INotifyPropertyChanged
 	{
 		private void InitializeCommands()
 		{

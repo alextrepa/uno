@@ -6,8 +6,9 @@
 	xmlns:lottie="using:Microsoft.Toolkit.Uwp.UI.Lottie"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:winui="using:Microsoft.UI.Xaml.Controls"
+ 	xmlns:xamarin="http://uno.ui/xamarin"
 	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-	mc:Ignorable="d">
+	mc:Ignorable="d xamarin">
 
 	<Grid>
 		<Grid.RowDefinitions>
@@ -28,7 +29,7 @@
 		</TextBlock>
 		<!--#endregion-->
 
-		<Border Grid.Row="1">
+		<xamarin:Border Grid.Row="1">
 			<!--  AnimatedVisualPlayer  -->
 			<winui:AnimatedVisualPlayer x:Name="Progress_Player"
 											AutoPlay="False">
@@ -38,7 +39,7 @@
 					-->
 				<lottie:LottieVisualSource x:Name="Progress_Source" />
 			</winui:AnimatedVisualPlayer>
-		</Border>
+		</xamarin:Border>
 
 		<!--  Light Switch and Progress Slider  -->
 		<Grid Grid.Row="2" RowSpacing="10">

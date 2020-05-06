@@ -113,7 +113,7 @@ namespace UITests.Shared.Windows_ApplicationModel.Email
 			}
 		}
 
-		public ICommand ComposeCommand => GetOrCreateCommand(Compose);
+		public System.Windows.Input.ICommand ComposeCommand => GetOrCreateCommand(Compose);
 
 		private async void Compose()
 		{

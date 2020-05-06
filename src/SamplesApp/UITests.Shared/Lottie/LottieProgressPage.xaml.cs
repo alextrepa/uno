@@ -10,6 +10,7 @@ namespace UITests.Lottie
 	[Sample("Lottie", Name="Lottie Progress")]
 	public sealed partial class LottieProgressPage : Page
 	{
+#if HAS_UNO
 		private const double ClickedSegmentFromProgress = 0.69;
 
 		public LottieProgressPage()
@@ -56,5 +57,6 @@ namespace UITests.Lottie
 				ProgressSlider.Value = value;
 			}
 		}
+#endif
 	}
 }
