@@ -17,6 +17,12 @@ using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+#endif
+
 // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
 
 namespace UITests.Shared.Windows_UI_Xaml_Controls
@@ -35,7 +41,7 @@ namespace UITests.Shared.Windows_UI_Xaml_Controls
             this.InitializeComponent();
         }
 
-		public System.Windows.Input.ICommand ClickCommand => new DelegateCommand<object>(o => resultCommand.Text = $"Command {o} ({++commandActionsCounter})");
+		public ICommand ClickCommand => new DelegateCommand<object>(o => resultCommand.Text = $"Command {o} ({++commandActionsCounter})");
 
 		private void OnClick(object sender, object args)
 		{

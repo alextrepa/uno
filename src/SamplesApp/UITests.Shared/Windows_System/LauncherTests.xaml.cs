@@ -6,7 +6,14 @@ using Windows.System;
 using Windows.UI.Core;
 using Microsoft.UI.Xaml.Controls;
 
-// The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+using EventHandler = System.EventHandler;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+using EventHandler = System.EventHandler<object>;
+using EventArgs = System.Object;
+#endif
 
 namespace UITests.Shared.Windows_System
 {

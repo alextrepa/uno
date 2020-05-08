@@ -16,6 +16,12 @@ using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+#endif
+
 // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
 
 namespace UITests.Shared.Windows_UI_Xaml_Controls.MenuBarTests

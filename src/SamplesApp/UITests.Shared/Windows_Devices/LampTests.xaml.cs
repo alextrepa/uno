@@ -6,6 +6,15 @@ using Windows.Devices.Lights;
 using Windows.UI.Core;
 using Microsoft.UI.Xaml.Controls;
 
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+using EventHandler = System.EventHandler;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+using EventHandler = System.EventHandler<object>;
+using EventArgs = System.Object;
+#endif
+
 namespace UITests.Shared.Windows_Devices
 {
 	[SampleControlInfo(

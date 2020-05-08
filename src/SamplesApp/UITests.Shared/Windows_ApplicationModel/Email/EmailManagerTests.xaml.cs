@@ -19,7 +19,14 @@ using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+using EventHandler = System.EventHandler;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+using EventHandler = System.EventHandler<object>;
+using EventArgs = System.Object;
+#endif
 
 namespace UITests.Shared.Windows_ApplicationModel.Email
 {
@@ -113,7 +120,7 @@ namespace UITests.Shared.Windows_ApplicationModel.Email
 			}
 		}
 
-		public System.Windows.Input.ICommand ComposeCommand => GetOrCreateCommand(Compose);
+		public ICommand ComposeCommand => GetOrCreateCommand(Compose);
 
 		private async void Compose()
 		{

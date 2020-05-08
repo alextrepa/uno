@@ -2,6 +2,14 @@
 using System;
 using System.Windows.Input;
 
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+using EventHandler;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+using EventHandler = System.EventHandler<object>;
+#endif
+
 namespace Uno.UI.Common
 {
 	public class DelegateCommand : ICommand

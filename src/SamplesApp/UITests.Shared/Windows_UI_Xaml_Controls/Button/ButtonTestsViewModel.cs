@@ -10,6 +10,12 @@ using System.Windows.Input;
 using Windows.UI.Core;
 using System.Runtime.CompilerServices;
 
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+#endif
+
 namespace Uno.UI.Samples.Presentation.SamplePages
 {
 	public class ButtonTestsViewModel : ViewModelBase

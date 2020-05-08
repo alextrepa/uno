@@ -34,6 +34,12 @@ using Windows.UI;
 using Microsoft.UI.Xaml.Controls;
 #endif
 
+#if HAS_UNO
+using ICommand = System.Windows.Input.ICommand;
+#else
+using ICommand = Microsoft.UI.Xaml.Input.ICommand;
+#endif
+
 namespace SampleControl.Presentation
 {
 	public partial class SampleChooserViewModel : System.ComponentModel.INotifyPropertyChanged

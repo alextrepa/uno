@@ -10,7 +10,7 @@
 	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
 	mc:Ignorable="d xamarin">
 
-	<Grid>
+	<xamarin:Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="*" />
@@ -69,5 +69,5 @@
 				</StackPanel>
 			</Grid>
 		</Grid>
-	</Grid>
+	</xamarin:Grid>
 </Page>
