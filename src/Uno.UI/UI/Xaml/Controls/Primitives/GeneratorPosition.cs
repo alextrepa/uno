@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Microsoft.UI.Xaml.Controls.Primitives
 {
-	public struct GeneratorPosition
+	public partial struct GeneratorPosition
 	{
 		public GeneratorPosition(int index, int offset) { throw new NotImplementedException(); }
 

@@ -123,7 +123,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CaptionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Caption", typeof(string), 
+			nameof(Caption), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -131,7 +131,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty InitialSetValueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"InitialSetValue", typeof(int), 
+			nameof(InitialSetValue), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -139,7 +139,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsClearEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsClearEnabled", typeof(bool), 
+			nameof(IsClearEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -147,7 +147,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsReadOnlyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsReadOnly", typeof(bool), 
+			nameof(IsReadOnly), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -155,7 +155,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemInfoProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemInfo", typeof(global::Microsoft.UI.Xaml.Controls.RatingItemInfo), 
+			nameof(ItemInfo), typeof(global::Microsoft.UI.Xaml.Controls.RatingItemInfo), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.RatingItemInfo)));
 		#endif
@@ -163,7 +163,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxRatingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxRating", typeof(int), 
+			nameof(MaxRating), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -171,7 +171,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PlaceholderValueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlaceholderValue", typeof(double), 
+			nameof(PlaceholderValue), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -179,7 +179,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ValueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Value", typeof(double), 
+			nameof(Value), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RatingControl), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif

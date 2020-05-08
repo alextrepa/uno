@@ -43,7 +43,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LightDismissOverlayModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LightDismissOverlayMode", typeof(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode), 
+			nameof(LightDismissOverlayMode), typeof(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SplitView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode)));
 		#endif

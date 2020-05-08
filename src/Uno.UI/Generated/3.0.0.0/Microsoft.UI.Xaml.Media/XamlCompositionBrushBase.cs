@@ -23,7 +23,7 @@ namespace Microsoft.UI.Xaml.Media
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Composition.CompositionBrush CompositionBrush
+		public  global::Microsoft.UI.Composition.CompositionBrush CompositionBrush
 		{
 			get
 			{
@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FallbackColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FallbackColor", typeof(global::Windows.UI.Color), 
+			nameof(FallbackColor), typeof(global::Windows.UI.Color), 
 			typeof(global::Microsoft.UI.Xaml.Media.XamlCompositionBrushBase), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Color)));
 		#endif

@@ -51,35 +51,17 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.Media.PlayTo.PlayToSource PlayToSource
-		{
-			get
-			{
-				return (global::Windows.Media.PlayTo.PlayToSource)this.GetValue(PlayToSourceProperty);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty NineGridProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"NineGrid", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(NineGrid), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Image), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlayToSourceProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlayToSource", typeof(global::Windows.Media.PlayTo.PlayToSource), 
-			typeof(global::Microsoft.UI.Xaml.Controls.Image), 
-			new FrameworkPropertyMetadata(default(global::Windows.Media.PlayTo.PlayToSource)));
 		#endif
 		#if false || false || NET461 || false || false
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Source", typeof(global::Microsoft.UI.Xaml.Media.ImageSource), 
+			nameof(Source), typeof(global::Microsoft.UI.Xaml.Media.ImageSource), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Image), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.ImageSource)));
 		#endif
@@ -87,7 +69,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StretchProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Stretch", typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
+			nameof(Stretch), typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Image), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stretch)));
 		#endif
@@ -99,7 +81,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.Stretch.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.NineGrid.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.NineGrid.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.PlayToSource.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.ImageFailed.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.ImageFailed.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.ImageOpened.add
@@ -113,7 +94,7 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Composition.CompositionBrush GetAlphaMask()
+		public  global::Microsoft.UI.Composition.CompositionBrush GetAlphaMask()
 		{
 			throw new global::System.NotImplementedException("The member CompositionBrush Image.GetAlphaMask() is not implemented in Uno.");
 		}
@@ -121,7 +102,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.SourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.StretchProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.NineGridProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.Image.PlayToSourceProperty.get
 		#if false || false || NET461 || false || false
 		[global::Uno.NotImplemented]
 		public  event global::Microsoft.UI.Xaml.ExceptionRoutedEventHandler ImageFailed

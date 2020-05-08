@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TargetNameProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TargetName", typeof(string), 
+			nameof(TargetName), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.PointerUpThemeAnimation), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif

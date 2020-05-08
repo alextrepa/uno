@@ -179,7 +179,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ElementSoundModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ElementSoundMode", typeof(global::Microsoft.UI.Xaml.ElementSoundMode), 
+			nameof(ElementSoundMode), typeof(global::Microsoft.UI.Xaml.ElementSoundMode), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.ElementSoundMode)));
 		#endif
@@ -187,7 +187,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusDownProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusDown", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(XYFocusDown), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -195,7 +195,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusLeftProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusLeft", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(XYFocusLeft), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -203,7 +203,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusRightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusRight", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(XYFocusRight), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -211,7 +211,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusUpProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusUp", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(XYFocusUp), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -219,7 +219,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FocusStateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FocusState", typeof(global::Microsoft.UI.Xaml.FocusState), 
+			nameof(FocusState), typeof(global::Microsoft.UI.Xaml.FocusState), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.FocusState)));
 		#endif
@@ -227,7 +227,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusDownNavigationStrategyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusDownNavigationStrategy", typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
+			nameof(XYFocusDownNavigationStrategy), typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy)));
 		#endif
@@ -235,7 +235,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusLeftNavigationStrategyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusLeftNavigationStrategy", typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
+			nameof(XYFocusLeftNavigationStrategy), typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy)));
 		#endif
@@ -243,7 +243,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusRightNavigationStrategyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusRightNavigationStrategy", typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
+			nameof(XYFocusRightNavigationStrategy), typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy)));
 		#endif
@@ -251,7 +251,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty XYFocusUpNavigationStrategyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"XYFocusUpNavigationStrategy", typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
+			nameof(XYFocusUpNavigationStrategy), typeof(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy)));
 		#endif
@@ -259,7 +259,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTabStopProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTabStop", typeof(bool), 
+			nameof(IsTabStop), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -267,7 +267,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TabIndexProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TabIndex", typeof(int), 
+			nameof(TabIndex), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Hyperlink), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif

@@ -429,7 +429,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CharacterSpacingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CharacterSpacing", typeof(int), 
+			nameof(CharacterSpacing), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -437,7 +437,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontFamilyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontFamily", typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
+			nameof(FontFamily), typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.FontFamily)));
 		#endif
@@ -445,7 +445,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontSizeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontSize", typeof(double), 
+			nameof(FontSize), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -453,7 +453,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontStretchProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontStretch", typeof(global::Windows.UI.Text.FontStretch), 
+			nameof(FontStretch), typeof(global::Windows.UI.Text.FontStretch), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStretch)));
 		#endif
@@ -461,7 +461,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontStyle", typeof(global::Windows.UI.Text.FontStyle), 
+			nameof(FontStyle), typeof(global::Windows.UI.Text.FontStyle), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStyle)));
 		#endif
@@ -469,7 +469,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(FontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -477,7 +477,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Foreground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(Foreground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -485,7 +485,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextSelectionEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextSelectionEnabled", typeof(bool), 
+			nameof(IsTextSelectionEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -493,7 +493,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LineHeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LineHeight", typeof(double), 
+			nameof(LineHeight), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -501,7 +501,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LineStackingStrategyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LineStackingStrategy", typeof(global::Microsoft.UI.Xaml.LineStackingStrategy), 
+			nameof(LineStackingStrategy), typeof(global::Microsoft.UI.Xaml.LineStackingStrategy), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.LineStackingStrategy)));
 		#endif
@@ -509,7 +509,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PaddingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Padding", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(Padding), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
@@ -517,7 +517,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedTextProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedText", typeof(string), 
+			nameof(SelectedText), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -525,7 +525,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextAlignment", typeof(global::Microsoft.UI.Xaml.TextAlignment), 
+			nameof(TextAlignment), typeof(global::Microsoft.UI.Xaml.TextAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextAlignment)));
 		#endif
@@ -533,7 +533,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Text", typeof(string), 
+			nameof(Text), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -541,7 +541,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextTrimmingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextTrimming", typeof(global::Microsoft.UI.Xaml.TextTrimming), 
+			nameof(TextTrimming), typeof(global::Microsoft.UI.Xaml.TextTrimming), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextTrimming)));
 		#endif
@@ -549,7 +549,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextWrappingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextWrapping", typeof(global::Microsoft.UI.Xaml.TextWrapping), 
+			nameof(TextWrapping), typeof(global::Microsoft.UI.Xaml.TextWrapping), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextWrapping)));
 		#endif
@@ -557,7 +557,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsColorFontEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsColorFontEnabled", typeof(bool), 
+			nameof(IsColorFontEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -565,7 +565,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxLinesProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxLines", typeof(int), 
+			nameof(MaxLines), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -573,7 +573,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OpticalMarginAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OpticalMarginAlignment", typeof(global::Microsoft.UI.Xaml.OpticalMarginAlignment), 
+			nameof(OpticalMarginAlignment), typeof(global::Microsoft.UI.Xaml.OpticalMarginAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.OpticalMarginAlignment)));
 		#endif
@@ -581,7 +581,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionHighlightColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionHighlightColor", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
+			nameof(SelectionHighlightColor), typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
 		#endif
@@ -589,7 +589,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextLineBoundsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextLineBounds", typeof(global::Microsoft.UI.Xaml.TextLineBounds), 
+			nameof(TextLineBounds), typeof(global::Microsoft.UI.Xaml.TextLineBounds), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextLineBounds)));
 		#endif
@@ -597,7 +597,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextReadingOrderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextReadingOrder", typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
+			nameof(TextReadingOrder), typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextReadingOrder)));
 		#endif
@@ -605,7 +605,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextScaleFactorEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextScaleFactorEnabled", typeof(bool), 
+			nameof(IsTextScaleFactorEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -614,7 +614,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalTextAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HorizontalTextAlignment", typeof(global::Microsoft.UI.Xaml.TextAlignment), 
+			nameof(HorizontalTextAlignment), typeof(global::Microsoft.UI.Xaml.TextAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextAlignment)));
 		#endif
@@ -622,7 +622,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextTrimmedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextTrimmed", typeof(bool), 
+			nameof(IsTextTrimmed), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -630,7 +630,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionFlyoutProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionFlyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			nameof(SelectionFlyout), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
 		#endif
@@ -714,7 +714,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBlock.IsTextScaleFactorEnabled.set
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Composition.CompositionBrush GetAlphaMask()
+		public  global::Microsoft.UI.Composition.CompositionBrush GetAlphaMask()
 		{
 			throw new global::System.NotImplementedException("The member CompositionBrush TextBlock.GetAlphaMask() is not implemented in Uno.");
 		}

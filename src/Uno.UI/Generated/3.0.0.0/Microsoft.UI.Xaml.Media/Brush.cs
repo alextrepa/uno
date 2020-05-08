@@ -5,7 +5,7 @@ namespace Microsoft.UI.Xaml.Media
 	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class Brush : global::Microsoft.UI.Xaml.DependencyObject,global::Windows.UI.Composition.IAnimationObject
+	public  partial class Brush : global::Microsoft.UI.Xaml.DependencyObject,global::Microsoft.UI.Composition.IAnimationObject
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -29,7 +29,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TransformProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Transform", typeof(global::Microsoft.UI.Xaml.Media.Transform), 
+			nameof(Transform), typeof(global::Microsoft.UI.Xaml.Media.Transform), 
 			typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Transform)));
 		#endif
@@ -43,14 +43,14 @@ namespace Microsoft.UI.Xaml.Media
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Brush.RelativeTransform.set
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		protected virtual void PopulatePropertyInfoOverride( string propertyName,  global::Windows.UI.Composition.AnimationPropertyInfo animationPropertyInfo)
+		protected virtual void PopulatePropertyInfoOverride( string propertyName,  global::Microsoft.UI.Composition.AnimationPropertyInfo animationPropertyInfo)
 		{
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.Brush", "void Brush.PopulatePropertyInfoOverride(string propertyName, AnimationPropertyInfo animationPropertyInfo)");
 		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  void PopulatePropertyInfo( string propertyName,  global::Windows.UI.Composition.AnimationPropertyInfo propertyInfo)
+		public  void PopulatePropertyInfo( string propertyName,  global::Microsoft.UI.Composition.AnimationPropertyInfo propertyInfo)
 		{
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.Brush", "void Brush.PopulatePropertyInfo(string propertyName, AnimationPropertyInfo propertyInfo)");
 		}
@@ -58,6 +58,6 @@ namespace Microsoft.UI.Xaml.Media
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Brush.OpacityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Brush.TransformProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty.get
-		// Processing: Windows.UI.Composition.IAnimationObject
+		// Processing: Microsoft.UI.Composition.IAnimationObject
 	}
 }

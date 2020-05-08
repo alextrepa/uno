@@ -139,7 +139,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DefaultSectionIndexProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DefaultSectionIndex", typeof(int), 
+			nameof(DefaultSectionIndex), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Hub), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -147,7 +147,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Header", typeof(object), 
+			nameof(Header), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Hub), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -155,7 +155,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderTemplateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HeaderTemplate", typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			nameof(HeaderTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Hub), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
 		#endif
@@ -163,7 +163,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsActiveViewProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsActiveView", typeof(bool), 
+			nameof(IsActiveView), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Hub), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -171,7 +171,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsZoomedInViewProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsZoomedInView", typeof(bool), 
+			nameof(IsZoomedInView), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Hub), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -179,7 +179,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OrientationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Orientation", typeof(global::Microsoft.UI.Xaml.Controls.Orientation), 
+			nameof(Orientation), typeof(global::Microsoft.UI.Xaml.Controls.Orientation), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Hub), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Orientation)));
 		#endif
@@ -187,7 +187,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SemanticZoomOwnerProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SemanticZoomOwner", typeof(global::Microsoft.UI.Xaml.Controls.SemanticZoom), 
+			nameof(SemanticZoomOwner), typeof(global::Microsoft.UI.Xaml.Controls.SemanticZoom), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Hub), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.SemanticZoom)));
 		#endif

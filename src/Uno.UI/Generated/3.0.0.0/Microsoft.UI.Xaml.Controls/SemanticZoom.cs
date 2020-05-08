@@ -81,7 +81,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CanChangeViewsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanChangeViews", typeof(bool), 
+			nameof(CanChangeViews), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SemanticZoom), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -89,7 +89,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsZoomOutButtonEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsZoomOutButtonEnabled", typeof(bool), 
+			nameof(IsZoomOutButtonEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SemanticZoom), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -97,7 +97,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsZoomedInViewActiveProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsZoomedInViewActive", typeof(bool), 
+			nameof(IsZoomedInViewActive), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SemanticZoom), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -105,7 +105,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ZoomedInViewProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ZoomedInView", typeof(global::Microsoft.UI.Xaml.Controls.ISemanticZoomInformation), 
+			nameof(ZoomedInView), typeof(global::Microsoft.UI.Xaml.Controls.ISemanticZoomInformation), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SemanticZoom), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.ISemanticZoomInformation)));
 		#endif
@@ -113,7 +113,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ZoomedOutViewProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ZoomedOutView", typeof(global::Microsoft.UI.Xaml.Controls.ISemanticZoomInformation), 
+			nameof(ZoomedOutView), typeof(global::Microsoft.UI.Xaml.Controls.ISemanticZoomInformation), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SemanticZoom), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.ISemanticZoomInformation)));
 		#endif

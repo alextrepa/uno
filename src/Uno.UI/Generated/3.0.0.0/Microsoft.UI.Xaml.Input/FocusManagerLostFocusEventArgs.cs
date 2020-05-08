@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Input
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class FocusManagerLostFocusEventArgs 
@@ -17,6 +17,7 @@ namespace Microsoft.UI.Xaml.Input
 			}
 		}
 		#endif
+		// Skipping already declared property OldFocusedElement
 		// Forced skipping of method Microsoft.UI.Xaml.Input.FocusManagerLostFocusEventArgs.OldFocusedElement.get
 		// Forced skipping of method Microsoft.UI.Xaml.Input.FocusManagerLostFocusEventArgs.CorrelationId.get
 	}

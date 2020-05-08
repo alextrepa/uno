@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Source", typeof(global::Windows.Media.Capture.MediaCapture), 
+			nameof(Source), typeof(global::Windows.Media.Capture.MediaCapture), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CaptureElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.Media.Capture.MediaCapture)));
 		#endif
@@ -47,7 +47,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StretchProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Stretch", typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
+			nameof(Stretch), typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CaptureElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stretch)));
 		#endif

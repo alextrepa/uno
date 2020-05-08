@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty EndPointProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"EndPoint", typeof(global::Windows.Foundation.Point), 
+			nameof(EndPoint), typeof(global::Windows.Foundation.Point), 
 			typeof(global::Microsoft.UI.Xaml.Media.LineGeometry), 
 			new FrameworkPropertyMetadata(default(global::Windows.Foundation.Point)));
 		#endif
@@ -47,7 +47,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StartPointProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"StartPoint", typeof(global::Windows.Foundation.Point), 
+			nameof(StartPoint), typeof(global::Windows.Foundation.Point), 
 			typeof(global::Microsoft.UI.Xaml.Media.LineGeometry), 
 			new FrameworkPropertyMetadata(default(global::Windows.Foundation.Point)));
 		#endif

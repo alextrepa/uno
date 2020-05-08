@@ -189,7 +189,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CenterOfRotationXProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CenterOfRotationX", typeof(double), 
+			nameof(CenterOfRotationX), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -197,7 +197,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CenterOfRotationYProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CenterOfRotationY", typeof(double), 
+			nameof(CenterOfRotationY), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -205,7 +205,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CenterOfRotationZProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CenterOfRotationZ", typeof(double), 
+			nameof(CenterOfRotationZ), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -213,7 +213,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GlobalOffsetXProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GlobalOffsetX", typeof(double), 
+			nameof(GlobalOffsetX), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -221,7 +221,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GlobalOffsetYProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GlobalOffsetY", typeof(double), 
+			nameof(GlobalOffsetY), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -229,7 +229,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GlobalOffsetZProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GlobalOffsetZ", typeof(double), 
+			nameof(GlobalOffsetZ), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -237,7 +237,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LocalOffsetXProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LocalOffsetX", typeof(double), 
+			nameof(LocalOffsetX), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -245,7 +245,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LocalOffsetYProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LocalOffsetY", typeof(double), 
+			nameof(LocalOffsetY), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -253,7 +253,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LocalOffsetZProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LocalOffsetZ", typeof(double), 
+			nameof(LocalOffsetZ), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -261,7 +261,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ProjectionMatrixProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ProjectionMatrix", typeof(global::Microsoft.UI.Xaml.Media.Media3D.Matrix3D), 
+			nameof(ProjectionMatrix), typeof(global::Microsoft.UI.Xaml.Media.Media3D.Matrix3D), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Media3D.Matrix3D)));
 		#endif
@@ -269,7 +269,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty RotationXProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"RotationX", typeof(double), 
+			nameof(RotationX), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -277,7 +277,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty RotationYProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"RotationY", typeof(double), 
+			nameof(RotationY), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -285,7 +285,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty RotationZProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"RotationZ", typeof(double), 
+			nameof(RotationZ), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.PlaneProjection), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif

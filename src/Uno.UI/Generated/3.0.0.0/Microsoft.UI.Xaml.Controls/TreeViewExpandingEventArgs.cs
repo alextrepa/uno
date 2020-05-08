@@ -9,21 +9,21 @@ namespace Microsoft.UI.Xaml.Controls
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Controls.TreeViewNode Node
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member TreeViewNode TreeViewExpandingEventArgs.Node is not implemented in Uno.");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public  object Item
 		{
 			get
 			{
 				throw new global::System.NotImplementedException("The member object TreeViewExpandingEventArgs.Item is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.TreeViewNode Node
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member TreeViewNode TreeViewExpandingEventArgs.Node is not implemented in Uno.");
 			}
 		}
 		#endif

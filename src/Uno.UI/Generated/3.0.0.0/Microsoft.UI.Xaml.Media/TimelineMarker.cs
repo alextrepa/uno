@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Media
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class TimelineMarker : global::Microsoft.UI.Xaml.DependencyObject
@@ -53,7 +53,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Text", typeof(string), 
+			nameof(Text), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.TimelineMarker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -61,7 +61,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TimeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Time", typeof(global::System.TimeSpan), 
+			nameof(Time), typeof(global::System.TimeSpan), 
 			typeof(global::Microsoft.UI.Xaml.Media.TimelineMarker), 
 			new FrameworkPropertyMetadata(default(global::System.TimeSpan)));
 		#endif
@@ -69,11 +69,17 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TypeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Type", typeof(string), 
+			nameof(Type), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.TimelineMarker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Media.TimelineMarker.TimelineMarker()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public TimelineMarker() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.TimelineMarker", "TimelineMarker.TimelineMarker()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Media.TimelineMarker.TimelineMarker()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.TimelineMarker.Time.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.TimelineMarker.Time.set

@@ -53,7 +53,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AlignmentXProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AlignmentX", typeof(global::Microsoft.UI.Xaml.Media.AlignmentX), 
+			nameof(AlignmentX), typeof(global::Microsoft.UI.Xaml.Media.AlignmentX), 
 			typeof(global::Microsoft.UI.Xaml.Media.TileBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.AlignmentX)));
 		#endif
@@ -61,7 +61,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AlignmentYProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AlignmentY", typeof(global::Microsoft.UI.Xaml.Media.AlignmentY), 
+			nameof(AlignmentY), typeof(global::Microsoft.UI.Xaml.Media.AlignmentY), 
 			typeof(global::Microsoft.UI.Xaml.Media.TileBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.AlignmentY)));
 		#endif
@@ -69,7 +69,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StretchProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Stretch", typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
+			nameof(Stretch), typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
 			typeof(global::Microsoft.UI.Xaml.Media.TileBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stretch)));
 		#endif

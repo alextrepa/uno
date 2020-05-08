@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DataProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Data", typeof(global::Microsoft.UI.Xaml.Media.Geometry), 
+			nameof(Data), typeof(global::Microsoft.UI.Xaml.Media.Geometry), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PathIconSource), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Geometry)));
 		#endif

@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls.Primitives
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class JumpListItemForegroundConverter : global::Microsoft.UI.Xaml.DependencyObject,global::Microsoft.UI.Xaml.Data.IValueConverter
@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DisabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Disabled", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(Disabled), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -47,11 +47,17 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty EnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Enabled", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(Enabled), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter.JumpListItemForegroundConverter()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public JumpListItemForegroundConverter() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter", "JumpListItemForegroundConverter.JumpListItemForegroundConverter()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter.JumpListItemForegroundConverter()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter.Enabled.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter.Enabled.set

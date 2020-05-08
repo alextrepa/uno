@@ -60,7 +60,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(FontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIcon), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -69,7 +69,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextScaleFactorEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextScaleFactorEnabled", typeof(bool), 
+			nameof(IsTextScaleFactorEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIcon), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -77,7 +77,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MirroredWhenRightToLeftProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MirroredWhenRightToLeft", typeof(bool), 
+			nameof(MirroredWhenRightToLeft), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIcon), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

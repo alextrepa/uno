@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Printing
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class PrintDocument : global::Microsoft.UI.Xaml.DependencyObject
@@ -21,11 +21,17 @@ namespace Microsoft.UI.Xaml.Printing
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DocumentSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DocumentSource", typeof(global::Windows.Graphics.Printing.IPrintDocumentSource), 
+			nameof(DocumentSource), typeof(global::Windows.Graphics.Printing.IPrintDocumentSource), 
 			typeof(global::Microsoft.UI.Xaml.Printing.PrintDocument), 
 			new FrameworkPropertyMetadata(default(global::Windows.Graphics.Printing.IPrintDocumentSource)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Printing.PrintDocument.PrintDocument()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public PrintDocument() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Printing.PrintDocument", "PrintDocument.PrintDocument()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Printing.PrintDocument.PrintDocument()
 		// Forced skipping of method Microsoft.UI.Xaml.Printing.PrintDocument.DocumentSource.get
 		// Forced skipping of method Microsoft.UI.Xaml.Printing.PrintDocument.Paginate.add

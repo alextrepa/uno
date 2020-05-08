@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Media.Animation
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class ColorKeyFrame : global::Microsoft.UI.Xaml.DependencyObject
@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty KeyTimeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"KeyTime", typeof(global::Microsoft.UI.Xaml.Media.Animation.KeyTime), 
+			nameof(KeyTime), typeof(global::Microsoft.UI.Xaml.Media.Animation.KeyTime), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.ColorKeyFrame), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Animation.KeyTime)));
 		#endif
@@ -47,11 +47,17 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ValueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Value", typeof(global::Windows.UI.Color), 
+			nameof(Value), typeof(global::Windows.UI.Color), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.ColorKeyFrame), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Color)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Media.Animation.ColorKeyFrame.ColorKeyFrame()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		protected ColorKeyFrame() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.Animation.ColorKeyFrame", "ColorKeyFrame.ColorKeyFrame()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Animation.ColorKeyFrame.ColorKeyFrame()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Animation.ColorKeyFrame.Value.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Animation.ColorKeyFrame.Value.set

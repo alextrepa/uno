@@ -52,7 +52,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BackgroundSizingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BackgroundSizing", typeof(global::Microsoft.UI.Xaml.Controls.BackgroundSizing), 
+			nameof(BackgroundSizing), typeof(global::Microsoft.UI.Xaml.Controls.BackgroundSizing), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Border), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.BackgroundSizing)));
 		#endif

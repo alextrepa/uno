@@ -5,7 +5,7 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class AppBarAutomationPeer : global::Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer,global::Microsoft.UI.Xaml.Automation.Provider.IToggleProvider,global::Microsoft.UI.Xaml.Automation.Provider.IExpandCollapseProvider,global::Microsoft.UI.Xaml.Automation.Provider.IWindowProvider
+	public  partial class AppBarAutomationPeer : global::Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer,global::Microsoft.UI.Xaml.Automation.Provider.IExpandCollapseProvider,global::Microsoft.UI.Xaml.Automation.Provider.IToggleProvider,global::Microsoft.UI.Xaml.Automation.Provider.IWindowProvider
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -95,14 +95,6 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		}
 		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer.AppBarAutomationPeer(Microsoft.UI.Xaml.Controls.AppBar)
-		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer.ToggleState.get
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  void Toggle()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer", "void AppBarAutomationPeer.Toggle()");
-		}
-		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer.ExpandCollapseState.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -116,6 +108,14 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		public  void Expand()
 		{
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer", "void AppBarAutomationPeer.Expand()");
+		}
+		#endif
+		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer.ToggleState.get
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  void Toggle()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer", "void AppBarAutomationPeer.Toggle()");
 		}
 		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AppBarAutomationPeer.IsModal.get
@@ -145,8 +145,8 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 			throw new global::System.NotImplementedException("The member bool AppBarAutomationPeer.WaitForInputIdle(int milliseconds) is not implemented in Uno.");
 		}
 		#endif
-		// Processing: Microsoft.UI.Xaml.Automation.Provider.IToggleProvider
 		// Processing: Microsoft.UI.Xaml.Automation.Provider.IExpandCollapseProvider
+		// Processing: Microsoft.UI.Xaml.Automation.Provider.IToggleProvider
 		// Processing: Microsoft.UI.Xaml.Automation.Provider.IWindowProvider
 	}
 }

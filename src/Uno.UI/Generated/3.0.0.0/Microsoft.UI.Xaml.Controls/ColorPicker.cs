@@ -277,7 +277,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Color", typeof(global::Windows.UI.Color), 
+			nameof(Color), typeof(global::Windows.UI.Color), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Color)));
 		#endif
@@ -285,7 +285,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ColorSpectrumComponentsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ColorSpectrumComponents", typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents), 
+			nameof(ColorSpectrumComponents), typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents)));
 		#endif
@@ -293,7 +293,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ColorSpectrumShapeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ColorSpectrumShape", typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape), 
+			nameof(ColorSpectrumShape), typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape)));
 		#endif
@@ -301,7 +301,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsAlphaEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsAlphaEnabled", typeof(bool), 
+			nameof(IsAlphaEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -309,7 +309,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsAlphaSliderVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsAlphaSliderVisible", typeof(bool), 
+			nameof(IsAlphaSliderVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -317,7 +317,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsAlphaTextInputVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsAlphaTextInputVisible", typeof(bool), 
+			nameof(IsAlphaTextInputVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -325,7 +325,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsColorChannelTextInputVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsColorChannelTextInputVisible", typeof(bool), 
+			nameof(IsColorChannelTextInputVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -333,7 +333,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsColorPreviewVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsColorPreviewVisible", typeof(bool), 
+			nameof(IsColorPreviewVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -341,7 +341,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsColorSliderVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsColorSliderVisible", typeof(bool), 
+			nameof(IsColorSliderVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -349,7 +349,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsColorSpectrumVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsColorSpectrumVisible", typeof(bool), 
+			nameof(IsColorSpectrumVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -357,7 +357,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsHexInputVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsHexInputVisible", typeof(bool), 
+			nameof(IsHexInputVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -365,7 +365,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsMoreButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsMoreButtonVisible", typeof(bool), 
+			nameof(IsMoreButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -373,7 +373,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxHueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxHue", typeof(int), 
+			nameof(MaxHue), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -381,7 +381,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxSaturationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxSaturation", typeof(int), 
+			nameof(MaxSaturation), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -389,7 +389,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxValueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxValue", typeof(int), 
+			nameof(MaxValue), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -397,7 +397,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MinHueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MinHue", typeof(int), 
+			nameof(MinHue), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -405,7 +405,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MinSaturationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MinSaturation", typeof(int), 
+			nameof(MinSaturation), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -413,7 +413,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MinValueProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MinValue", typeof(int), 
+			nameof(MinValue), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -421,7 +421,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PreviousColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PreviousColor", typeof(global::Windows.UI.Color?), 
+			nameof(PreviousColor), typeof(global::Windows.UI.Color?), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Color?)));
 		#endif

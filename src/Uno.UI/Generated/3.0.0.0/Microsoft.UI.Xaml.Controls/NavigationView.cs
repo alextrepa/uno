@@ -7,42 +7,77 @@ namespace Microsoft.UI.Xaml.Controls
 	#endif
 	public  partial class NavigationView : global::Microsoft.UI.Xaml.Controls.ContentControl
 	{
-		// Skipping already declared property MenuItemTemplateSelector
-		// Skipping already declared property MenuItemTemplate
-		// Skipping already declared property MenuItemContainerStyleSelector
-		// Skipping already declared property MenuItemContainerStyle
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  bool IsTitleBarAutoPaddingEnabled
+		{
+			get
+			{
+				return (bool)this.GetValue(IsTitleBarAutoPaddingEnabledProperty);
+			}
+			set
+			{
+				this.SetValue(IsTitleBarAutoPaddingEnabledProperty, value);
+			}
+		}
+		#endif
 		// Skipping already declared property IsSettingsVisible
+		// Skipping already declared property IsPaneVisible
 		// Skipping already declared property IsPaneToggleButtonVisible
 		// Skipping already declared property IsPaneOpen
+		// Skipping already declared property IsBackEnabled
+		// Skipping already declared property IsBackButtonVisible
 		// Skipping already declared property HeaderTemplate
 		// Skipping already declared property Header
 		// Skipping already declared property ExpandedModeThresholdWidth
-		// Skipping already declared property MenuItemsSource
+		// Skipping already declared property MenuItemContainerStyle
+		// Skipping already declared property ContentOverlay
 		// Skipping already declared property CompactPaneLength
 		// Skipping already declared property CompactModeThresholdWidth
 		// Skipping already declared property AutoSuggestBox
-		// Skipping already declared property OpenPaneLength
+		// Skipping already declared property MenuItemContainerStyleSelector
 		// Skipping already declared property AlwaysShowHeader
-		// Skipping already declared property SelectedItem
-		// Skipping already declared property PaneToggleButtonStyle
-		// Skipping already declared property PaneFooter
-		// Skipping already declared property DisplayMode
-		// Skipping already declared property MenuItems
-		// Skipping already declared property SettingsItem
-		// Skipping already declared property PaneTitle
-		// Skipping already declared property IsBackEnabled
-		// Skipping already declared property IsBackButtonVisible
 		// Skipping already declared property ShoulderNavigationEnabled
 		// Skipping already declared property SelectionFollowsFocus
+		// Skipping already declared property SelectedItem
+		// Skipping already declared property PaneToggleButtonStyle
+		// Skipping already declared property PaneTitle
 		// Skipping already declared property PaneHeader
+		// Skipping already declared property PaneFooter
 		// Skipping already declared property PaneDisplayMode
 		// Skipping already declared property PaneCustomContent
 		// Skipping already declared property OverflowLabelMode
-		// Skipping already declared property IsPaneVisible
-		// Skipping already declared property ContentOverlay
+		// Skipping already declared property OpenPaneLength
+		// Skipping already declared property MenuItemsSource
+		// Skipping already declared property MenuItemTemplateSelector
+		// Skipping already declared property MenuItemTemplate
+		// Skipping already declared property DisplayMode
+		// Skipping already declared property MenuItems
+		// Skipping already declared property SettingsItem
 		// Skipping already declared property TemplateSettings
+		// Skipping already declared property AlwaysShowHeaderProperty
+		// Skipping already declared property AutoSuggestBoxProperty
+		// Skipping already declared property CompactModeThresholdWidthProperty
+		// Skipping already declared property CompactPaneLengthProperty
+		// Skipping already declared property ContentOverlayProperty
+		// Skipping already declared property DisplayModeProperty
 		// Skipping already declared property ExpandedModeThresholdWidthProperty
+		// Skipping already declared property HeaderProperty
+		// Skipping already declared property HeaderTemplateProperty
+		// Skipping already declared property IsBackButtonVisibleProperty
+		// Skipping already declared property IsBackEnabledProperty
+		// Skipping already declared property IsPaneOpenProperty
+		// Skipping already declared property IsPaneToggleButtonVisibleProperty
+		// Skipping already declared property IsPaneVisibleProperty
 		// Skipping already declared property IsSettingsVisibleProperty
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty IsTitleBarAutoPaddingEnabledProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(IsTitleBarAutoPaddingEnabled), typeof(bool), 
+			typeof(global::Microsoft.UI.Xaml.Controls.NavigationView), 
+			new FrameworkPropertyMetadata(default(bool)));
+		#endif
 		// Skipping already declared property MenuItemContainerStyleProperty
 		// Skipping already declared property MenuItemContainerStyleSelectorProperty
 		// Skipping already declared property MenuItemTemplateProperty
@@ -50,31 +85,18 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property MenuItemsProperty
 		// Skipping already declared property MenuItemsSourceProperty
 		// Skipping already declared property OpenPaneLengthProperty
-		// Skipping already declared property PaneFooterProperty
-		// Skipping already declared property PaneToggleButtonStyleProperty
-		// Skipping already declared property SelectedItemProperty
-		// Skipping already declared property AlwaysShowHeaderProperty
-		// Skipping already declared property AutoSuggestBoxProperty
-		// Skipping already declared property CompactModeThresholdWidthProperty
-		// Skipping already declared property CompactPaneLengthProperty
-		// Skipping already declared property DisplayModeProperty
-		// Skipping already declared property SettingsItemProperty
-		// Skipping already declared property HeaderProperty
-		// Skipping already declared property HeaderTemplateProperty
-		// Skipping already declared property IsPaneOpenProperty
-		// Skipping already declared property IsPaneToggleButtonVisibleProperty
-		// Skipping already declared property IsBackButtonVisibleProperty
-		// Skipping already declared property IsBackEnabledProperty
-		// Skipping already declared property PaneTitleProperty
-		// Skipping already declared property IsPaneVisibleProperty
 		// Skipping already declared property OverflowLabelModeProperty
 		// Skipping already declared property PaneCustomContentProperty
 		// Skipping already declared property PaneDisplayModeProperty
+		// Skipping already declared property PaneFooterProperty
 		// Skipping already declared property PaneHeaderProperty
+		// Skipping already declared property PaneTitleProperty
+		// Skipping already declared property PaneToggleButtonStyleProperty
+		// Skipping already declared property SelectedItemProperty
 		// Skipping already declared property SelectionFollowsFocusProperty
+		// Skipping already declared property SettingsItemProperty
 		// Skipping already declared property ShoulderNavigationEnabledProperty
 		// Skipping already declared property TemplateSettingsProperty
-		// Skipping already declared property ContentOverlayProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.NavigationView.NavigationView()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.NavigationView()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsPaneOpen.get
@@ -159,18 +181,8 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.ShoulderNavigationEnabled.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelMode.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelMode.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneDisplayModeProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneHeaderProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneCustomContentProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.ContentOverlayProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsPaneVisibleProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.SelectionFollowsFocusProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.TemplateSettingsProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.ShoulderNavigationEnabledProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelModeProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsBackButtonVisibleProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsBackEnabledProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneTitleProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabled.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabled.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsPaneOpenProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.CompactModeThresholdWidthProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.ExpandedModeThresholdWidthProperty.get
@@ -193,13 +205,26 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplateSelectorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyleProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyleSelectorProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsBackButtonVisibleProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsBackEnabledProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneTitleProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneDisplayModeProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneHeaderProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.PaneCustomContentProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.ContentOverlayProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsPaneVisibleProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.SelectionFollowsFocusProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.TemplateSettingsProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.ShoulderNavigationEnabledProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelModeProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabledProperty.get
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.BackRequested
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.DisplayModeChanged
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.ItemInvoked
-		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.SelectionChanged
-		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.BackRequested
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.PaneClosed
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.PaneClosing
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.PaneOpened
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.PaneOpening
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.NavigationView.SelectionChanged
 	}
 }

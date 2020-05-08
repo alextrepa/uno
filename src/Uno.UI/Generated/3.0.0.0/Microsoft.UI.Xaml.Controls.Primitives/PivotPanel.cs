@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls.Primitives
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class PivotPanel : global::Microsoft.UI.Xaml.Controls.Panel,global::Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo
@@ -27,13 +27,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public PivotPanel() : base()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.Primitives.PivotPanel", "PivotPanel.PivotPanel()");
-		}
-		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.PivotPanel.PivotPanel()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.PivotPanel.PivotPanel()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.PivotPanel.AreHorizontalSnapPointsRegular.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.PivotPanel.AreVerticalSnapPointsRegular.get

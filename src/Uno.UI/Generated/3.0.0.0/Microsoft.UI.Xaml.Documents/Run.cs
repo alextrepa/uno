@@ -26,7 +26,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FlowDirectionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FlowDirection", typeof(global::Microsoft.UI.Xaml.FlowDirection), 
+			nameof(FlowDirection), typeof(global::Microsoft.UI.Xaml.FlowDirection), 
 			typeof(global::Microsoft.UI.Xaml.Documents.Run), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.FlowDirection)));
 		#endif

@@ -4,12 +4,12 @@ namespace Microsoft.UI.Xaml.Hosting
 {
     public partial class ElementCompositionPreview
     {
-        public static global::Windows.UI.Composition.Visual GetElementVisual(global::Microsoft.UI.Xaml.UIElement element)
+        public static global::Microsoft.UI.Composition.Visual GetElementVisual(global::Microsoft.UI.Xaml.UIElement element)
         {
-            return new Windows.UI.Composition.Visual() { NativeOwner = element };
+            return new Microsoft.UI.Composition.Visual() { NativeOwner = element };
         }
 
-        public static void SetElementChildVisual(global::Microsoft.UI.Xaml.UIElement element, global::Windows.UI.Composition.Visual visual)
+        public static void SetElementChildVisual(global::Microsoft.UI.Xaml.UIElement element, global::Microsoft.UI.Composition.Visual visual)
         {
 #if __IOS__
             element.Layer.AddSublayer(visual.NativeLayer);

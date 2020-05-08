@@ -37,6 +37,20 @@ namespace Microsoft.UI.Xaml.Media
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public  double? TintLuminosityOpacity
+		{
+			get
+			{
+				return (double?)this.GetValue(TintLuminosityOpacityProperty);
+			}
+			set
+			{
+				this.SetValue(TintLuminosityOpacityProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public  global::Windows.UI.Color TintColor
 		{
 			get
@@ -81,7 +95,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AlwaysUseFallbackProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AlwaysUseFallback", typeof(bool), 
+			nameof(AlwaysUseFallback), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -89,7 +103,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BackgroundSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BackgroundSource", typeof(global::Microsoft.UI.Xaml.Media.AcrylicBackgroundSource), 
+			nameof(BackgroundSource), typeof(global::Microsoft.UI.Xaml.Media.AcrylicBackgroundSource), 
 			typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.AcrylicBackgroundSource)));
 		#endif
@@ -97,15 +111,23 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TintColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TintColor", typeof(global::Windows.UI.Color), 
+			nameof(TintColor), typeof(global::Windows.UI.Color), 
 			typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Color)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty TintLuminosityOpacityProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(TintLuminosityOpacity), typeof(double?), 
+			typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush), 
+			new FrameworkPropertyMetadata(default(double?)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TintOpacityProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TintOpacity", typeof(double), 
+			nameof(TintOpacity), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -113,7 +135,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TintTransitionDurationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TintTransitionDuration", typeof(global::System.TimeSpan), 
+			nameof(TintTransitionDuration), typeof(global::System.TimeSpan), 
 			typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush), 
 			new FrameworkPropertyMetadata(default(global::System.TimeSpan)));
 		#endif
@@ -135,10 +157,13 @@ namespace Microsoft.UI.Xaml.Media
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintTransitionDuration.set
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.AlwaysUseFallback.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.AlwaysUseFallback.set
+		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacity.get
+		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacity.set
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.BackgroundSourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintColorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintOpacityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintTransitionDurationProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.AlwaysUseFallbackProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacityProperty.get
 	}
 }

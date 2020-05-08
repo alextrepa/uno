@@ -73,7 +73,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarIdentifierProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarIdentifier", typeof(string), 
+			nameof(CalendarIdentifier), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePickerFlyout), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -87,7 +87,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayFormat", typeof(string), 
+			nameof(DayFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePickerFlyout), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -95,7 +95,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MonthFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MonthFormat", typeof(string), 
+			nameof(MonthFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePickerFlyout), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -103,7 +103,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty YearFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"YearFormat", typeof(string), 
+			nameof(YearFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePickerFlyout), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif

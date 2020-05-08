@@ -2,7 +2,7 @@
 
 namespace Microsoft.UI.Xaml.Controls
 {
-	public interface IAnimatedVisualSource
+	public partial interface IAnimatedVisualSource
 	{
 		void Update(AnimatedVisualPlayer player);
 		void Load();

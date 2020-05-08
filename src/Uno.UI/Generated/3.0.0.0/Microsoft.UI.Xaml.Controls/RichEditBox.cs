@@ -313,76 +313,6 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  bool IsHandwritingViewEnabled
-		{
-			get
-			{
-				return (bool)this.GetValue(IsHandwritingViewEnabledProperty);
-			}
-			set
-			{
-				this.SetValue(IsHandwritingViewEnabledProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Controls.HandwritingView HandwritingView
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Controls.HandwritingView)this.GetValue(HandwritingViewProperty);
-			}
-			set
-			{
-				this.SetValue(HandwritingViewProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Documents.ContentLinkProviderCollection ContentLinkProviders
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Documents.ContentLinkProviderCollection)this.GetValue(ContentLinkProvidersProperty);
-			}
-			set
-			{
-				this.SetValue(ContentLinkProvidersProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Media.SolidColorBrush ContentLinkForegroundColor
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Media.SolidColorBrush)this.GetValue(ContentLinkForegroundColorProperty);
-			}
-			set
-			{
-				this.SetValue(ContentLinkForegroundColorProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Media.SolidColorBrush ContentLinkBackgroundColor
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Media.SolidColorBrush)this.GetValue(ContentLinkBackgroundColorProperty);
-			}
-			set
-			{
-				this.SetValue(ContentLinkBackgroundColorProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase SelectionFlyout
 		{
 			get
@@ -433,7 +363,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AcceptsReturnProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AcceptsReturn", typeof(bool), 
+			nameof(AcceptsReturn), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -441,7 +371,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty InputScopeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"InputScope", typeof(global::Microsoft.UI.Xaml.Input.InputScope), 
+			nameof(InputScope), typeof(global::Microsoft.UI.Xaml.Input.InputScope), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.InputScope)));
 		#endif
@@ -449,7 +379,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsReadOnlyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsReadOnly", typeof(bool), 
+			nameof(IsReadOnly), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -457,7 +387,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsSpellCheckEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsSpellCheckEnabled", typeof(bool), 
+			nameof(IsSpellCheckEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -465,7 +395,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextPredictionEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextPredictionEnabled", typeof(bool), 
+			nameof(IsTextPredictionEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -473,7 +403,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextAlignment", typeof(global::Microsoft.UI.Xaml.TextAlignment), 
+			nameof(TextAlignment), typeof(global::Microsoft.UI.Xaml.TextAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextAlignment)));
 		#endif
@@ -481,7 +411,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextWrappingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextWrapping", typeof(global::Microsoft.UI.Xaml.TextWrapping), 
+			nameof(TextWrapping), typeof(global::Microsoft.UI.Xaml.TextWrapping), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextWrapping)));
 		#endif
@@ -489,7 +419,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Header", typeof(object), 
+			nameof(Header), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -497,7 +427,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderTemplateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HeaderTemplate", typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			nameof(HeaderTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
 		#endif
@@ -505,7 +435,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsColorFontEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsColorFontEnabled", typeof(bool), 
+			nameof(IsColorFontEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -513,7 +443,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PlaceholderTextProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlaceholderText", typeof(string), 
+			nameof(PlaceholderText), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -521,7 +451,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PreventKeyboardDisplayOnProgrammaticFocusProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PreventKeyboardDisplayOnProgrammaticFocus", typeof(bool), 
+			nameof(PreventKeyboardDisplayOnProgrammaticFocus), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -529,7 +459,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionHighlightColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionHighlightColor", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
+			nameof(SelectionHighlightColor), typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
 		#endif
@@ -537,7 +467,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DesiredCandidateWindowAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DesiredCandidateWindowAlignment", typeof(global::Microsoft.UI.Xaml.Controls.CandidateWindowAlignment), 
+			nameof(DesiredCandidateWindowAlignment), typeof(global::Microsoft.UI.Xaml.Controls.CandidateWindowAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.CandidateWindowAlignment)));
 		#endif
@@ -545,7 +475,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextReadingOrderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextReadingOrder", typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
+			nameof(TextReadingOrder), typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextReadingOrder)));
 		#endif
@@ -553,7 +483,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ClipboardCopyFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ClipboardCopyFormat", typeof(global::Microsoft.UI.Xaml.Controls.RichEditClipboardFormat), 
+			nameof(ClipboardCopyFormat), typeof(global::Microsoft.UI.Xaml.Controls.RichEditClipboardFormat), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.RichEditClipboardFormat)));
 		#endif
@@ -561,7 +491,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxLengthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxLength", typeof(int), 
+			nameof(MaxLength), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -569,7 +499,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionHighlightColorWhenNotFocusedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionHighlightColorWhenNotFocused", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
+			nameof(SelectionHighlightColorWhenNotFocused), typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
 		#endif
@@ -577,7 +507,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CharacterCasingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CharacterCasing", typeof(global::Microsoft.UI.Xaml.Controls.CharacterCasing), 
+			nameof(CharacterCasing), typeof(global::Microsoft.UI.Xaml.Controls.CharacterCasing), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.CharacterCasing)));
 		#endif
@@ -585,7 +515,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DisabledFormattingAcceleratorsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DisabledFormattingAccelerators", typeof(global::Microsoft.UI.Xaml.Controls.DisabledFormattingAccelerators), 
+			nameof(DisabledFormattingAccelerators), typeof(global::Microsoft.UI.Xaml.Controls.DisabledFormattingAccelerators), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.DisabledFormattingAccelerators)));
 		#endif
@@ -593,55 +523,15 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalTextAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HorizontalTextAlignment", typeof(global::Microsoft.UI.Xaml.TextAlignment), 
+			nameof(HorizontalTextAlignment), typeof(global::Microsoft.UI.Xaml.TextAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextAlignment)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty ContentLinkBackgroundColorProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentLinkBackgroundColor", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
-			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty ContentLinkForegroundColorProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentLinkForegroundColor", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
-			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty ContentLinkProvidersProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentLinkProviders", typeof(global::Microsoft.UI.Xaml.Documents.ContentLinkProviderCollection), 
-			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Documents.ContentLinkProviderCollection)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty HandwritingViewProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HandwritingView", typeof(global::Microsoft.UI.Xaml.Controls.HandwritingView), 
-			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.HandwritingView)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty IsHandwritingViewEnabledProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsHandwritingViewEnabled", typeof(bool), 
-			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
-			new FrameworkPropertyMetadata(default(bool)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DescriptionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Description", typeof(object), 
+			nameof(Description), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -649,7 +539,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ProofingMenuFlyoutProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ProofingMenuFlyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			nameof(ProofingMenuFlyout), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
 		#endif
@@ -657,7 +547,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionFlyoutProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionFlyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			nameof(SelectionFlyout), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichEditBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
 		#endif
@@ -741,20 +631,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.CopyingToClipboard.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.CuttingToClipboard.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.CuttingToClipboard.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkForegroundColor.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkForegroundColor.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkBackgroundColor.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkBackgroundColor.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkProviders.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkProviders.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.HandwritingView.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.HandwritingView.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.IsHandwritingViewEnabled.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.IsHandwritingViewEnabled.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkChanged.add
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkChanged.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkInvoked.add
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkInvoked.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.TextDocument.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.SelectionFlyout.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.SelectionFlyout.set
@@ -766,11 +642,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.SelectionFlyoutProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ProofingMenuFlyoutProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.DescriptionProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkForegroundColorProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkBackgroundColorProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.ContentLinkProvidersProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.HandwritingViewProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.IsHandwritingViewEnabledProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.HorizontalTextAlignmentProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.CharacterCasingProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.RichEditBox.DisabledFormattingAcceleratorsProperty.get
@@ -965,38 +836,6 @@ namespace Microsoft.UI.Xaml.Controls
 			remove
 			{
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.RichEditBox", "event TypedEventHandler<RichEditBox, TextControlCuttingToClipboardEventArgs> RichEditBox.CuttingToClipboard");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RichEditBox, global::Microsoft.UI.Xaml.Controls.ContentLinkChangedEventArgs> ContentLinkChanged
-		{
-			[global::Uno.NotImplemented]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.RichEditBox", "event TypedEventHandler<RichEditBox, ContentLinkChangedEventArgs> RichEditBox.ContentLinkChanged");
-			}
-			[global::Uno.NotImplemented]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.RichEditBox", "event TypedEventHandler<RichEditBox, ContentLinkChangedEventArgs> RichEditBox.ContentLinkChanged");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RichEditBox, global::Microsoft.UI.Xaml.Documents.ContentLinkInvokedEventArgs> ContentLinkInvoked
-		{
-			[global::Uno.NotImplemented]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.RichEditBox", "event TypedEventHandler<RichEditBox, ContentLinkInvokedEventArgs> RichEditBox.ContentLinkInvoked");
-			}
-			[global::Uno.NotImplemented]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.RichEditBox", "event TypedEventHandler<RichEditBox, ContentLinkInvokedEventArgs> RichEditBox.ContentLinkInvoked");
 			}
 		}
 		#endif

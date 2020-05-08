@@ -8,16 +8,7 @@ namespace Microsoft.UI.Xaml.Media
 	public  partial class TransformGroup : global::Microsoft.UI.Xaml.Media.Transform
 	{
 		// Skipping already declared property Children
-		#if false
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Media.Matrix Value
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member Matrix TransformGroup.Value is not implemented in Uno.");
-			}
-		}
-		#endif
+		// Skipping already declared property Value
 		// Skipping already declared property ChildrenProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Media.TransformGroup.TransformGroup()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.TransformGroup.TransformGroup()

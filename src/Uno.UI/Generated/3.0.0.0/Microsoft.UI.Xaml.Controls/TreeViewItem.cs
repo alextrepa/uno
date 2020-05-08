@@ -9,6 +9,20 @@ namespace Microsoft.UI.Xaml.Controls
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public  object ItemsSource
+		{
+			get
+			{
+				return (object)this.GetValue(ItemsSourceProperty);
+			}
+			set
+			{
+				this.SetValue(ItemsSourceProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public  bool IsExpanded
 		{
 			get
@@ -18,6 +32,20 @@ namespace Microsoft.UI.Xaml.Controls
 			set
 			{
 				this.SetValue(IsExpandedProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  bool HasUnrealizedChildren
+		{
+			get
+			{
+				return (bool)this.GetValue(HasUnrealizedChildrenProperty);
+			}
+			set
+			{
+				this.SetValue(HasUnrealizedChildrenProperty, value);
 			}
 		}
 		#endif
@@ -103,37 +131,9 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  object ItemsSource
-		{
-			get
-			{
-				return (object)this.GetValue(ItemsSourceProperty);
-			}
-			set
-			{
-				this.SetValue(ItemsSourceProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  bool HasUnrealizedChildren
-		{
-			get
-			{
-				return (bool)this.GetValue(HasUnrealizedChildrenProperty);
-			}
-			set
-			{
-				this.SetValue(HasUnrealizedChildrenProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CollapsedGlyphProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CollapsedGlyph", typeof(string), 
+			nameof(CollapsedGlyph), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -141,7 +141,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ExpandedGlyphProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ExpandedGlyph", typeof(string), 
+			nameof(ExpandedGlyph), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -149,7 +149,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GlyphBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GlyphBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(GlyphBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -157,7 +157,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GlyphOpacityProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GlyphOpacity", typeof(double), 
+			nameof(GlyphOpacity), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -165,31 +165,23 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GlyphSizeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GlyphSize", typeof(double), 
+			nameof(GlyphSize), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty IsExpandedProperty { get; } = 
+		public static global::Microsoft.UI.Xaml.DependencyProperty HasUnrealizedChildrenProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsExpanded", typeof(bool), 
+			nameof(HasUnrealizedChildren), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty TreeViewItemTemplateSettingsProperty { get; } = 
+		public static global::Microsoft.UI.Xaml.DependencyProperty IsExpandedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TreeViewItemTemplateSettings", typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty HasUnrealizedChildrenProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HasUnrealizedChildren", typeof(bool), 
+			nameof(IsExpanded), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -197,9 +189,17 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemsSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemsSource", typeof(object), 
+			nameof(ItemsSource), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
 			new FrameworkPropertyMetadata(default(object)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty TreeViewItemTemplateSettingsProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(TreeViewItemTemplateSettings), typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItem), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -226,8 +226,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.HasUnrealizedChildren.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.ItemsSource.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.ItemsSource.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.HasUnrealizedChildrenProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.ItemsSourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.GlyphOpacityProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.GlyphBrushProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.ExpandedGlyphProperty.get
@@ -235,5 +233,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.GlyphSizeProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.IsExpandedProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.TreeViewItemTemplateSettingsProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.HasUnrealizedChildrenProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItem.ItemsSourceProperty.get
 	}
 }

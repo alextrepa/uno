@@ -7,9 +7,9 @@ namespace Microsoft.UI.Xaml.Controls
 	#endif
 	public  partial class NavigationViewItem : global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase
 	{
+		// Skipping already declared property SelectsOnInvoked
 		// Skipping already declared property Icon
 		// Skipping already declared property CompactPaneLength
-		// Skipping already declared property SelectsOnInvoked
 		// Skipping already declared property CompactPaneLengthProperty
 		// Skipping already declared property IconProperty
 		// Skipping already declared property SelectsOnInvokedProperty
@@ -20,8 +20,8 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewItem.CompactPaneLength.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvoked.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvoked.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvokedProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewItem.IconProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewItem.CompactPaneLengthProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvokedProperty.get
 	}
 }

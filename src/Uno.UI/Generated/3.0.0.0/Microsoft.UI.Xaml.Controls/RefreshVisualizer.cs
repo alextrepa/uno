@@ -49,7 +49,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Content", typeof(global::Microsoft.UI.Xaml.UIElement), 
+			nameof(Content), typeof(global::Microsoft.UI.Xaml.UIElement), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizer), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.UIElement)));
 		#endif
@@ -62,7 +62,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OrientationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Orientation", typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizerOrientation), 
+			nameof(Orientation), typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizerOrientation), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizer), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.RefreshVisualizerOrientation)));
 		#endif
@@ -70,7 +70,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"State", typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizerState), 
+			nameof(State), typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizerState), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizer), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.RefreshVisualizerState)));
 		#endif

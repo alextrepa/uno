@@ -15,13 +15,17 @@ namespace Microsoft.UI.Xaml.Input
 			{
 				return (global::Microsoft.UI.Xaml.Input.StandardUICommandKind)this.GetValue(KindProperty);
 			}
+			set
+			{
+				this.SetValue(KindProperty, value);
+			}
 		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty KindProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Kind", typeof(global::Microsoft.UI.Xaml.Input.StandardUICommandKind), 
+			nameof(Kind), typeof(global::Microsoft.UI.Xaml.Input.StandardUICommandKind), 
 			typeof(global::Microsoft.UI.Xaml.Input.StandardUICommand), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.StandardUICommandKind)));
 		#endif
@@ -42,6 +46,7 @@ namespace Microsoft.UI.Xaml.Input
 		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Input.StandardUICommand.StandardUICommand(Microsoft.UI.Xaml.Input.StandardUICommandKind)
 		// Forced skipping of method Microsoft.UI.Xaml.Input.StandardUICommand.Kind.get
+		// Forced skipping of method Microsoft.UI.Xaml.Input.StandardUICommand.Kind.set
 		// Forced skipping of method Microsoft.UI.Xaml.Input.StandardUICommand.KindProperty.get
 	}
 }

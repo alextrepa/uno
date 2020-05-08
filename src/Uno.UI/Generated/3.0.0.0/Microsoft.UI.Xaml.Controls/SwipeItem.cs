@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class SwipeItem : global::Microsoft.UI.Xaml.DependencyObject
@@ -109,7 +109,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Background", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(Background), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItem), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -117,7 +117,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BehaviorOnInvokedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BehaviorOnInvoked", typeof(global::Microsoft.UI.Xaml.Controls.SwipeBehaviorOnInvoked), 
+			nameof(BehaviorOnInvoked), typeof(global::Microsoft.UI.Xaml.Controls.SwipeBehaviorOnInvoked), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItem), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.SwipeBehaviorOnInvoked)));
 		#endif
@@ -125,7 +125,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CommandParameterProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CommandParameter", typeof(object), 
+			nameof(CommandParameter), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItem), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -133,15 +133,15 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CommandProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Command", typeof(global::System.Windows.Input.ICommand), 
+			nameof(Command), typeof(global::Microsoft.UI.Xaml.Input.ICommand), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItem), 
-			new FrameworkPropertyMetadata(default(global::System.Windows.Input.ICommand)));
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.ICommand)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Foreground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(Foreground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItem), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -149,7 +149,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IconSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IconSource", typeof(global::Microsoft.UI.Xaml.Controls.IconSource), 
+			nameof(IconSource), typeof(global::Microsoft.UI.Xaml.Controls.IconSource), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItem), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.IconSource)));
 		#endif
@@ -157,11 +157,17 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Text", typeof(string), 
+			nameof(Text), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItem), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Controls.SwipeItem.SwipeItem()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public SwipeItem() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.SwipeItem", "SwipeItem.SwipeItem()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.SwipeItem.SwipeItem()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.SwipeItem.Text.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.SwipeItem.Text.set

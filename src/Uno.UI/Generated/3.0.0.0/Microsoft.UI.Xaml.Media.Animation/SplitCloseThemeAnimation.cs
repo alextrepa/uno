@@ -165,7 +165,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ClosedLengthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ClosedLength", typeof(double), 
+			nameof(ClosedLength), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -173,7 +173,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ClosedTargetNameProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ClosedTargetName", typeof(string), 
+			nameof(ClosedTargetName), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -181,7 +181,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ClosedTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ClosedTarget", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(ClosedTarget), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -189,7 +189,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentTargetNameProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentTargetName", typeof(string), 
+			nameof(ContentTargetName), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -197,7 +197,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentTarget", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(ContentTarget), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -205,7 +205,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentTranslationDirectionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentTranslationDirection", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.AnimationDirection), 
+			nameof(ContentTranslationDirection), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.AnimationDirection), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.AnimationDirection)));
 		#endif
@@ -213,7 +213,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentTranslationOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentTranslationOffset", typeof(double), 
+			nameof(ContentTranslationOffset), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -221,7 +221,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OffsetFromCenterProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OffsetFromCenter", typeof(double), 
+			nameof(OffsetFromCenter), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -229,7 +229,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OpenedLengthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OpenedLength", typeof(double), 
+			nameof(OpenedLength), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -237,7 +237,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OpenedTargetNameProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OpenedTargetName", typeof(string), 
+			nameof(OpenedTargetName), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -245,7 +245,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OpenedTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OpenedTarget", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(OpenedTarget), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplitCloseThemeAnimation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif

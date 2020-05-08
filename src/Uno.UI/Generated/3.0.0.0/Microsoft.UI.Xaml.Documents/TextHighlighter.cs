@@ -49,7 +49,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Background", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(Background), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Documents.TextHighlighter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -57,7 +57,7 @@ namespace Microsoft.UI.Xaml.Documents
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Foreground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(Foreground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Documents.TextHighlighter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif

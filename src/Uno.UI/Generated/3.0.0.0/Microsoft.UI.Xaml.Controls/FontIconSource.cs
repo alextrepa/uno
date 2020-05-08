@@ -109,7 +109,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontFamilyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontFamily", typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
+			nameof(FontFamily), typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIconSource), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.FontFamily)));
 		#endif
@@ -117,7 +117,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontSizeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontSize", typeof(double), 
+			nameof(FontSize), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIconSource), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -125,7 +125,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontStyle", typeof(global::Windows.UI.Text.FontStyle), 
+			nameof(FontStyle), typeof(global::Windows.UI.Text.FontStyle), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIconSource), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStyle)));
 		#endif
@@ -133,7 +133,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(FontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIconSource), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -141,7 +141,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GlyphProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Glyph", typeof(string), 
+			nameof(Glyph), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIconSource), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -149,7 +149,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextScaleFactorEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextScaleFactorEnabled", typeof(bool), 
+			nameof(IsTextScaleFactorEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIconSource), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -157,7 +157,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MirroredWhenRightToLeftProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MirroredWhenRightToLeft", typeof(bool), 
+			nameof(MirroredWhenRightToLeft), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.FontIconSource), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

@@ -417,7 +417,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsCompactProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsCompact", typeof(bool), 
+			nameof(IsCompact), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -425,7 +425,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsFastForwardButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFastForwardButtonVisible", typeof(bool), 
+			nameof(IsFastForwardButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -433,7 +433,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsFastForwardEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFastForwardEnabled", typeof(bool), 
+			nameof(IsFastForwardEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -441,7 +441,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsFastRewindButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFastRewindButtonVisible", typeof(bool), 
+			nameof(IsFastRewindButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -449,7 +449,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsFastRewindEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFastRewindEnabled", typeof(bool), 
+			nameof(IsFastRewindEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -457,7 +457,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsFullWindowButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFullWindowButtonVisible", typeof(bool), 
+			nameof(IsFullWindowButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -465,7 +465,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsFullWindowEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFullWindowEnabled", typeof(bool), 
+			nameof(IsFullWindowEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -473,7 +473,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsPlaybackRateButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsPlaybackRateButtonVisible", typeof(bool), 
+			nameof(IsPlaybackRateButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -481,7 +481,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsPlaybackRateEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsPlaybackRateEnabled", typeof(bool), 
+			nameof(IsPlaybackRateEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -489,7 +489,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsSeekBarVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsSeekBarVisible", typeof(bool), 
+			nameof(IsSeekBarVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -497,7 +497,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsSeekEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsSeekEnabled", typeof(bool), 
+			nameof(IsSeekEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -505,7 +505,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsStopButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsStopButtonVisible", typeof(bool), 
+			nameof(IsStopButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -513,7 +513,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsStopEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsStopEnabled", typeof(bool), 
+			nameof(IsStopEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -521,7 +521,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsVolumeButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsVolumeButtonVisible", typeof(bool), 
+			nameof(IsVolumeButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -529,7 +529,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsVolumeEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsVolumeEnabled", typeof(bool), 
+			nameof(IsVolumeEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -537,7 +537,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsZoomButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsZoomButtonVisible", typeof(bool), 
+			nameof(IsZoomButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -545,7 +545,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsZoomEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsZoomEnabled", typeof(bool), 
+			nameof(IsZoomEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -553,7 +553,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FastPlayFallbackBehaviourProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FastPlayFallbackBehaviour", typeof(global::Microsoft.UI.Xaml.Media.FastPlayFallbackBehaviour), 
+			nameof(FastPlayFallbackBehaviour), typeof(global::Microsoft.UI.Xaml.Media.FastPlayFallbackBehaviour), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.FastPlayFallbackBehaviour)));
 		#endif
@@ -561,7 +561,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsNextTrackButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsNextTrackButtonVisible", typeof(bool), 
+			nameof(IsNextTrackButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -569,7 +569,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsPreviousTrackButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsPreviousTrackButtonVisible", typeof(bool), 
+			nameof(IsPreviousTrackButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -577,7 +577,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsSkipBackwardButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsSkipBackwardButtonVisible", typeof(bool), 
+			nameof(IsSkipBackwardButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -585,7 +585,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsSkipBackwardEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsSkipBackwardEnabled", typeof(bool), 
+			nameof(IsSkipBackwardEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -593,7 +593,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsSkipForwardButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsSkipForwardButtonVisible", typeof(bool), 
+			nameof(IsSkipForwardButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -601,7 +601,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsSkipForwardEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsSkipForwardEnabled", typeof(bool), 
+			nameof(IsSkipForwardEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -609,7 +609,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsRepeatButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsRepeatButtonVisible", typeof(bool), 
+			nameof(IsRepeatButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -617,7 +617,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsRepeatEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsRepeatEnabled", typeof(bool), 
+			nameof(IsRepeatEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -625,7 +625,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ShowAndHideAutomaticallyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ShowAndHideAutomatically", typeof(bool), 
+			nameof(ShowAndHideAutomatically), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -633,7 +633,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsCompactOverlayButtonVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsCompactOverlayButtonVisible", typeof(bool), 
+			nameof(IsCompactOverlayButtonVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -641,7 +641,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsCompactOverlayEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsCompactOverlayEnabled", typeof(bool), 
+			nameof(IsCompactOverlayEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaTransportControls), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

@@ -7,6 +7,9 @@ namespace Microsoft.UI.Xaml
 	#endif
 	public  partial class ResourceDictionary : global::Microsoft.UI.Xaml.DependencyObject,global::System.Collections.Generic.IDictionary<object, object>,global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<object, object>>
 	{
+		// Skipping already declared property Source
+		// Skipping already declared property MergedDictionaries
+		// Skipping already declared property ThemeDictionaries
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  uint Size
@@ -17,9 +20,6 @@ namespace Microsoft.UI.Xaml
 			}
 		}
 		#endif
-		// Skipping already declared property Source
-		// Skipping already declared property MergedDictionaries
-		// Skipping already declared property ThemeDictionaries
 		// Skipping already declared method Microsoft.UI.Xaml.ResourceDictionary.ResourceDictionary()
 		// Forced skipping of method Microsoft.UI.Xaml.ResourceDictionary.ResourceDictionary()
 		// Forced skipping of method Microsoft.UI.Xaml.ResourceDictionary.Source.get

@@ -111,12 +111,13 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
+		// Skipping already declared property LightDismissOverlayMode
 		// Skipping already declared property SelectedDate
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarIdentifierProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarIdentifier", typeof(string), 
+			nameof(CalendarIdentifier), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -125,7 +126,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayFormat", typeof(string), 
+			nameof(DayFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -134,7 +135,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Header", typeof(object), 
+			nameof(Header), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePicker), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -142,7 +143,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderTemplateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HeaderTemplate", typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			nameof(HeaderTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
 		#endif
@@ -152,7 +153,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MonthFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MonthFormat", typeof(string), 
+			nameof(MonthFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -161,7 +162,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OrientationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Orientation", typeof(global::Microsoft.UI.Xaml.Controls.Orientation), 
+			nameof(Orientation), typeof(global::Microsoft.UI.Xaml.Controls.Orientation), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Orientation)));
 		#endif
@@ -169,11 +170,12 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty YearFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"YearFormat", typeof(string), 
+			nameof(YearFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.DatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
-#endif
+		#endif
 		// Skipping already declared property YearVisibleProperty
+		// Skipping already declared property LightDismissOverlayModeProperty
 		// Skipping already declared property SelectedDateProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.DatePicker.DatePicker()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.DatePicker.DatePicker()

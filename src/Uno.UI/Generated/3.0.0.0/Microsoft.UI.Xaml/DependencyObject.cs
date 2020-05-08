@@ -14,8 +14,8 @@ namespace Microsoft.UI.Xaml
 		// Skipping already declared method Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
 		// Skipping already declared method Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
 		// Skipping already declared method Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
-		// Forced skipping of method Microsoft.UI.Xaml.DependencyObject.Dispatcher.get
 		// Skipping already declared method Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
 		// Skipping already declared method Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, long)
+		// Forced skipping of method Microsoft.UI.Xaml.DependencyObject.Dispatcher.get
 	}
 }

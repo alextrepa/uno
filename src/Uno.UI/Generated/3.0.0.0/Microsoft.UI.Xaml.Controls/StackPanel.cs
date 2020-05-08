@@ -65,7 +65,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AreScrollSnapPointsRegularProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AreScrollSnapPointsRegular", typeof(bool), 
+			nameof(AreScrollSnapPointsRegular), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.StackPanel), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -79,7 +79,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BackgroundSizingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BackgroundSizing", typeof(global::Microsoft.UI.Xaml.Controls.BackgroundSizing), 
+			nameof(BackgroundSizing), typeof(global::Microsoft.UI.Xaml.Controls.BackgroundSizing), 
 			typeof(global::Microsoft.UI.Xaml.Controls.StackPanel), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.BackgroundSizing)));
 		#endif

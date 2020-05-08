@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty EasingFunctionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"EasingFunction", typeof(global::Microsoft.UI.Xaml.Media.Animation.EasingFunctionBase), 
+			nameof(EasingFunction), typeof(global::Microsoft.UI.Xaml.Media.Animation.EasingFunctionBase), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.EasingPointKeyFrame), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Animation.EasingFunctionBase)));
 		#endif

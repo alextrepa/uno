@@ -2,7 +2,5 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Input
 {
-	#if false
-	public delegate void ManipulationStartedEventHandler(object @sender, global::Microsoft.UI.Xaml.Input.ManipulationStartedRoutedEventArgs @e);
-	#endif
+	// Skipping already declared delegate Microsoft.UI.Xaml.Input.ManipulationStartedEventHandler
 }

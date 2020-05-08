@@ -41,6 +41,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToggleSwitch.TemplateSettings.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToggleSwitch.Toggled.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToggleSwitch.Toggled.remove
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.ToggleSwitch.OnToggled()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		protected virtual void OnOnContentChanged( object oldContent,  object newContent)

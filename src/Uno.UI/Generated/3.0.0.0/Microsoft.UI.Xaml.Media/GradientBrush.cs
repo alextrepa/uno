@@ -53,7 +53,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ColorInterpolationModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ColorInterpolationMode", typeof(global::Microsoft.UI.Xaml.Media.ColorInterpolationMode), 
+			nameof(ColorInterpolationMode), typeof(global::Microsoft.UI.Xaml.Media.ColorInterpolationMode), 
 			typeof(global::Microsoft.UI.Xaml.Media.GradientBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.ColorInterpolationMode)));
 #endif
@@ -61,7 +61,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GradientStopsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GradientStops", typeof(global::Microsoft.UI.Xaml.Media.GradientStopCollection), 
+			nameof(GradientStops), typeof(global::Microsoft.UI.Xaml.Media.GradientStopCollection), 
 			typeof(global::Microsoft.UI.Xaml.Media.GradientBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.GradientStopCollection)));
 #endif
@@ -69,7 +69,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SpreadMethodProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SpreadMethod", typeof(global::Windows.UI.Xaml.Media.GradientSpreadMethod), 
+			"SpreadMethod", typeof(global::Microsoft.UI.Xaml.Media.GradientSpreadMethod), 
 			typeof(global::Microsoft.UI.Xaml.Media.GradientBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.GradientSpreadMethod)));
 #endif

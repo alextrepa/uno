@@ -5,7 +5,7 @@ namespace Microsoft.UI.Xaml.Interop
 	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial interface IBindableVectorView : global::System.Collections.IEnumerable
+	public  partial interface IBindableVectorView : global::Microsoft.UI.Xaml.Interop.IBindableIterable
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		uint Size

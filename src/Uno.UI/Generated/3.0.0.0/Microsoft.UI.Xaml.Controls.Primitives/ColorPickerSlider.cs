@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ColorChannelProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ColorChannel", typeof(global::Microsoft.UI.Xaml.Controls.ColorPickerHsvChannel), 
+			nameof(ColorChannel), typeof(global::Microsoft.UI.Xaml.Controls.ColorPickerHsvChannel), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ColorPickerSlider), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.ColorPickerHsvChannel)));
 		#endif

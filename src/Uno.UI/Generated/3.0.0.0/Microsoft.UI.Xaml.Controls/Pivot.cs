@@ -80,7 +80,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderFocusVisualPlacementProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HeaderFocusVisualPlacement", typeof(global::Microsoft.UI.Xaml.Controls.PivotHeaderFocusVisualPlacement), 
+			nameof(HeaderFocusVisualPlacement), typeof(global::Microsoft.UI.Xaml.Controls.PivotHeaderFocusVisualPlacement), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Pivot), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.PivotHeaderFocusVisualPlacement)));
 		#endif
@@ -88,7 +88,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsHeaderItemsCarouselEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsHeaderItemsCarouselEnabled", typeof(bool), 
+			nameof(IsHeaderItemsCarouselEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Pivot), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

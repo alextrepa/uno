@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ProjectionMatrixProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ProjectionMatrix", typeof(global::Microsoft.UI.Xaml.Media.Media3D.Matrix3D), 
+			nameof(ProjectionMatrix), typeof(global::Microsoft.UI.Xaml.Media.Media3D.Matrix3D), 
 			typeof(global::Microsoft.UI.Xaml.Media.Matrix3DProjection), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Media3D.Matrix3D)));
 		#endif

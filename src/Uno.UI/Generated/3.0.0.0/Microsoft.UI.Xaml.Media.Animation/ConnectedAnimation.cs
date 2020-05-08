@@ -62,7 +62,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  void SetAnimationComponent( global::Microsoft.UI.Xaml.Media.Animation.ConnectedAnimationComponent component,  global::Windows.UI.Composition.ICompositionAnimationBase animation)
+		public  void SetAnimationComponent( global::Microsoft.UI.Xaml.Media.Animation.ConnectedAnimationComponent component,  global::Microsoft.UI.Composition.ICompositionAnimationBase animation)
 		{
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.Animation.ConnectedAnimation", "void ConnectedAnimation.SetAnimationComponent(ConnectedAnimationComponent component, ICompositionAnimationBase animation)");
 		}

@@ -82,7 +82,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CacheLengthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CacheLength", typeof(double), 
+			nameof(CacheLength), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ItemsWrapGrid), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif

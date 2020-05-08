@@ -97,7 +97,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Header", typeof(object), 
+			nameof(Header), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TimePicker), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -105,7 +105,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderTemplateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HeaderTemplate", typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			nameof(HeaderTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TimePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
 		#endif
@@ -113,7 +113,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MinuteIncrementProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MinuteIncrement", typeof(int), 
+			nameof(MinuteIncrement), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TimePicker), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -121,7 +121,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TimeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Time", typeof(global::System.TimeSpan), 
+			nameof(Time), typeof(global::System.TimeSpan), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TimePicker), 
 			new FrameworkPropertyMetadata(default(global::System.TimeSpan)));
 		#endif
@@ -129,7 +129,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LightDismissOverlayModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LightDismissOverlayMode", typeof(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode), 
+			nameof(LightDismissOverlayMode), typeof(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TimePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode)));
 		#endif
@@ -137,7 +137,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedTimeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedTime", typeof(global::System.TimeSpan?), 
+			nameof(SelectedTime), typeof(global::System.TimeSpan?), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TimePicker), 
 			new FrameworkPropertyMetadata(default(global::System.TimeSpan?)));
 		#endif

@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HorizontalOffset", typeof(double), 
+			nameof(HorizontalOffset), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.ContentThemeTransition), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -47,7 +47,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty VerticalOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"VerticalOffset", typeof(double), 
+			nameof(VerticalOffset), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.ContentThemeTransition), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif

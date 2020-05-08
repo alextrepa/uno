@@ -53,7 +53,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CommandParameterProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CommandParameter", typeof(object), 
+			nameof(CommandParameter), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SplitButton), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -61,15 +61,15 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CommandProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Command", typeof(global::System.Windows.Input.ICommand), 
+			nameof(Command), typeof(global::Microsoft.UI.Xaml.Input.ICommand), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SplitButton), 
-			new FrameworkPropertyMetadata(default(global::System.Windows.Input.ICommand)));
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.ICommand)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FlyoutProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Flyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			nameof(Flyout), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SplitButton), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
 		#endif

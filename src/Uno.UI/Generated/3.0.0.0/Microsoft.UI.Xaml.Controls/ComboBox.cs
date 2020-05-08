@@ -5,7 +5,7 @@ namespace Microsoft.UI.Xaml.Controls
 	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class ComboBox 
+	public  partial class ComboBox : global::Microsoft.UI.Xaml.Controls.IInputValidationControl
 	{
 		// Skipping already declared property MaxDropDownHeight
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
@@ -57,6 +57,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property PlaceholderText
 		// Skipping already declared property HeaderTemplate
 		// Skipping already declared property Header
+		// Skipping already declared property LightDismissOverlayMode
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  bool IsTextSearchEnabled
@@ -141,6 +142,82 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationContext ValidationContext
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member InputValidationContext ComboBox.ValidationContext is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.ComboBox", "InputValidationContext ComboBox.ValidationContext");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationMode InputValidationMode
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.InputValidationMode)this.GetValue(InputValidationModeProperty);
+			}
+			set
+			{
+				this.SetValue(InputValidationModeProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationKind InputValidationKind
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.InputValidationKind)this.GetValue(InputValidationKindProperty);
+			}
+			set
+			{
+				this.SetValue(InputValidationKindProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.DataTemplate ErrorTemplate
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.DataTemplate)this.GetValue(ErrorTemplateProperty);
+			}
+			set
+			{
+				this.SetValue(ErrorTemplateProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  bool HasValidationErrors
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member bool ComboBox.HasValidationErrors is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.Foundation.Collections.IObservableVector<global::Microsoft.UI.Xaml.Controls.InputValidationError> ValidationErrors
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member IObservableVector<InputValidationError> ComboBox.ValidationErrors is not implemented in Uno.");
+			}
+		}
+		#endif
 		// Skipping already declared property IsDropDownOpenProperty
 		// Skipping already declared property MaxDropDownHeightProperty
 		// Skipping already declared property HeaderProperty
@@ -150,15 +227,16 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextSearchEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextSearchEnabled", typeof(bool), 
+			nameof(IsTextSearchEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
+		// Skipping already declared property LightDismissOverlayModeProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionChangedTriggerProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionChangedTrigger", typeof(global::Microsoft.UI.Xaml.Controls.ComboBoxSelectionChangedTrigger), 
+			nameof(SelectionChangedTrigger), typeof(global::Microsoft.UI.Xaml.Controls.ComboBoxSelectionChangedTrigger), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.ComboBoxSelectionChangedTrigger)));
 		#endif
@@ -166,7 +244,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PlaceholderForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlaceholderForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(PlaceholderForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -174,7 +252,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DescriptionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Description", typeof(object), 
+			nameof(Description), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -182,7 +260,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsEditableProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsEditable", typeof(bool), 
+			nameof(IsEditable), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -190,7 +268,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextBoxStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextBoxStyle", typeof(global::Microsoft.UI.Xaml.Style), 
+			nameof(TextBoxStyle), typeof(global::Microsoft.UI.Xaml.Style), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Style)));
 		#endif
@@ -198,9 +276,33 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Text", typeof(string), 
+			nameof(Text), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
 			new FrameworkPropertyMetadata(default(string)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty ErrorTemplateProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(ErrorTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationKindProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(InputValidationKind), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationKind), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationKind)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationModeProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(InputValidationMode), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationMode), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ComboBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationMode)));
 		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.ComboBox.ComboBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ComboBox()
@@ -254,6 +356,23 @@ namespace Microsoft.UI.Xaml.Controls
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.ComboBox", "void ComboBox.OnDropDownOpened(object e)");
 		}
 		#endif
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ValidationErrors.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.HasValidationErrors.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ValidationContext.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ValidationContext.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ErrorTemplate.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ErrorTemplate.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.InputValidationMode.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.InputValidationMode.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.InputValidationKind.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.InputValidationKind.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.HasValidationErrorsChanged.add
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.HasValidationErrorsChanged.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ValidationError.add
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ValidationError.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.ErrorTemplateProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.InputValidationModeProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.InputValidationKindProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.IsEditableProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.TextProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ComboBox.TextBoxStyleProperty.get
@@ -285,5 +404,38 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.HasValidationErrorsChangedEventArgs> HasValidationErrorsChanged
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.ComboBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> ComboBox.HasValidationErrorsChanged");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.ComboBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> ComboBox.HasValidationErrorsChanged");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.InputValidationErrorEventArgs> ValidationError
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.ComboBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> ComboBox.ValidationError");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.ComboBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> ComboBox.ValidationError");
+			}
+		}
+		#endif
+		// Processing: Microsoft.UI.Xaml.Controls.IInputValidationControl
 	}
 }

@@ -5,7 +5,7 @@ namespace Microsoft.UI.Xaml.Controls
 	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class GroupStyle : global::System.ComponentModel.INotifyPropertyChanged
+	public  partial class GroupStyle : global::Microsoft.UI.Xaml.Data.INotifyPropertyChanged
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -73,7 +73,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.GroupStyle.PropertyChanged.remove
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged
+		public  event global::Microsoft.UI.Xaml.Data.PropertyChangedEventHandler PropertyChanged
 		{
 			[global::Uno.NotImplemented]
 			add
@@ -87,6 +87,6 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
-		// Processing: System.ComponentModel.INotifyPropertyChanged
+		// Processing: Microsoft.UI.Xaml.Data.INotifyPropertyChanged
 	}
 }

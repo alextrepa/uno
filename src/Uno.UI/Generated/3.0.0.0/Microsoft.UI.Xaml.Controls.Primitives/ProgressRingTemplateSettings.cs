@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls.Primitives
 {
-	#if __ANDROID__ || __IOS__ || NET461 || false || false
+	#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class ProgressRingTemplateSettings : global::Microsoft.UI.Xaml.DependencyObject

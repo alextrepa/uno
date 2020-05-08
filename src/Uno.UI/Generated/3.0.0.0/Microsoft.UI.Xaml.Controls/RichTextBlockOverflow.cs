@@ -113,7 +113,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HasOverflowContentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HasOverflowContent", typeof(bool), 
+			nameof(HasOverflowContent), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -121,7 +121,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OverflowContentTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OverflowContentTarget", typeof(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow), 
+			nameof(OverflowContentTarget), typeof(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow)));
 		#endif
@@ -129,7 +129,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PaddingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Padding", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(Padding), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
@@ -137,7 +137,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxLinesProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxLines", typeof(int), 
+			nameof(MaxLines), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -145,7 +145,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextTrimmedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextTrimmed", typeof(bool), 
+			nameof(IsTextTrimmed), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RichTextBlockOverflow), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

@@ -49,7 +49,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DynamicOverflowOrderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DynamicOverflowOrder", typeof(int), 
+			nameof(DynamicOverflowOrder), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.AppBarElementContainer), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -57,7 +57,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsCompactProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsCompact", typeof(bool), 
+			nameof(IsCompact), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.AppBarElementContainer), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -65,7 +65,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsInOverflowProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsInOverflow", typeof(bool), 
+			nameof(IsInOverflow), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.AppBarElementContainer), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

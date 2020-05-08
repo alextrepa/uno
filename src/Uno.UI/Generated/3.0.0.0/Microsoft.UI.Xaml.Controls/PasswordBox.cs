@@ -5,8 +5,84 @@ namespace Microsoft.UI.Xaml.Controls
 	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class PasswordBox 
+	public  partial class PasswordBox : global::Microsoft.UI.Xaml.Controls.IInputValidationControl
 	{
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationContext ValidationContext
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member InputValidationContext PasswordBox.ValidationContext is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "InputValidationContext PasswordBox.ValidationContext");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationMode InputValidationMode
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.InputValidationMode)this.GetValue(InputValidationModeProperty);
+			}
+			set
+			{
+				this.SetValue(InputValidationModeProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationKind InputValidationKind
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.InputValidationKind)this.GetValue(InputValidationKindProperty);
+			}
+			set
+			{
+				this.SetValue(InputValidationKindProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.DataTemplate ErrorTemplate
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.DataTemplate)this.GetValue(ErrorTemplateProperty);
+			}
+			set
+			{
+				this.SetValue(ErrorTemplateProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  bool HasValidationErrors
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member bool PasswordBox.HasValidationErrors is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.Foundation.Collections.IObservableVector<global::Microsoft.UI.Xaml.Controls.InputValidationError> ValidationErrors
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member IObservableVector<InputValidationError> PasswordBox.ValidationErrors is not implemented in Uno.");
+			}
+		}
+		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  string PasswordChar
@@ -20,24 +96,11 @@ namespace Microsoft.UI.Xaml.Controls
 				this.SetValue(PasswordCharProperty, value);
 			}
 		}
-#endif
+		#endif
 		// Skipping already declared property Password
 		// Skipping already declared property MaxLength
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public  bool IsPasswordRevealButtonEnabled
-		{
-			get
-			{
-				return (bool)this.GetValue(IsPasswordRevealButtonEnabledProperty);
-			}
-			set
-			{
-				this.SetValue(IsPasswordRevealButtonEnabledProperty, value);
-			}
-		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		// Skipping already declared property IsPasswordRevealButtonEnabled
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Media.SolidColorBrush SelectionHighlightColor
 		{
@@ -134,21 +197,14 @@ namespace Microsoft.UI.Xaml.Controls
 				return (bool)this.GetValue(CanPasteClipboardContentProperty);
 			}
 		}
-#endif
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty IsPasswordRevealButtonEnabledProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsPasswordRevealButtonEnabled", typeof(bool), 
-			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
-			new FrameworkPropertyMetadata(default(bool)));
-#endif
+		#endif
+		// Skipping already declared property IsPasswordRevealButtonEnabledProperty
 		// Skipping already declared property MaxLengthProperty
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PasswordCharProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PasswordChar", typeof(string), 
+			nameof(PasswordChar), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -160,7 +216,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PreventKeyboardDisplayOnProgrammaticFocusProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PreventKeyboardDisplayOnProgrammaticFocus", typeof(bool), 
+			nameof(PreventKeyboardDisplayOnProgrammaticFocus), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -168,7 +224,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionHighlightColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionHighlightColor", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
+			nameof(SelectionHighlightColor), typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
 		#endif
@@ -177,7 +233,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PasswordRevealModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PasswordRevealMode", typeof(global::Microsoft.UI.Xaml.Controls.PasswordRevealMode), 
+			nameof(PasswordRevealMode), typeof(global::Microsoft.UI.Xaml.Controls.PasswordRevealMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.PasswordRevealMode)));
 		#endif
@@ -185,7 +241,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextReadingOrderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextReadingOrder", typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
+			nameof(TextReadingOrder), typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextReadingOrder)));
 		#endif
@@ -193,7 +249,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CanPasteClipboardContentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanPasteClipboardContent", typeof(bool), 
+			nameof(CanPasteClipboardContent), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -201,7 +257,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DescriptionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Description", typeof(object), 
+			nameof(Description), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -209,9 +265,33 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionFlyoutProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionFlyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			nameof(SelectionFlyout), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty ErrorTemplateProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(ErrorTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationKindProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(InputValidationKind), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationKind), 
+			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationKind)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationModeProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(InputValidationMode), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationMode), 
+			typeof(global::Microsoft.UI.Xaml.Controls.PasswordBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationMode)));
 		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.PasswordBox.PasswordBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.PasswordBox()
@@ -266,6 +346,23 @@ namespace Microsoft.UI.Xaml.Controls
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "void PasswordBox.PasteFromClipboard()");
 		}
 		#endif
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationErrors.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.HasValidationErrors.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationContext.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationContext.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ErrorTemplate.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ErrorTemplate.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationMode.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationMode.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationKind.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationKind.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.HasValidationErrorsChanged.add
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.HasValidationErrorsChanged.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationError.add
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ValidationError.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.ErrorTemplateProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationModeProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.InputValidationKindProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.CanPasteClipboardContentProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.SelectionFlyoutProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.PasswordBox.DescriptionProperty.get
@@ -330,5 +427,38 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.HasValidationErrorsChangedEventArgs> HasValidationErrorsChanged
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> PasswordBox.HasValidationErrorsChanged");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> PasswordBox.HasValidationErrorsChanged");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.InputValidationErrorEventArgs> ValidationError
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> PasswordBox.ValidationError");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.PasswordBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> PasswordBox.ValidationError");
+			}
+		}
+		#endif
+		// Processing: Microsoft.UI.Xaml.Controls.IInputValidationControl
 	}
 }

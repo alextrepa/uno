@@ -53,7 +53,7 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty RasterizePixelHeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"RasterizePixelHeight", typeof(double), 
+			nameof(RasterizePixelHeight), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Imaging.SvgImageSource), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -61,7 +61,7 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty RasterizePixelWidthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"RasterizePixelWidth", typeof(double), 
+			nameof(RasterizePixelWidth), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Imaging.SvgImageSource), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -69,7 +69,7 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty UriSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"UriSource", typeof(global::System.Uri), 
+			nameof(UriSource), typeof(global::System.Uri), 
 			typeof(global::Microsoft.UI.Xaml.Media.Imaging.SvgImageSource), 
 			new FrameworkPropertyMetadata(default(global::System.Uri)));
 		#endif

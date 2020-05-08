@@ -7,19 +7,10 @@ namespace Microsoft.UI.Xaml.Data
 	#endif
 	public  partial class BindingExpression : global::Microsoft.UI.Xaml.Data.BindingExpressionBase
 	{
-		#if false
-		[global::Uno.NotImplemented]
-		public  object DataItem
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member object BindingExpression.DataItem is not implemented in Uno.");
-			}
-		}
-		#endif
+		// Skipping already declared property DataItem
 		// Skipping already declared property ParentBinding
 		// Forced skipping of method Microsoft.UI.Xaml.Data.BindingExpression.DataItem.get
 		// Forced skipping of method Microsoft.UI.Xaml.Data.BindingExpression.ParentBinding.get
-		// Skipping already declared property UpdateSource()
+		// Skipping already declared method Microsoft.UI.Xaml.Data.BindingExpression.UpdateSource()
 	}
 }

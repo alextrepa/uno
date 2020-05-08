@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class ItemsPickedEventArgs : global::Microsoft.UI.Xaml.DependencyObject
@@ -27,7 +27,13 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Controls.ItemsPickedEventArgs.ItemsPickedEventArgs()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public ItemsPickedEventArgs() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.ItemsPickedEventArgs", "ItemsPickedEventArgs.ItemsPickedEventArgs()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsPickedEventArgs.ItemsPickedEventArgs()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsPickedEventArgs.AddedItems.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ItemsPickedEventArgs.RemovedItems.get

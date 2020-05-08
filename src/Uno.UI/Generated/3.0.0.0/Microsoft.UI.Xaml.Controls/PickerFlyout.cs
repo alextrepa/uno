@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ConfirmationButtonsVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ConfirmationButtonsVisible", typeof(bool), 
+			nameof(ConfirmationButtonsVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PickerFlyout), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -47,7 +47,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Content", typeof(global::Microsoft.UI.Xaml.UIElement), 
+			nameof(Content), typeof(global::Microsoft.UI.Xaml.UIElement), 
 			typeof(global::Microsoft.UI.Xaml.Controls.PickerFlyout), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.UIElement)));
 		#endif

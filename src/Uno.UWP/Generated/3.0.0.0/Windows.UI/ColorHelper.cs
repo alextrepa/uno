@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Windows.UI
 {
-	#if false || false || false || false || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class ColorHelper 
@@ -14,6 +14,12 @@ namespace Windows.UI
 			throw new global::System.NotImplementedException("The member string ColorHelper.ToDisplayName(Color color) is not implemented in Uno.");
 		}
 		#endif
-		// Skipping already declared method Windows.UI.ColorHelper.FromArgb(byte, byte, byte, byte)
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Windows.UI.Color FromArgb( byte a,  byte r,  byte g,  byte b)
+		{
+			throw new global::System.NotImplementedException("The member Color ColorHelper.FromArgb(byte a, byte r, byte g, byte b) is not implemented in Uno.");
+		}
+		#endif
 	}
 }

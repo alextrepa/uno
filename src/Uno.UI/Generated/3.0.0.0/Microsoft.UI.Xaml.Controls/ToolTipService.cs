@@ -2,27 +2,28 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class ToolTipService
+	public  partial class ToolTipService 
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementProperty { get; } =
+		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.RegisterAttached(
-			"Placement", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.PlacementMode),
-			typeof(global::Microsoft.UI.Xaml.Controls.ToolTipService),
+			"Placement", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.PlacementMode), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ToolTipService), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.PlacementMode)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementTargetProperty { get; } =
+		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.RegisterAttached(
-			"PlacementTarget", typeof(global::Microsoft.UI.Xaml.UIElement),
-			typeof(global::Microsoft.UI.Xaml.Controls.ToolTipService),
+			"PlacementTarget", typeof(global::Microsoft.UI.Xaml.UIElement), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ToolTipService), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.UIElement)));
 		#endif
+		// Skipping already declared property ToolTipProperty
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTipService.PlacementProperty.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -54,5 +55,7 @@ namespace Microsoft.UI.Xaml.Controls
 		}
 		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTipService.ToolTipProperty.get
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.ToolTipService.GetToolTip(Microsoft.UI.Xaml.DependencyObject)
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.ToolTipService.SetToolTip(Microsoft.UI.Xaml.DependencyObject, object)
 	}
 }

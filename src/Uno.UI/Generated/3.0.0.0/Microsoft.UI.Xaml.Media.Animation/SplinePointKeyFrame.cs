@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty KeySplineProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"KeySpline", typeof(global::Microsoft.UI.Xaml.Media.Animation.KeySpline), 
+			nameof(KeySpline), typeof(global::Microsoft.UI.Xaml.Media.Animation.KeySpline), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SplinePointKeyFrame), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Animation.KeySpline)));
 		#endif

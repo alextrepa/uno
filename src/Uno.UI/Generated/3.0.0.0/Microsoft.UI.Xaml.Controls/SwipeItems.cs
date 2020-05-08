@@ -2,21 +2,11 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class SwipeItems : global::Microsoft.UI.Xaml.DependencyObject,global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.SwipeItem>,global::System.Collections.Generic.IEnumerable<global::Microsoft.UI.Xaml.Controls.SwipeItem>
 	{
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  uint Size
-		{
-			get
-			{
-				throw new global::System.NotImplementedException("The member uint SwipeItems.Size is not implemented in Uno.");
-			}
-		}
-		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Controls.SwipeMode Mode
@@ -33,13 +23,29 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public  uint Size
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member uint SwipeItems.Size is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Mode", typeof(global::Microsoft.UI.Xaml.Controls.SwipeMode), 
+			nameof(Mode), typeof(global::Microsoft.UI.Xaml.Controls.SwipeMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.SwipeMode)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Controls.SwipeItems.SwipeItems()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public SwipeItems() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.SwipeItems", "SwipeItems.SwipeItems()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.SwipeItems.SwipeItems()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.SwipeItems.Mode.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.SwipeItems.Mode.set

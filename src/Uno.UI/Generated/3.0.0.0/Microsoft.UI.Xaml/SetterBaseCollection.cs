@@ -7,7 +7,6 @@ namespace Microsoft.UI.Xaml
 	#endif
 	public  partial class SetterBaseCollection : global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.SetterBase>,global::System.Collections.Generic.IEnumerable<global::Microsoft.UI.Xaml.SetterBase>
 	{
-		// Skipping already declared property Size
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  bool IsSealed
@@ -18,6 +17,7 @@ namespace Microsoft.UI.Xaml
 			}
 		}
 		#endif
+		// Skipping already declared property Size
 		// Skipping already declared method Microsoft.UI.Xaml.SetterBaseCollection.SetterBaseCollection()
 		// Forced skipping of method Microsoft.UI.Xaml.SetterBaseCollection.SetterBaseCollection()
 		// Forced skipping of method Microsoft.UI.Xaml.SetterBaseCollection.IsSealed.get

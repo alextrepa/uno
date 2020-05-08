@@ -17,7 +17,7 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Imaging.SoftwareBitmapSource.SoftwareBitmapSource()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.Foundation.IAsyncAction SetBitmapAsync( global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap)
+		public  global::System.Threading.Tasks.Task SetBitmapAsync( global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap)
 		{
 			throw new global::System.NotImplementedException("The member IAsyncAction SoftwareBitmapSource.SetBitmapAsync(SoftwareBitmap softwareBitmap) is not implemented in Uno.");
 		}

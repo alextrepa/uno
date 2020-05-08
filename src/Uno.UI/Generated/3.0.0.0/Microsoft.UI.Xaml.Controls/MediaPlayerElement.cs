@@ -119,7 +119,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AreTransportControlsEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AreTransportControlsEnabled", typeof(bool), 
+			nameof(AreTransportControlsEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -127,7 +127,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AutoPlayProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AutoPlay", typeof(bool), 
+			nameof(AutoPlay), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -135,7 +135,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsFullWindowProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFullWindow", typeof(bool), 
+			nameof(IsFullWindow), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -143,7 +143,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MediaPlayerProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MediaPlayer", typeof(global::Windows.Media.Playback.MediaPlayer), 
+			nameof(MediaPlayer), typeof(global::Windows.Media.Playback.MediaPlayer), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.Media.Playback.MediaPlayer)));
 		#endif
@@ -151,7 +151,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PosterSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PosterSource", typeof(global::Microsoft.UI.Xaml.Media.ImageSource), 
+			nameof(PosterSource), typeof(global::Microsoft.UI.Xaml.Media.ImageSource), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.ImageSource)));
 		#endif
@@ -159,7 +159,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Source", typeof(global::Windows.Media.Playback.IMediaPlaybackSource), 
+			nameof(Source), typeof(global::Windows.Media.Playback.IMediaPlaybackSource), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.Media.Playback.IMediaPlaybackSource)));
 		#endif
@@ -167,7 +167,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StretchProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Stretch", typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
+			nameof(Stretch), typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stretch)));
 		#endif

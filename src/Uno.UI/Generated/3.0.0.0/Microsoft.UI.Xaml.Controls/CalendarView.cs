@@ -717,7 +717,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BlackoutForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BlackoutForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(BlackoutForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -725,7 +725,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarIdentifierProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarIdentifier", typeof(string), 
+			nameof(CalendarIdentifier), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -733,7 +733,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarItemBackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarItemBackground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(CalendarItemBackground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -741,7 +741,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarItemBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarItemBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(CalendarItemBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -749,7 +749,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarItemBorderThicknessProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarItemBorderThickness", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(CalendarItemBorderThickness), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
@@ -757,7 +757,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarItemForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarItemForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(CalendarItemForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -765,7 +765,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarViewDayItemStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarViewDayItemStyle", typeof(global::Microsoft.UI.Xaml.Style), 
+			nameof(CalendarViewDayItemStyle), typeof(global::Microsoft.UI.Xaml.Style), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Style)));
 		#endif
@@ -773,7 +773,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayItemFontFamilyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayItemFontFamily", typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
+			nameof(DayItemFontFamily), typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.FontFamily)));
 		#endif
@@ -781,7 +781,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayItemFontSizeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayItemFontSize", typeof(double), 
+			nameof(DayItemFontSize), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -789,7 +789,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayItemFontStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayItemFontStyle", typeof(global::Windows.UI.Text.FontStyle), 
+			nameof(DayItemFontStyle), typeof(global::Windows.UI.Text.FontStyle), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStyle)));
 		#endif
@@ -797,7 +797,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayItemFontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayItemFontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(DayItemFontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -805,7 +805,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayOfWeekFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayOfWeekFormat", typeof(string), 
+			nameof(DayOfWeekFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -813,7 +813,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DisplayModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DisplayMode", typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewDisplayMode), 
+			nameof(DisplayMode), typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewDisplayMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.CalendarViewDisplayMode)));
 		#endif
@@ -821,7 +821,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstDayOfWeekProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstDayOfWeek", typeof(global::Windows.Globalization.DayOfWeek), 
+			nameof(FirstDayOfWeek), typeof(global::Windows.Globalization.DayOfWeek), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.Globalization.DayOfWeek)));
 		#endif
@@ -829,7 +829,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfMonthLabelFontFamilyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfMonthLabelFontFamily", typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
+			nameof(FirstOfMonthLabelFontFamily), typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.FontFamily)));
 		#endif
@@ -837,7 +837,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfMonthLabelFontSizeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfMonthLabelFontSize", typeof(double), 
+			nameof(FirstOfMonthLabelFontSize), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -845,7 +845,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfMonthLabelFontStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfMonthLabelFontStyle", typeof(global::Windows.UI.Text.FontStyle), 
+			nameof(FirstOfMonthLabelFontStyle), typeof(global::Windows.UI.Text.FontStyle), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStyle)));
 		#endif
@@ -853,7 +853,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfMonthLabelFontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfMonthLabelFontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(FirstOfMonthLabelFontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -861,7 +861,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfYearDecadeLabelFontFamilyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfYearDecadeLabelFontFamily", typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
+			nameof(FirstOfYearDecadeLabelFontFamily), typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.FontFamily)));
 		#endif
@@ -869,7 +869,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfYearDecadeLabelFontSizeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfYearDecadeLabelFontSize", typeof(double), 
+			nameof(FirstOfYearDecadeLabelFontSize), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -877,7 +877,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfYearDecadeLabelFontStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfYearDecadeLabelFontStyle", typeof(global::Windows.UI.Text.FontStyle), 
+			nameof(FirstOfYearDecadeLabelFontStyle), typeof(global::Windows.UI.Text.FontStyle), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStyle)));
 		#endif
@@ -885,7 +885,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstOfYearDecadeLabelFontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstOfYearDecadeLabelFontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(FirstOfYearDecadeLabelFontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -893,7 +893,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FocusBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FocusBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(FocusBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -901,7 +901,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalDayItemAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HorizontalDayItemAlignment", typeof(global::Microsoft.UI.Xaml.HorizontalAlignment), 
+			nameof(HorizontalDayItemAlignment), typeof(global::Microsoft.UI.Xaml.HorizontalAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.HorizontalAlignment)));
 		#endif
@@ -909,7 +909,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalFirstOfMonthLabelAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HorizontalFirstOfMonthLabelAlignment", typeof(global::Microsoft.UI.Xaml.HorizontalAlignment), 
+			nameof(HorizontalFirstOfMonthLabelAlignment), typeof(global::Microsoft.UI.Xaml.HorizontalAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.HorizontalAlignment)));
 		#endif
@@ -917,7 +917,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HoverBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HoverBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(HoverBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -925,7 +925,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsGroupLabelVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsGroupLabelVisible", typeof(bool), 
+			nameof(IsGroupLabelVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -933,7 +933,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsOutOfScopeEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsOutOfScopeEnabled", typeof(bool), 
+			nameof(IsOutOfScopeEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -941,7 +941,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTodayHighlightedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTodayHighlighted", typeof(bool), 
+			nameof(IsTodayHighlighted), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -949,7 +949,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxDateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxDate", typeof(global::System.DateTimeOffset), 
+			nameof(MaxDate), typeof(global::System.DateTimeOffset), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::System.DateTimeOffset)));
 		#endif
@@ -957,7 +957,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MinDateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MinDate", typeof(global::System.DateTimeOffset), 
+			nameof(MinDate), typeof(global::System.DateTimeOffset), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::System.DateTimeOffset)));
 		#endif
@@ -965,7 +965,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MonthYearItemFontFamilyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MonthYearItemFontFamily", typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
+			nameof(MonthYearItemFontFamily), typeof(global::Microsoft.UI.Xaml.Media.FontFamily), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.FontFamily)));
 		#endif
@@ -973,7 +973,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MonthYearItemFontSizeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MonthYearItemFontSize", typeof(double), 
+			nameof(MonthYearItemFontSize), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -981,7 +981,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MonthYearItemFontStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MonthYearItemFontStyle", typeof(global::Windows.UI.Text.FontStyle), 
+			nameof(MonthYearItemFontStyle), typeof(global::Windows.UI.Text.FontStyle), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStyle)));
 		#endif
@@ -989,7 +989,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MonthYearItemFontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MonthYearItemFontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(MonthYearItemFontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -997,7 +997,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty NumberOfWeeksInViewProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"NumberOfWeeksInView", typeof(int), 
+			nameof(NumberOfWeeksInView), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -1005,7 +1005,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OutOfScopeBackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OutOfScopeBackground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(OutOfScopeBackground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1013,7 +1013,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OutOfScopeForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OutOfScopeForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(OutOfScopeForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1021,7 +1021,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PressedBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PressedBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(PressedBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1029,7 +1029,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PressedForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PressedForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(PressedForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1037,7 +1037,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1045,7 +1045,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedDatesProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedDates", typeof(global::System.Collections.Generic.IList<global::System.DateTimeOffset>), 
+			nameof(SelectedDates), typeof(global::System.Collections.Generic.IList<global::System.DateTimeOffset>), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::System.Collections.Generic.IList<global::System.DateTimeOffset>)));
 		#endif
@@ -1053,7 +1053,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1061,7 +1061,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedHoverBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedHoverBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedHoverBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1069,7 +1069,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedPressedBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedPressedBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedPressedBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1077,7 +1077,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionMode", typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewSelectionMode), 
+			nameof(SelectionMode), typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewSelectionMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.CalendarViewSelectionMode)));
 		#endif
@@ -1085,7 +1085,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TemplateSettingsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TemplateSettings", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.CalendarViewTemplateSettings), 
+			nameof(TemplateSettings), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.CalendarViewTemplateSettings), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.CalendarViewTemplateSettings)));
 		#endif
@@ -1093,7 +1093,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TodayFontWeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TodayFontWeight", typeof(global::Windows.UI.Text.FontWeight), 
+			nameof(TodayFontWeight), typeof(global::Windows.UI.Text.FontWeight), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
 		#endif
@@ -1101,7 +1101,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TodayForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TodayForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(TodayForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -1109,7 +1109,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty VerticalDayItemAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"VerticalDayItemAlignment", typeof(global::Microsoft.UI.Xaml.VerticalAlignment), 
+			nameof(VerticalDayItemAlignment), typeof(global::Microsoft.UI.Xaml.VerticalAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.VerticalAlignment)));
 		#endif
@@ -1117,7 +1117,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty VerticalFirstOfMonthLabelAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"VerticalFirstOfMonthLabelAlignment", typeof(global::Microsoft.UI.Xaml.VerticalAlignment), 
+			nameof(VerticalFirstOfMonthLabelAlignment), typeof(global::Microsoft.UI.Xaml.VerticalAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.VerticalAlignment)));
 		#endif

@@ -16,7 +16,7 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Windows.Foundation.IAsyncAction SetRelativeScrollPositionAsync( global::Microsoft.UI.Xaml.Controls.ListViewBase listViewBase,  string relativeScrollPosition,  global::Microsoft.UI.Xaml.Controls.ListViewKeyToItemHandler keyToItemHandler)
+		public static global::System.Threading.Tasks.Task SetRelativeScrollPositionAsync( global::Microsoft.UI.Xaml.Controls.ListViewBase listViewBase,  string relativeScrollPosition,  global::Microsoft.UI.Xaml.Controls.ListViewKeyToItemHandler keyToItemHandler)
 		{
 			throw new global::System.NotImplementedException("The member IAsyncAction ListViewPersistenceHelper.SetRelativeScrollPositionAsync(ListViewBase listViewBase, string relativeScrollPosition, ListViewKeyToItemHandler keyToItemHandler) is not implemented in Uno.");
 		}

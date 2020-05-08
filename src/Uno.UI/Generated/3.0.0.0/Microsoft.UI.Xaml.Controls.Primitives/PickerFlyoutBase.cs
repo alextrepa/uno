@@ -2,10 +2,10 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls.Primitives
 {
-	#if NET461 || __WASM__ || __MACOS__
+	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public partial class PickerFlyoutBase : global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase
+	public  partial class PickerFlyoutBase : global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -15,13 +15,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
-		#if NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		protected PickerFlyoutBase() : base()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase", "PickerFlyoutBase.PickerFlyoutBase()");
-		}
-		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase.PickerFlyoutBase()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase.PickerFlyoutBase()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]

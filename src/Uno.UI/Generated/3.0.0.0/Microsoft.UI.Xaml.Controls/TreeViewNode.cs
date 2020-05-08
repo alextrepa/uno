@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class TreeViewNode : global::Microsoft.UI.Xaml.DependencyObject
@@ -93,7 +93,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Content", typeof(object), 
+			nameof(Content), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -101,7 +101,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DepthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Depth", typeof(int), 
+			nameof(Depth), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -109,7 +109,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HasChildrenProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HasChildren", typeof(bool), 
+			nameof(HasChildren), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -117,11 +117,17 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsExpandedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsExpanded", typeof(bool), 
+			nameof(IsExpanded), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Controls.TreeViewNode.TreeViewNode()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public TreeViewNode() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeViewNode", "TreeViewNode.TreeViewNode()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewNode.TreeViewNode()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewNode.Content.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewNode.Content.set

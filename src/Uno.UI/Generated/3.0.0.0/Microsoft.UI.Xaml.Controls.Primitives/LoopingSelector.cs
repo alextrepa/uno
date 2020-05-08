@@ -109,7 +109,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemHeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemHeight", typeof(int), 
+			nameof(ItemHeight), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.LoopingSelector), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -117,7 +117,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemTemplateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemTemplate", typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			nameof(ItemTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.LoopingSelector), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
 		#endif
@@ -125,7 +125,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemWidthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemWidth", typeof(int), 
+			nameof(ItemWidth), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.LoopingSelector), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -133,7 +133,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Items", typeof(global::System.Collections.Generic.IList<object>), 
+			nameof(Items), typeof(global::System.Collections.Generic.IList<object>), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.LoopingSelector), 
 			new FrameworkPropertyMetadata(default(global::System.Collections.Generic.IList<object>)));
 		#endif
@@ -141,7 +141,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedIndexProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedIndex", typeof(int), 
+			nameof(SelectedIndex), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.LoopingSelector), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -149,7 +149,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedItemProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedItem", typeof(object), 
+			nameof(SelectedItem), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.LoopingSelector), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -157,7 +157,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ShouldLoopProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ShouldLoop", typeof(bool), 
+			nameof(ShouldLoop), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.LoopingSelector), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

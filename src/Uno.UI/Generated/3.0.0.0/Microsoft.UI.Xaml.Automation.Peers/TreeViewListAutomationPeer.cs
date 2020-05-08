@@ -5,7 +5,7 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class TreeViewListAutomationPeer : global::Microsoft.UI.Xaml.Automation.Peers.SelectorAutomationPeer
+	public  partial class TreeViewListAutomationPeer : global::Microsoft.UI.Xaml.Automation.Peers.ListViewAutomationPeer
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]

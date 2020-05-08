@@ -35,7 +35,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Date", typeof(global::System.DateTimeOffset), 
+			nameof(Date), typeof(global::System.DateTimeOffset), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewDayItem), 
 			new FrameworkPropertyMetadata(default(global::System.DateTimeOffset)));
 		#endif
@@ -43,7 +43,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsBlackoutProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsBlackout", typeof(bool), 
+			nameof(IsBlackout), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewDayItem), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

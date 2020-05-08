@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class TreeViewItemTemplateSettings : global::Microsoft.UI.Xaml.DependencyObject
@@ -51,7 +51,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CollapsedGlyphVisibilityProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CollapsedGlyphVisibility", typeof(global::Microsoft.UI.Xaml.Visibility), 
+			nameof(CollapsedGlyphVisibility), typeof(global::Microsoft.UI.Xaml.Visibility), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Visibility)));
 		#endif
@@ -59,7 +59,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DragItemsCountProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DragItemsCount", typeof(int), 
+			nameof(DragItemsCount), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -67,7 +67,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ExpandedGlyphVisibilityProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ExpandedGlyphVisibility", typeof(global::Microsoft.UI.Xaml.Visibility), 
+			nameof(ExpandedGlyphVisibility), typeof(global::Microsoft.UI.Xaml.Visibility), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Visibility)));
 		#endif
@@ -75,11 +75,17 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IndentationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Indentation", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(Indentation), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings.TreeViewItemTemplateSettings()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public TreeViewItemTemplateSettings() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings", "TreeViewItemTemplateSettings.TreeViewItemTemplateSettings()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings.TreeViewItemTemplateSettings()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings.ExpandedGlyphVisibility.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings.CollapsedGlyphVisibility.get

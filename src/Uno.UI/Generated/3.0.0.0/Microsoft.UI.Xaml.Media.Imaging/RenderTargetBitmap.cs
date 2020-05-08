@@ -31,7 +31,7 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PixelHeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PixelHeight", typeof(int), 
+			nameof(PixelHeight), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Media.Imaging.RenderTargetBitmap), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PixelWidthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PixelWidth", typeof(int), 
+			nameof(PixelWidth), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Media.Imaging.RenderTargetBitmap), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -55,14 +55,14 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Imaging.RenderTargetBitmap.PixelHeight.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.Foundation.IAsyncAction RenderAsync( global::Microsoft.UI.Xaml.UIElement element)
+		public  global::System.Threading.Tasks.Task RenderAsync( global::Microsoft.UI.Xaml.UIElement element)
 		{
 			throw new global::System.NotImplementedException("The member IAsyncAction RenderTargetBitmap.RenderAsync(UIElement element) is not implemented in Uno.");
 		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.Foundation.IAsyncAction RenderAsync( global::Microsoft.UI.Xaml.UIElement element,  int scaledWidth,  int scaledHeight)
+		public  global::System.Threading.Tasks.Task RenderAsync( global::Microsoft.UI.Xaml.UIElement element,  int scaledWidth,  int scaledHeight)
 		{
 			throw new global::System.NotImplementedException("The member IAsyncAction RenderTargetBitmap.RenderAsync(UIElement element, int scaledWidth, int scaledHeight) is not implemented in Uno.");
 		}

@@ -82,6 +82,13 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 			throw new global::System.NotImplementedException("The member IList<AutomationPeer> AutomationPeer.GetChildren() is not implemented in Uno.");
 		}
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  object Navigate( global::Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection direction)
+		{
+			throw new global::System.NotImplementedException("The member object AutomationPeer.Navigate(AutomationNavigationDirection direction) is not implemented in Uno.");
+		}
+		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClassName()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -171,20 +178,6 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Automation.Peers.AutomationLiveSetting GetLiveSetting()
-		{
-			throw new global::System.NotImplementedException("The member AutomationLiveSetting AutomationPeer.GetLiveSetting() is not implemented in Uno.");
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  object Navigate( global::Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection direction)
-		{
-			throw new global::System.NotImplementedException("The member object AutomationPeer.Navigate(AutomationNavigationDirection direction) is not implemented in Uno.");
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public  object GetElementFromPoint( global::Windows.Foundation.Point pointInWindowCoordinates)
 		{
 			throw new global::System.NotImplementedException("The member object AutomationPeer.GetElementFromPoint(Point pointInWindowCoordinates) is not implemented in Uno.");
@@ -195,6 +188,13 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		public  object GetFocusedElement()
 		{
 			throw new global::System.NotImplementedException("The member object AutomationPeer.GetFocusedElement() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Automation.Peers.AutomationLiveSetting GetLiveSetting()
+		{
+			throw new global::System.NotImplementedException("The member AutomationLiveSetting AutomationPeer.GetLiveSetting() is not implemented in Uno.");
 		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
@@ -380,6 +380,13 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 			throw new global::System.NotImplementedException("The member IList<AutomationPeer> AutomationPeer.GetChildrenCore() is not implemented in Uno.");
 		}
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		protected virtual object NavigateCore( global::Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection direction)
+		{
+			throw new global::System.NotImplementedException("The member object AutomationPeer.NavigateCore(AutomationNavigationDirection direction) is not implemented in Uno.");
+		}
+		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClassNameCore()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -461,6 +468,20 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		protected virtual object GetElementFromPointCore( global::Windows.Foundation.Point pointInWindowCoordinates)
+		{
+			throw new global::System.NotImplementedException("The member object AutomationPeer.GetElementFromPointCore(Point pointInWindowCoordinates) is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		protected virtual object GetFocusedElementCore()
+		{
+			throw new global::System.NotImplementedException("The member object AutomationPeer.GetFocusedElementCore() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		protected virtual global::Microsoft.UI.Xaml.Automation.Peers.AutomationLiveSetting GetLiveSettingCore()
 		{
 			throw new global::System.NotImplementedException("The member AutomationLiveSetting AutomationPeer.GetLiveSettingCore() is not implemented in Uno.");
@@ -478,27 +499,6 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		protected virtual global::System.Collections.Generic.IReadOnlyList<global::Microsoft.UI.Xaml.Automation.Peers.AutomationPeer> GetControlledPeersCore()
 		{
 			throw new global::System.NotImplementedException("The member IReadOnlyList<AutomationPeer> AutomationPeer.GetControlledPeersCore() is not implemented in Uno.");
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		protected virtual object NavigateCore( global::Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection direction)
-		{
-			throw new global::System.NotImplementedException("The member object AutomationPeer.NavigateCore(AutomationNavigationDirection direction) is not implemented in Uno.");
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		protected virtual object GetElementFromPointCore( global::Windows.Foundation.Point pointInWindowCoordinates)
-		{
-			throw new global::System.NotImplementedException("The member object AutomationPeer.GetElementFromPointCore(Point pointInWindowCoordinates) is not implemented in Uno.");
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		protected virtual object GetFocusedElementCore()
-		{
-			throw new global::System.NotImplementedException("The member object AutomationPeer.GetFocusedElementCore() is not implemented in Uno.");
 		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
@@ -600,6 +600,7 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 			throw new global::System.NotImplementedException("The member bool AutomationPeer.IsDialogCore() is not implemented in Uno.");
 		}
 		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ListenerExists(Microsoft.UI.Xaml.Automation.Peers.AutomationEvents)
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.Automation.Peers.RawElementProviderRuntimeId GenerateRawElementProviderRuntimeId()
@@ -607,6 +608,5 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 			throw new global::System.NotImplementedException("The member RawElementProviderRuntimeId AutomationPeer.GenerateRawElementProviderRuntimeId() is not implemented in Uno.");
 		}
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ListenerExists()
 	}
 }

@@ -2,6 +2,9 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls
 {
+	#if false || false || false || false || false
+	[global::Uno.NotImplemented]
+	#endif
 	public  partial class ToolTip : global::Microsoft.UI.Xaml.Controls.ContentControl
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
@@ -32,6 +35,8 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
+		// Skipping already declared property Placement
+		// Skipping already declared property IsOpen
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  double HorizontalOffset
@@ -72,36 +77,39 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalOffsetProperty { get; } =
+		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HorizontalOffset", typeof(double),
-			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip),
+			nameof(HorizontalOffset), typeof(double), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
+		// Skipping already declared property IsOpenProperty
+		// Skipping already declared property PlacementProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementTargetProperty { get; } =
+		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlacementTarget", typeof(global::Microsoft.UI.Xaml.UIElement),
-			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip),
+			nameof(PlacementTarget), typeof(global::Microsoft.UI.Xaml.UIElement), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.UIElement)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty VerticalOffsetProperty { get; } =
+		public static global::Microsoft.UI.Xaml.DependencyProperty VerticalOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"VerticalOffset", typeof(double),
-			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip),
+			nameof(VerticalOffset), typeof(double), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementRectProperty { get; } =
+		public static global::Microsoft.UI.Xaml.DependencyProperty PlacementRectProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlacementRect", typeof(global::Windows.Foundation.Rect?),
-			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip),
+			nameof(PlacementRect), typeof(global::Windows.Foundation.Rect?), 
+			typeof(global::Microsoft.UI.Xaml.Controls.ToolTip), 
 			new FrameworkPropertyMetadata(default(global::Windows.Foundation.Rect?)));
 		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.ToolTip.ToolTip()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTip.ToolTip()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTip.HorizontalOffset.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTip.HorizontalOffset.set
@@ -126,5 +134,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTip.PlacementProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTip.PlacementTargetProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ToolTip.VerticalOffsetProperty.get
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.ToolTip.Closed
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.ToolTip.Opened
 	}
 }

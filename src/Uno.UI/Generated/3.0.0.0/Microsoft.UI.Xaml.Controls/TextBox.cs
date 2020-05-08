@@ -5,8 +5,84 @@ namespace Microsoft.UI.Xaml.Controls
 	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class TextBox 
+	public  partial class TextBox : global::Microsoft.UI.Xaml.Controls.IInputValidationControl
 	{
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationKind InputValidationKind
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.InputValidationKind)this.GetValue(InputValidationKindProperty);
+			}
+			set
+			{
+				this.SetValue(InputValidationKindProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationMode InputValidationMode
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.InputValidationMode)this.GetValue(InputValidationModeProperty);
+			}
+			set
+			{
+				this.SetValue(InputValidationModeProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Controls.InputValidationContext ValidationContext
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member InputValidationContext TextBox.ValidationContext is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "InputValidationContext TextBox.ValidationContext");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.DataTemplate ErrorTemplate
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.DataTemplate)this.GetValue(ErrorTemplateProperty);
+			}
+			set
+			{
+				this.SetValue(ErrorTemplateProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.Foundation.Collections.IObservableVector<global::Microsoft.UI.Xaml.Controls.InputValidationError> ValidationErrors
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member IObservableVector<InputValidationError> TextBox.ValidationErrors is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  bool HasValidationErrors
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member bool TextBox.HasValidationErrors is not implemented in Uno.");
+			}
+		}
+		#endif
 		// Skipping already declared property TextWrapping
 		// Skipping already declared property TextAlignment
 		// Skipping already declared property Text
@@ -58,6 +134,7 @@ namespace Microsoft.UI.Xaml.Controls
 		// Skipping already declared property IsReadOnly
 		// Skipping already declared property InputScope
 		// Skipping already declared property AcceptsReturn
+		// Skipping already declared property HeaderTemplate
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  bool IsColorFontEnabled
@@ -101,7 +178,6 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
-		// Skipping already declared property HeaderTemplate
 		// Skipping already declared property Header
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -189,34 +265,6 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  bool IsHandwritingViewEnabled
-		{
-			get
-			{
-				return (bool)this.GetValue(IsHandwritingViewEnabledProperty);
-			}
-			set
-			{
-				this.SetValue(IsHandwritingViewEnabledProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Controls.HandwritingView HandwritingView
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Controls.HandwritingView)this.GetValue(HandwritingViewProperty);
-			}
-			set
-			{
-				this.SetValue(HandwritingViewProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase SelectionFlyout
 		{
 			get
@@ -283,47 +331,47 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
-		// Skipping already declared property TextWrappingProperty
-		// Skipping already declared property TextProperty
-		// Skipping already declared property TextAlignmentProperty
-		// Skipping already declared property MaxLengthProperty
-		// Skipping already declared property IsTextPredictionEnabledProperty
-		// Skipping already declared property IsSpellCheckEnabledProperty
-		// Skipping already declared property IsReadOnlyProperty
-		// Skipping already declared property InputScopeProperty
 		// Skipping already declared property AcceptsReturnProperty
-		// Skipping already declared property HeaderTemplateProperty
+		// Skipping already declared property InputScopeProperty
+		// Skipping already declared property IsReadOnlyProperty
+		// Skipping already declared property IsSpellCheckEnabledProperty
+		// Skipping already declared property IsTextPredictionEnabledProperty
+		// Skipping already declared property MaxLengthProperty
+		// Skipping already declared property TextAlignmentProperty
+		// Skipping already declared property TextProperty
+		// Skipping already declared property TextWrappingProperty
 		// Skipping already declared property HeaderProperty
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionHighlightColorProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionHighlightColor", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
-		#endif
-		#if false || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PreventKeyboardDisplayOnProgrammaticFocusProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PreventKeyboardDisplayOnProgrammaticFocus", typeof(bool), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(bool)));
-		#endif
-		// Skipping already declared property PlaceholderTextProperty
+		// Skipping already declared property HeaderTemplateProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsColorFontEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsColorFontEnabled", typeof(bool), 
+			nameof(IsColorFontEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(bool)));
+		#endif
+		// Skipping already declared property PlaceholderTextProperty
+		#if false || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty PreventKeyboardDisplayOnProgrammaticFocusProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(PreventKeyboardDisplayOnProgrammaticFocus), typeof(bool), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(bool)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionHighlightColorProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(SelectionHighlightColor), typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DesiredCandidateWindowAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DesiredCandidateWindowAlignment", typeof(global::Microsoft.UI.Xaml.Controls.CandidateWindowAlignment), 
+			nameof(DesiredCandidateWindowAlignment), typeof(global::Microsoft.UI.Xaml.Controls.CandidateWindowAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.CandidateWindowAlignment)));
 		#endif
@@ -331,7 +379,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextReadingOrderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextReadingOrder", typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
+			nameof(TextReadingOrder), typeof(global::Microsoft.UI.Xaml.TextReadingOrder), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextReadingOrder)));
 		#endif
@@ -339,79 +387,39 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionHighlightColorWhenNotFocusedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionHighlightColorWhenNotFocused", typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
+			nameof(SelectionHighlightColorWhenNotFocused), typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.SolidColorBrush)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlaceholderForegroundProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlaceholderForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalTextAlignmentProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HorizontalTextAlignment", typeof(global::Microsoft.UI.Xaml.TextAlignment), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextAlignment)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CharacterCasingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CharacterCasing", typeof(global::Microsoft.UI.Xaml.Controls.CharacterCasing), 
+			nameof(CharacterCasing), typeof(global::Microsoft.UI.Xaml.Controls.CharacterCasing), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.CharacterCasing)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty IsHandwritingViewEnabledProperty { get; } = 
+		public static global::Microsoft.UI.Xaml.DependencyProperty HorizontalTextAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsHandwritingViewEnabled", typeof(bool), 
+			nameof(HorizontalTextAlignment), typeof(global::Microsoft.UI.Xaml.TextAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(bool)));
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextAlignment)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty HandwritingViewProperty { get; } = 
+		public static global::Microsoft.UI.Xaml.DependencyProperty PlaceholderForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HandwritingView", typeof(global::Microsoft.UI.Xaml.Controls.HandwritingView), 
+			nameof(PlaceholderForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.HandwritingView)));
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionFlyoutProperty { get; } = 
+		public static global::Microsoft.UI.Xaml.DependencyProperty CanPasteClipboardContentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionFlyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty ProofingMenuFlyoutProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ProofingMenuFlyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty DescriptionProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Description", typeof(object), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
-			new FrameworkPropertyMetadata(default(object)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty CanUndoProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanUndo", typeof(bool), 
+			nameof(CanPasteClipboardContent), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -419,17 +427,65 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CanRedoProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanRedo", typeof(bool), 
+			nameof(CanRedo), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty CanPasteClipboardContentProperty { get; } = 
+		public static global::Microsoft.UI.Xaml.DependencyProperty CanUndoProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanPasteClipboardContent", typeof(bool), 
+			nameof(CanUndo), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
 			new FrameworkPropertyMetadata(default(bool)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty DescriptionProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(Description), typeof(object), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(object)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty ProofingMenuFlyoutProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(ProofingMenuFlyout), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionFlyoutProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(SelectionFlyout), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty ErrorTemplateProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(ErrorTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationKindProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(InputValidationKind), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationKind), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationKind)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty InputValidationModeProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(InputValidationMode), typeof(global::Microsoft.UI.Xaml.Controls.InputValidationMode), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TextBox), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.InputValidationMode)));
 		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.TextBox.TextBox()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.TextBox()
@@ -533,10 +589,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CuttingToClipboard.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.BeforeTextChanging.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.BeforeTextChanging.remove
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HandwritingView.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HandwritingView.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.IsHandwritingViewEnabled.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.IsHandwritingViewEnabled.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CanPasteClipboardContent.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CanUndo.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CanRedo.get
@@ -589,14 +641,29 @@ namespace Microsoft.UI.Xaml.Controls
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "void TextBox.ClearUndoRedoHistory()");
 		}
 		#endif
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationErrors.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HasValidationErrors.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationContext.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationContext.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ErrorTemplate.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ErrorTemplate.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationMode.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationMode.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationKind.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationKind.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HasValidationErrorsChanged.add
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HasValidationErrorsChanged.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationError.add
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ValidationError.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ErrorTemplateProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationModeProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.InputValidationKindProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CanPasteClipboardContentProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CanUndoProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CanRedoProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.SelectionFlyoutProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.ProofingMenuFlyoutProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.DescriptionProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HandwritingViewProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.IsHandwritingViewEnabledProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.HorizontalTextAlignmentProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.CharacterCasingProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TextBox.PlaceholderForegroundProperty.get
@@ -667,24 +734,9 @@ namespace Microsoft.UI.Xaml.Controls
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<TextBox, CandidateWindowBoundsChangedEventArgs> TextBox.CandidateWindowBoundsChanged");
 			}
 		}
-#endif
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TextBox, global::Microsoft.UI.Xaml.Controls.TextBoxTextChangingEventArgs> TextChanging
-		{
-			[global::Uno.NotImplemented]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<TextBox, TextBoxTextChangingEventArgs> TextBox.TextChanging");
-			}
-			[global::Uno.NotImplemented]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<TextBox, TextBoxTextChangingEventArgs> TextBox.TextChanging");
-			}
-		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.TextBox.TextChanging
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TextBox, global::Microsoft.UI.Xaml.Controls.TextCompositionChangedEventArgs> TextCompositionChanged
 		{
@@ -731,24 +783,9 @@ namespace Microsoft.UI.Xaml.Controls
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<TextBox, TextCompositionStartedEventArgs> TextBox.TextCompositionStarted");
 			}
 		}
-#endif
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TextBox, global::Microsoft.UI.Xaml.Controls.TextBoxBeforeTextChangingEventArgs> BeforeTextChanging
-		{
-			[global::Uno.NotImplemented]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<TextBox, TextBoxBeforeTextChangingEventArgs> TextBox.BeforeTextChanging");
-			}
-			[global::Uno.NotImplemented]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<TextBox, TextBoxBeforeTextChangingEventArgs> TextBox.BeforeTextChanging");
-			}
-		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		// Skipping already declared event Microsoft.UI.Xaml.Controls.TextBox.BeforeTextChanging
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TextBox, global::Microsoft.UI.Xaml.Controls.TextControlCopyingToClipboardEventArgs> CopyingToClipboard
 		{
@@ -796,5 +833,38 @@ namespace Microsoft.UI.Xaml.Controls
 			}
 		}
 		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.HasValidationErrorsChangedEventArgs> HasValidationErrorsChanged
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> TextBox.HasValidationErrorsChanged");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, HasValidationErrorsChangedEventArgs> TextBox.HasValidationErrorsChanged");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.IInputValidationControl, global::Microsoft.UI.Xaml.Controls.InputValidationErrorEventArgs> ValidationError
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> TextBox.ValidationError");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TextBox", "event TypedEventHandler<IInputValidationControl, InputValidationErrorEventArgs> TextBox.ValidationError");
+			}
+		}
+		#endif
+		// Processing: Microsoft.UI.Xaml.Controls.IInputValidationControl
 	}
 }

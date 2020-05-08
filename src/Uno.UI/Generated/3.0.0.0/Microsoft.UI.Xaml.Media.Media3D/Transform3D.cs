@@ -2,12 +2,18 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Media.Media3D
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class Transform3D : global::Microsoft.UI.Xaml.DependencyObject
 	{
-		// Skipping already declared method Microsoft.UI.Xaml.Media.Media3D.Transform3D.Transform3D()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		protected Transform3D() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.Media3D.Transform3D", "Transform3D.Transform3D()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Media.Media3D.Transform3D.Transform3D()
 	}
 }

@@ -35,7 +35,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsActiveProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsActive", typeof(bool), 
+			nameof(IsActive), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

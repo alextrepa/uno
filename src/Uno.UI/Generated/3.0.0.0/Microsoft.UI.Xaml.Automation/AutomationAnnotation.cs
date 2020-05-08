@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Automation
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class AutomationAnnotation : global::Microsoft.UI.Xaml.DependencyObject
@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Automation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ElementProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Element", typeof(global::Microsoft.UI.Xaml.UIElement), 
+			nameof(Element), typeof(global::Microsoft.UI.Xaml.UIElement), 
 			typeof(global::Microsoft.UI.Xaml.Automation.AutomationAnnotation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.UIElement)));
 		#endif
@@ -47,18 +47,11 @@ namespace Microsoft.UI.Xaml.Automation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TypeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Type", typeof(global::Microsoft.UI.Xaml.Automation.AnnotationType), 
+			nameof(Type), typeof(global::Microsoft.UI.Xaml.Automation.AnnotationType), 
 			typeof(global::Microsoft.UI.Xaml.Automation.AutomationAnnotation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Automation.AnnotationType)));
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public AutomationAnnotation() : base()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Automation.AutomationAnnotation", "AutomationAnnotation.AutomationAnnotation(AnnotationType type)");
-		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public AutomationAnnotation( global::Microsoft.UI.Xaml.Automation.AnnotationType type) : base()
 		{
@@ -74,7 +67,13 @@ namespace Microsoft.UI.Xaml.Automation
 		}
 		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.AutomationAnnotation.AutomationAnnotation(Microsoft.UI.Xaml.Automation.AnnotationType, Microsoft.UI.Xaml.UIElement)
-		// Skipping already declared method Microsoft.UI.Xaml.Automation.AutomationAnnotation.AutomationAnnotation()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public AutomationAnnotation() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Automation.AutomationAnnotation", "AutomationAnnotation.AutomationAnnotation()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.AutomationAnnotation.AutomationAnnotation()
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.AutomationAnnotation.Type.get
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.AutomationAnnotation.Type.set

@@ -2,14 +2,14 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Media
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class XamlLight : global::Microsoft.UI.Xaml.DependencyObject
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Composition.CompositionLight CompositionLight
+		public  global::Microsoft.UI.Composition.CompositionLight CompositionLight
 		{
 			get
 			{
@@ -21,7 +21,13 @@ namespace Microsoft.UI.Xaml.Media
 			}
 		}
 		#endif
-		// Skipping already declared method Microsoft.UI.Xaml.Media.XamlLight.XamlLight()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public XamlLight() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.XamlLight", "XamlLight.XamlLight()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Media.XamlLight.XamlLight()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.XamlLight.CompositionLight.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.XamlLight.CompositionLight.set

@@ -17,7 +17,7 @@ using Foundation;
 using CoreAnimation;
 using Uno.Extensions;
 using Uno.Logging;
-using Windows.UI.Composition;
+using Microsoft.UI.Composition;
 using Uno.UI;
 using Uno.UI.Extensions;
 

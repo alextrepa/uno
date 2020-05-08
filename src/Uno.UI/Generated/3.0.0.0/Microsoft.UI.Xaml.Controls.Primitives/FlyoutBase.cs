@@ -8,6 +8,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 	public  partial class FlyoutBase : global::Microsoft.UI.Xaml.DependencyObject
 	{
 		// Skipping already declared property Placement
+		// Skipping already declared property LightDismissOverlayMode
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.ElementSoundMode ElementSoundMode
@@ -115,6 +116,44 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.XamlRoot XamlRoot
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member XamlRoot FlyoutBase.XamlRoot is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase", "XamlRoot FlyoutBase.XamlRoot");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  bool ShouldConstrainToRootBounds
+		{
+			get
+			{
+				return (bool)this.GetValue(ShouldConstrainToRootBoundsProperty);
+			}
+			set
+			{
+				this.SetValue(ShouldConstrainToRootBoundsProperty, value);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  bool IsConstrainedToRootBounds
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member bool FlyoutBase.IsConstrainedToRootBounds is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AttachedFlyoutProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.RegisterAttached(
 			"AttachedFlyout", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
@@ -126,7 +165,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AllowFocusOnInteractionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AllowFocusOnInteraction", typeof(bool), 
+			nameof(AllowFocusOnInteraction), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -134,7 +173,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AllowFocusWhenDisabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AllowFocusWhenDisabled", typeof(bool), 
+			nameof(AllowFocusWhenDisabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -142,15 +181,16 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ElementSoundModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ElementSoundMode", typeof(global::Microsoft.UI.Xaml.ElementSoundMode), 
+			nameof(ElementSoundMode), typeof(global::Microsoft.UI.Xaml.ElementSoundMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.ElementSoundMode)));
 		#endif
+		// Skipping already declared property LightDismissOverlayModeProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OverlayInputPassThroughElementProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OverlayInputPassThroughElement", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(OverlayInputPassThroughElement), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -158,7 +198,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AreOpenCloseAnimationsEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AreOpenCloseAnimationsEnabled", typeof(bool), 
+			nameof(AreOpenCloseAnimationsEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -166,7 +206,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty InputDevicePrefersPrimaryCommandsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"InputDevicePrefersPrimaryCommands", typeof(bool), 
+			nameof(InputDevicePrefersPrimaryCommands), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -174,7 +214,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsOpenProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsOpen", typeof(bool), 
+			nameof(IsOpen), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -182,7 +222,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ShowModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ShowMode", typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowMode), 
+			nameof(ShowMode), typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowMode)));
 		#endif
@@ -190,9 +230,17 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Target", typeof(global::Microsoft.UI.Xaml.FrameworkElement), 
+			nameof(Target), typeof(global::Microsoft.UI.Xaml.FrameworkElement), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.FrameworkElement)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty ShouldConstrainToRootBoundsProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(ShouldConstrainToRootBounds), typeof(bool), 
+			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			new FrameworkPropertyMetadata(default(bool)));
 		#endif
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.FlyoutBase()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.FlyoutBase()
@@ -232,6 +280,12 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AreOpenCloseAnimationsEnabled.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AreOpenCloseAnimationsEnabled.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsOpen.get
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAt(Microsoft.UI.Xaml.DependencyObject, Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowOptions)
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShouldConstrainToRootBounds.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShouldConstrainToRootBounds.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsConstrainedToRootBounds.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.XamlRoot.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.XamlRoot.set
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.CreatePresenter()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -240,6 +294,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase", "void FlyoutBase.OnProcessKeyboardAccelerators(ProcessKeyboardAcceleratorEventArgs args)");
 		}
 		#endif
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShouldConstrainToRootBoundsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.TargetProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowModeProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.InputDevicePrefersPrimaryCommandsProperty.get
@@ -252,27 +307,9 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ElementSoundModeProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.PlacementProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty.get
-		#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase GetAttachedFlyout( global::Microsoft.UI.Xaml.FrameworkElement element)
-		{
-			return (global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)element.GetValue(AttachedFlyoutProperty);
-		}
-		#endif
-		#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public static void SetAttachedFlyout( global::Microsoft.UI.Xaml.FrameworkElement element,  global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase value)
-		{
-			element.SetValue(AttachedFlyoutProperty, value);
-		}
-#endif
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public static void ShowAttachedFlyout( global::Microsoft.UI.Xaml.FrameworkElement flyoutOwner)
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase", "void FlyoutBase.ShowAttachedFlyout(FrameworkElement flyoutOwner)");
-		}
-#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.GetAttachedFlyout(Microsoft.UI.Xaml.FrameworkElement)
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.SetAttachedFlyout(Microsoft.UI.Xaml.FrameworkElement, Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAttachedFlyout(Microsoft.UI.Xaml.FrameworkElement)
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Closed
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Opened
 		// Skipping already declared event Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Opening

@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ShowAsMonochromeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ShowAsMonochrome", typeof(bool), 
+			nameof(ShowAsMonochrome), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.BitmapIconSource), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -47,7 +47,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty UriSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"UriSource", typeof(global::System.Uri), 
+			nameof(UriSource), typeof(global::System.Uri), 
 			typeof(global::Microsoft.UI.Xaml.Controls.BitmapIconSource), 
 			new FrameworkPropertyMetadata(default(global::System.Uri)));
 		#endif

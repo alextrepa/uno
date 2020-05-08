@@ -2,6 +2,9 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Controls.Primitives
 {
+	#if false || false || false || false || false
+	[global::Uno.NotImplemented]
+	#endif
 	public  partial class FlyoutShowOptions 
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
@@ -18,6 +21,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 			}
 		}
 		#endif
+		// Skipping already declared property Position
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutPlacementMode Placement
@@ -46,6 +50,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 			}
 		}
 		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowOptions.FlyoutShowOptions()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowOptions.FlyoutShowOptions()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowOptions.Position.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowOptions.Position.set

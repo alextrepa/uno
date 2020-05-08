@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PullDirectionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PullDirection", typeof(global::Microsoft.UI.Xaml.Controls.RefreshPullDirection), 
+			nameof(PullDirection), typeof(global::Microsoft.UI.Xaml.Controls.RefreshPullDirection), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RefreshContainer), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.RefreshPullDirection)));
 		#endif
@@ -47,7 +47,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty VisualizerProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Visualizer", typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizer), 
+			nameof(Visualizer), typeof(global::Microsoft.UI.Xaml.Controls.RefreshVisualizer), 
 			typeof(global::Microsoft.UI.Xaml.Controls.RefreshContainer), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.RefreshVisualizer)));
 		#endif

@@ -67,7 +67,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty EntranceTargetNameProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"EntranceTargetName", typeof(string), 
+			nameof(EntranceTargetName), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.DrillOutThemeAnimation), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -75,7 +75,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty EntranceTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"EntranceTarget", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(EntranceTarget), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.DrillOutThemeAnimation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif
@@ -83,7 +83,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ExitTargetNameProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ExitTargetName", typeof(string), 
+			nameof(ExitTargetName), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.DrillOutThemeAnimation), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -91,7 +91,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ExitTargetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ExitTarget", typeof(global::Microsoft.UI.Xaml.DependencyObject), 
+			nameof(ExitTarget), typeof(global::Microsoft.UI.Xaml.DependencyObject), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.DrillOutThemeAnimation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DependencyObject)));
 		#endif

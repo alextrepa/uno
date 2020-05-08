@@ -263,7 +263,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarIdentifierProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarIdentifier", typeof(string), 
+			nameof(CalendarIdentifier), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -271,7 +271,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CalendarViewStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CalendarViewStyle", typeof(global::Microsoft.UI.Xaml.Style), 
+			nameof(CalendarViewStyle), typeof(global::Microsoft.UI.Xaml.Style), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Style)));
 		#endif
@@ -279,7 +279,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DateFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DateFormat", typeof(string), 
+			nameof(DateFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -287,7 +287,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Date", typeof(global::System.DateTimeOffset?), 
+			nameof(Date), typeof(global::System.DateTimeOffset?), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::System.DateTimeOffset?)));
 		#endif
@@ -295,7 +295,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DayOfWeekFormatProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DayOfWeekFormat", typeof(string), 
+			nameof(DayOfWeekFormat), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -303,7 +303,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DisplayModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DisplayMode", typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewDisplayMode), 
+			nameof(DisplayMode), typeof(global::Microsoft.UI.Xaml.Controls.CalendarViewDisplayMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.CalendarViewDisplayMode)));
 		#endif
@@ -311,7 +311,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FirstDayOfWeekProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FirstDayOfWeek", typeof(global::Windows.Globalization.DayOfWeek), 
+			nameof(FirstDayOfWeek), typeof(global::Windows.Globalization.DayOfWeek), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::Windows.Globalization.DayOfWeek)));
 		#endif
@@ -319,7 +319,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Header", typeof(object), 
+			nameof(Header), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif
@@ -327,7 +327,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty HeaderTemplateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"HeaderTemplate", typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			nameof(HeaderTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
 		#endif
@@ -335,7 +335,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsCalendarOpenProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsCalendarOpen", typeof(bool), 
+			nameof(IsCalendarOpen), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -343,7 +343,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsGroupLabelVisibleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsGroupLabelVisible", typeof(bool), 
+			nameof(IsGroupLabelVisible), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -351,7 +351,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsOutOfScopeEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsOutOfScopeEnabled", typeof(bool), 
+			nameof(IsOutOfScopeEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -359,7 +359,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTodayHighlightedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTodayHighlighted", typeof(bool), 
+			nameof(IsTodayHighlighted), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -367,7 +367,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MaxDateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MaxDate", typeof(global::System.DateTimeOffset), 
+			nameof(MaxDate), typeof(global::System.DateTimeOffset), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::System.DateTimeOffset)));
 		#endif
@@ -375,7 +375,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty MinDateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"MinDate", typeof(global::System.DateTimeOffset), 
+			nameof(MinDate), typeof(global::System.DateTimeOffset), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::System.DateTimeOffset)));
 		#endif
@@ -383,7 +383,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PlaceholderTextProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlaceholderText", typeof(string), 
+			nameof(PlaceholderText), typeof(string), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
@@ -391,7 +391,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LightDismissOverlayModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LightDismissOverlayMode", typeof(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode), 
+			nameof(LightDismissOverlayMode), typeof(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.LightDismissOverlayMode)));
 		#endif
@@ -399,7 +399,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DescriptionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Description", typeof(object), 
+			nameof(Description), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.CalendarDatePicker), 
 			new FrameworkPropertyMetadata(default(object)));
 		#endif

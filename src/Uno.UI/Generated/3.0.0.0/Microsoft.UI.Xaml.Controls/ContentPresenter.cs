@@ -155,7 +155,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CharacterSpacingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CharacterSpacing", typeof(int), 
+			nameof(CharacterSpacing), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -169,7 +169,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FontStretchProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FontStretch", typeof(global::Windows.UI.Text.FontStretch), 
+			nameof(FontStretch), typeof(global::Windows.UI.Text.FontStretch), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStretch)));
 		#endif
@@ -180,7 +180,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OpticalMarginAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OpticalMarginAlignment", typeof(global::Microsoft.UI.Xaml.OpticalMarginAlignment), 
+			nameof(OpticalMarginAlignment), typeof(global::Microsoft.UI.Xaml.OpticalMarginAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.OpticalMarginAlignment)));
 		#endif
@@ -188,7 +188,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TextLineBoundsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TextLineBounds", typeof(global::Microsoft.UI.Xaml.TextLineBounds), 
+			nameof(TextLineBounds), typeof(global::Microsoft.UI.Xaml.TextLineBounds), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.TextLineBounds)));
 		#endif
@@ -196,7 +196,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsTextScaleFactorEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsTextScaleFactorEnabled", typeof(bool), 
+			nameof(IsTextScaleFactorEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -209,7 +209,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LineHeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LineHeight", typeof(double), 
+			nameof(LineHeight), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -217,7 +217,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LineStackingStrategyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LineStackingStrategy", typeof(global::Microsoft.UI.Xaml.LineStackingStrategy), 
+			nameof(LineStackingStrategy), typeof(global::Microsoft.UI.Xaml.LineStackingStrategy), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.LineStackingStrategy)));
 		#endif
@@ -229,7 +229,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BackgroundSizingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BackgroundSizing", typeof(global::Microsoft.UI.Xaml.Controls.BackgroundSizing), 
+			nameof(BackgroundSizing), typeof(global::Microsoft.UI.Xaml.Controls.BackgroundSizing), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ContentPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.BackgroundSizing)));
 		#endif

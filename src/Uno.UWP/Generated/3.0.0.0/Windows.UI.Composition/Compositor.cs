@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Windows.UI.Composition
 {
-	#if false || false || false || false || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class Compositor : global::System.IDisposable
@@ -55,7 +55,13 @@ namespace Windows.UI.Composition
 			}
 		}
 		#endif
-		// Skipping already declared method Windows.UI.Composition.Compositor.Compositor()
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public Compositor() 
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Windows.UI.Composition.Compositor", "Compositor.Compositor()");
+		}
+		#endif
 		// Forced skipping of method Windows.UI.Composition.Compositor.Compositor()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -64,9 +70,27 @@ namespace Windows.UI.Composition
 			throw new global::System.NotImplementedException("The member ColorKeyFrameAnimation Compositor.CreateColorKeyFrameAnimation() is not implemented in Uno.");
 		}
 		#endif
-		// Skipping already declared method Windows.UI.Composition.Compositor.CreateColorBrush()
-		// Skipping already declared method Windows.UI.Composition.Compositor.CreateColorBrush(Windows.UI.Color)
-		// Skipping already declared method Windows.UI.Composition.Compositor.CreateContainerVisual()
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionColorBrush CreateColorBrush()
+		{
+			throw new global::System.NotImplementedException("The member CompositionColorBrush Compositor.CreateColorBrush() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionColorBrush CreateColorBrush( global::Windows.UI.Color color)
+		{
+			throw new global::System.NotImplementedException("The member CompositionColorBrush Compositor.CreateColorBrush(Color color) is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.ContainerVisual CreateContainerVisual()
+		{
+			throw new global::System.NotImplementedException("The member ContainerVisual Compositor.CreateContainerVisual() is not implemented in Uno.");
+		}
+		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Windows.UI.Composition.CubicBezierEasingFunction CreateCubicBezierEasingFunction( global::System.Numerics.Vector2 controlPoint1,  global::System.Numerics.Vector2 controlPoint2)
@@ -137,9 +161,27 @@ namespace Windows.UI.Composition
 			throw new global::System.NotImplementedException("The member QuaternionKeyFrameAnimation Compositor.CreateQuaternionKeyFrameAnimation() is not implemented in Uno.");
 		}
 		#endif
-		// Skipping already declared method Windows.UI.Composition.Compositor.CreateScalarKeyFrameAnimation()
-		// Skipping already declared method Windows.UI.Composition.Compositor.CreateScopedBatch(Windows.UI.Composition.CompositionBatchTypes)
-		// Skipping already declared method Windows.UI.Composition.Compositor.CreateSpriteVisual()
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.ScalarKeyFrameAnimation CreateScalarKeyFrameAnimation()
+		{
+			throw new global::System.NotImplementedException("The member ScalarKeyFrameAnimation Compositor.CreateScalarKeyFrameAnimation() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionScopedBatch CreateScopedBatch( global::Windows.UI.Composition.CompositionBatchTypes batchType)
+		{
+			throw new global::System.NotImplementedException("The member CompositionScopedBatch Compositor.CreateScopedBatch(CompositionBatchTypes batchType) is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.SpriteVisual CreateSpriteVisual()
+		{
+			throw new global::System.NotImplementedException("The member SpriteVisual Compositor.CreateSpriteVisual() is not implemented in Uno.");
+		}
+		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Windows.UI.Composition.CompositionSurfaceBrush CreateSurfaceBrush()
@@ -485,6 +527,41 @@ namespace Windows.UI.Composition
 		public  global::Windows.UI.Composition.BooleanKeyFrameAnimation CreateBooleanKeyFrameAnimation()
 		{
 			throw new global::System.NotImplementedException("The member BooleanKeyFrameAnimation Compositor.CreateBooleanKeyFrameAnimation() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionProjectedShadowCaster CreateProjectedShadowCaster()
+		{
+			throw new global::System.NotImplementedException("The member CompositionProjectedShadowCaster Compositor.CreateProjectedShadowCaster() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionProjectedShadow CreateProjectedShadow()
+		{
+			throw new global::System.NotImplementedException("The member CompositionProjectedShadow Compositor.CreateProjectedShadow() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionProjectedShadowReceiver CreateProjectedShadowReceiver()
+		{
+			throw new global::System.NotImplementedException("The member CompositionProjectedShadowReceiver Compositor.CreateProjectedShadowReceiver() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionRadialGradientBrush CreateRadialGradientBrush()
+		{
+			throw new global::System.NotImplementedException("The member CompositionRadialGradientBrush Compositor.CreateRadialGradientBrush() is not implemented in Uno.");
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Windows.UI.Composition.CompositionVisualSurface CreateVisualSurface()
+		{
+			throw new global::System.NotImplementedException("The member CompositionVisualSurface Compositor.CreateVisualSurface() is not implemented in Uno.");
 		}
 		#endif
 		// Forced skipping of method Windows.UI.Composition.Compositor.MaxGlobalPlaybackRate.get

@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Xaml.Automation.Peers
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class AutomationPeerAnnotation : global::Microsoft.UI.Xaml.DependencyObject
@@ -39,7 +39,7 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PeerProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Peer", typeof(global::Microsoft.UI.Xaml.Automation.Peers.AutomationPeer), 
+			nameof(Peer), typeof(global::Microsoft.UI.Xaml.Automation.Peers.AutomationPeer), 
 			typeof(global::Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)));
 		#endif
@@ -47,18 +47,11 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TypeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Type", typeof(global::Microsoft.UI.Xaml.Automation.AnnotationType), 
+			nameof(Type), typeof(global::Microsoft.UI.Xaml.Automation.AnnotationType), 
 			typeof(global::Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Automation.AnnotationType)));
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public AutomationPeerAnnotation() : base()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation", "AutomationPeerAnnotation.AutomationPeerAnnotation(AnnotationType type)");
-		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public AutomationPeerAnnotation( global::Microsoft.UI.Xaml.Automation.AnnotationType type) : base()
 		{
@@ -74,7 +67,13 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 		}
 		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation.AutomationPeerAnnotation(Microsoft.UI.Xaml.Automation.AnnotationType, Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)
-		// Skipping already declared method Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation.AutomationPeerAnnotation()
+		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		[global::Uno.NotImplemented]
+		public AutomationPeerAnnotation() : base()
+		{
+			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation", "AutomationPeerAnnotation.AutomationPeerAnnotation()");
+		}
+		#endif
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation.AutomationPeerAnnotation()
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation.Type.get
 		// Forced skipping of method Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation.Type.set

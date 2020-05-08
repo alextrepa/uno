@@ -47,8 +47,8 @@ namespace Microsoft.UI.Xaml.Controls
 				throw new global::System.NotImplementedException("The member int ItemsStackPanel.FirstCacheIndex is not implemented in Uno.");
 			}
 		}
-#endif
-#if false || false || NET461 || false || false
+		#endif
+		#if false || false || NET461 || false || false
 		[global::Uno.NotImplemented]
 		public  int FirstVisibleIndex
 		{
@@ -57,8 +57,8 @@ namespace Microsoft.UI.Xaml.Controls
 				throw new global::System.NotImplementedException("The member int ItemsStackPanel.FirstVisibleIndex is not implemented in Uno.");
 			}
 		}
-#endif
-#if false || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		#if false || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  int LastCacheIndex
 		{
@@ -67,8 +67,8 @@ namespace Microsoft.UI.Xaml.Controls
 				throw new global::System.NotImplementedException("The member int ItemsStackPanel.LastCacheIndex is not implemented in Uno.");
 			}
 		}
-#endif
-#if false || false || NET461 || false || false
+		#endif
+		#if false || false || NET461 || false || false
 		[global::Uno.NotImplemented]
 		public  int LastVisibleIndex
 		{
@@ -77,8 +77,8 @@ namespace Microsoft.UI.Xaml.Controls
 				throw new global::System.NotImplementedException("The member int ItemsStackPanel.LastVisibleIndex is not implemented in Uno.");
 			}
 		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Controls.PanelScrollingDirection ScrollingDirection
 		{
@@ -93,7 +93,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CacheLengthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CacheLength", typeof(double), 
+			nameof(CacheLength), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.ItemsStackPanel), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif

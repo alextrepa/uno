@@ -23,21 +23,29 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode> RootNodes
+		public  global::Microsoft.UI.Xaml.Controls.TreeViewNode SelectedNode
 		{
 			get
 			{
-				throw new global::System.NotImplementedException("The member IList<TreeViewNode> TreeView.RootNodes is not implemented in Uno.");
+				throw new global::System.NotImplementedException("The member TreeViewNode TreeView.SelectedNode is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "TreeViewNode TreeView.SelectedNode");
 			}
 		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode> SelectedNodes
+		public  object SelectedItem
 		{
 			get
 			{
-				throw new global::System.NotImplementedException("The member IList<TreeViewNode> TreeView.SelectedNodes is not implemented in Uno.");
+				throw new global::System.NotImplementedException("The member object TreeView.SelectedItem is not implemented in Uno.");
+			}
+			set
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "object TreeView.SelectedItem");
 			}
 		}
 		#endif
@@ -155,17 +163,39 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionModeProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionMode", typeof(global::Microsoft.UI.Xaml.Controls.TreeViewSelectionMode), 
-			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.TreeViewSelectionMode)));
+		public  global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode> RootNodes
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member IList<TreeViewNode> TreeView.RootNodes is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::System.Collections.Generic.IList<object> SelectedItems
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member IList<object> TreeView.SelectedItems is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode> SelectedNodes
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member IList<TreeViewNode> TreeView.SelectedNodes is not implemented in Uno.");
+			}
+		}
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CanDragItemsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanDragItems", typeof(bool), 
+			nameof(CanDragItems), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -173,7 +203,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CanReorderItemsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanReorderItems", typeof(bool), 
+			nameof(CanReorderItems), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -181,7 +211,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemContainerStyleProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemContainerStyle", typeof(global::Microsoft.UI.Xaml.Style), 
+			nameof(ItemContainerStyle), typeof(global::Microsoft.UI.Xaml.Style), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Style)));
 		#endif
@@ -189,7 +219,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemContainerStyleSelectorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemContainerStyleSelector", typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector), 
+			nameof(ItemContainerStyleSelector), typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.StyleSelector)));
 		#endif
@@ -197,7 +227,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemContainerTransitionsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemContainerTransitions", typeof(global::Microsoft.UI.Xaml.Media.Animation.TransitionCollection), 
+			nameof(ItemContainerTransitions), typeof(global::Microsoft.UI.Xaml.Media.Animation.TransitionCollection), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Animation.TransitionCollection)));
 		#endif
@@ -205,7 +235,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemTemplateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemTemplate", typeof(global::Microsoft.UI.Xaml.DataTemplate), 
+			nameof(ItemTemplate), typeof(global::Microsoft.UI.Xaml.DataTemplate), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.DataTemplate)));
 		#endif
@@ -213,7 +243,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemTemplateSelectorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemTemplateSelector", typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector), 
+			nameof(ItemTemplateSelector), typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)));
 		#endif
@@ -221,9 +251,17 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ItemsSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ItemsSource", typeof(object), 
+			nameof(ItemsSource), typeof(object), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
 			new FrameworkPropertyMetadata(default(object)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionModeProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(SelectionMode), typeof(global::Microsoft.UI.Xaml.Controls.TreeViewSelectionMode), 
+			typeof(global::Microsoft.UI.Xaml.Controls.TreeView), 
+			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.TreeViewSelectionMode)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -312,6 +350,12 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.DragItemsStarting.remove
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.DragItemsCompleted.add
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.DragItemsCompleted.remove
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedNode.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedNode.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItem.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItem.set
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectedItems.get
+		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectionModeProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.CanDragItemsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.CanReorderItemsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemTemplateProperty.get
@@ -320,7 +364,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemContainerStyleSelectorProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemContainerTransitionsProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.ItemsSourceProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.TreeView.SelectionModeProperty.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TreeView, global::Microsoft.UI.Xaml.Controls.TreeViewCollapsedEventArgs> Collapsed
@@ -334,38 +377,6 @@ namespace Microsoft.UI.Xaml.Controls
 			remove
 			{
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewCollapsedEventArgs> TreeView.Collapsed");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TreeView, global::Microsoft.UI.Xaml.Controls.TreeViewExpandingEventArgs> Expanding
-		{
-			[global::Uno.NotImplemented]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewExpandingEventArgs> TreeView.Expanding");
-			}
-			[global::Uno.NotImplemented]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewExpandingEventArgs> TreeView.Expanding");
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TreeView, global::Microsoft.UI.Xaml.Controls.TreeViewItemInvokedEventArgs> ItemInvoked
-		{
-			[global::Uno.NotImplemented]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewItemInvokedEventArgs> TreeView.ItemInvoked");
-			}
-			[global::Uno.NotImplemented]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewItemInvokedEventArgs> TreeView.ItemInvoked");
 			}
 		}
 		#endif
@@ -398,6 +409,38 @@ namespace Microsoft.UI.Xaml.Controls
 			remove
 			{
 				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewDragItemsStartingEventArgs> TreeView.DragItemsStarting");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TreeView, global::Microsoft.UI.Xaml.Controls.TreeViewExpandingEventArgs> Expanding
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewExpandingEventArgs> TreeView.Expanding");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewExpandingEventArgs> TreeView.Expanding");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TreeView, global::Microsoft.UI.Xaml.Controls.TreeViewItemInvokedEventArgs> ItemInvoked
+		{
+			[global::Uno.NotImplemented]
+			add
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewItemInvokedEventArgs> TreeView.ItemInvoked");
+			}
+			[global::Uno.NotImplemented]
+			remove
+			{
+				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.TreeView", "event TypedEventHandler<TreeView, TreeViewItemInvokedEventArgs> TreeView.ItemInvoked");
 			}
 		}
 		#endif

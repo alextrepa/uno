@@ -67,7 +67,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BottomItemsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BottomItems", typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
+			nameof(BottomItems), typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeControl), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.SwipeItems)));
 		#endif
@@ -75,7 +75,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty LeftItemsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"LeftItems", typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
+			nameof(LeftItems), typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeControl), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.SwipeItems)));
 		#endif
@@ -83,7 +83,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty RightItemsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"RightItems", typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
+			nameof(RightItems), typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeControl), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.SwipeItems)));
 		#endif
@@ -91,7 +91,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TopItemsProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TopItems", typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
+			nameof(TopItems), typeof(global::Microsoft.UI.Xaml.Controls.SwipeItems), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SwipeControl), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Controls.SwipeItems)));
 		#endif

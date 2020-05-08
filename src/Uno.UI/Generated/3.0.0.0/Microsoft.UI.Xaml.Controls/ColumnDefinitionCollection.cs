@@ -7,6 +7,7 @@ namespace Microsoft.UI.Xaml.Controls
 	#endif
 	public  partial class ColumnDefinitionCollection : global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.ColumnDefinition>,global::System.Collections.Generic.IEnumerable<global::Microsoft.UI.Xaml.Controls.ColumnDefinition>
 	{
+		// Skipping already declared property Size
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColumnDefinitionCollection.GetAt(uint)
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColumnDefinitionCollection.Size.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.ColumnDefinitionCollection.GetView()

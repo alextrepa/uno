@@ -53,7 +53,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AlwaysUseFallbackProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AlwaysUseFallback", typeof(bool), 
+			nameof(AlwaysUseFallback), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Media.RevealBrush), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -61,7 +61,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ColorProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Color", typeof(global::Windows.UI.Color), 
+			nameof(Color), typeof(global::Windows.UI.Color), 
 			typeof(global::Microsoft.UI.Xaml.Media.RevealBrush), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Color)));
 		#endif
@@ -77,7 +77,7 @@ namespace Microsoft.UI.Xaml.Media
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty TargetThemeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"TargetTheme", typeof(global::Microsoft.UI.Xaml.ApplicationTheme), 
+			nameof(TargetTheme), typeof(global::Microsoft.UI.Xaml.ApplicationTheme), 
 			typeof(global::Microsoft.UI.Xaml.Media.RevealBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.ApplicationTheme)));
 		#endif

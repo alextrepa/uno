@@ -319,7 +319,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CheckBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CheckBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(CheckBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -327,7 +327,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CheckHintBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CheckHintBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(CheckHintBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -335,7 +335,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CheckSelectingBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CheckSelectingBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(CheckSelectingBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -343,7 +343,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ContentMarginProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ContentMargin", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(ContentMargin), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
@@ -351,7 +351,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DisabledOpacityProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DisabledOpacity", typeof(double), 
+			nameof(DisabledOpacity), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -359,7 +359,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DragBackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DragBackground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(DragBackground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -367,7 +367,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DragForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DragForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(DragForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -375,7 +375,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DragOpacityProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DragOpacity", typeof(double), 
+			nameof(DragOpacity), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -383,7 +383,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty FocusBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"FocusBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(FocusBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -391,7 +391,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GridViewItemPresenterHorizontalContentAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GridViewItemPresenterHorizontalContentAlignment", typeof(global::Microsoft.UI.Xaml.HorizontalAlignment), 
+			nameof(GridViewItemPresenterHorizontalContentAlignment), typeof(global::Microsoft.UI.Xaml.HorizontalAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.HorizontalAlignment)));
 		#endif
@@ -399,7 +399,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GridViewItemPresenterPaddingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GridViewItemPresenterPadding", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(GridViewItemPresenterPadding), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
@@ -407,7 +407,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty GridViewItemPresenterVerticalContentAlignmentProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"GridViewItemPresenterVerticalContentAlignment", typeof(global::Microsoft.UI.Xaml.VerticalAlignment), 
+			nameof(GridViewItemPresenterVerticalContentAlignment), typeof(global::Microsoft.UI.Xaml.VerticalAlignment), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.VerticalAlignment)));
 		#endif
@@ -415,7 +415,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PlaceholderBackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlaceholderBackground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(PlaceholderBackground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -423,7 +423,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PointerOverBackgroundMarginProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PointerOverBackgroundMargin", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(PointerOverBackgroundMargin), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
@@ -431,7 +431,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PointerOverBackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PointerOverBackground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(PointerOverBackground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -439,7 +439,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ReorderHintOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ReorderHintOffset", typeof(double), 
+			nameof(ReorderHintOffset), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -447,7 +447,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedBackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedBackground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedBackground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -455,7 +455,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedBorderThicknessProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedBorderThickness", typeof(global::Microsoft.UI.Xaml.Thickness), 
+			nameof(SelectedBorderThickness), typeof(global::Microsoft.UI.Xaml.Thickness), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Thickness)));
 		#endif
@@ -463,7 +463,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedForegroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedForeground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedForeground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -471,7 +471,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedPointerOverBackgroundProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedPointerOverBackground", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedPointerOverBackground), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -479,7 +479,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectedPointerOverBorderBrushProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectedPointerOverBorderBrush", typeof(global::Microsoft.UI.Xaml.Media.Brush), 
+			nameof(SelectedPointerOverBorderBrush), typeof(global::Microsoft.UI.Xaml.Media.Brush), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Brush)));
 		#endif
@@ -487,7 +487,7 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SelectionCheckMarkVisualEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SelectionCheckMarkVisualEnabled", typeof(bool), 
+			nameof(SelectionCheckMarkVisualEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.Primitives.GridViewItemPresenter), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

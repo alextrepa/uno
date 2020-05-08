@@ -5,7 +5,7 @@ namespace Microsoft.UI.Xaml.Media
 	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
-	public  partial class LoadedImageSurface : global::System.IDisposable,global::Windows.UI.Composition.ICompositionSurface
+	public  partial class LoadedImageSurface : global::System.IDisposable,global::Microsoft.UI.Composition.ICompositionSurface
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -94,6 +94,6 @@ namespace Microsoft.UI.Xaml.Media
 		}
 		#endif
 		// Processing: System.IDisposable
-		// Processing: Windows.UI.Composition.ICompositionSurface
+		// Processing: Microsoft.UI.Composition.ICompositionSurface
 	}
 }

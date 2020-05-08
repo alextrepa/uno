@@ -9,7 +9,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 	{
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Composition.CompositionEasingFunction DefaultEasingFunction
+		public  global::Microsoft.UI.Composition.CompositionEasingFunction DefaultEasingFunction
 		{
 			get
 			{

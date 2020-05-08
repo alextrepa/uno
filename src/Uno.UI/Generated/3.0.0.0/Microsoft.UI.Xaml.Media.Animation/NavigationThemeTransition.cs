@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DefaultNavigationTransitionInfoProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DefaultNavigationTransitionInfo", typeof(global::Microsoft.UI.Xaml.Media.Animation.NavigationTransitionInfo), 
+			nameof(DefaultNavigationTransitionInfo), typeof(global::Microsoft.UI.Xaml.Media.Animation.NavigationTransitionInfo), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.NavigationThemeTransition), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Animation.NavigationTransitionInfo)));
 		#endif

@@ -53,7 +53,7 @@ namespace Microsoft.UI.Xaml.Media.Media3D
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DepthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Depth", typeof(double), 
+			nameof(Depth), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Media3D.PerspectiveTransform3D), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -61,7 +61,7 @@ namespace Microsoft.UI.Xaml.Media.Media3D
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OffsetXProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OffsetX", typeof(double), 
+			nameof(OffsetX), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Media3D.PerspectiveTransform3D), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -69,7 +69,7 @@ namespace Microsoft.UI.Xaml.Media.Media3D
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty OffsetYProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"OffsetY", typeof(double), 
+			nameof(OffsetY), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Media.Media3D.PerspectiveTransform3D), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif

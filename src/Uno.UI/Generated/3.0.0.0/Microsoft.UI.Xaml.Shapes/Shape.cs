@@ -113,7 +113,7 @@ namespace Microsoft.UI.Xaml.Shapes
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StrokeDashCapProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"StrokeDashCap", typeof(global::Microsoft.UI.Xaml.Media.PenLineCap), 
+			nameof(StrokeDashCap), typeof(global::Microsoft.UI.Xaml.Media.PenLineCap), 
 			typeof(global::Microsoft.UI.Xaml.Shapes.Shape), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.PenLineCap)));
 		#endif
@@ -121,7 +121,7 @@ namespace Microsoft.UI.Xaml.Shapes
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StrokeDashOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"StrokeDashOffset", typeof(double), 
+			nameof(StrokeDashOffset), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Shapes.Shape), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -129,7 +129,7 @@ namespace Microsoft.UI.Xaml.Shapes
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StrokeEndLineCapProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"StrokeEndLineCap", typeof(global::Microsoft.UI.Xaml.Media.PenLineCap), 
+			nameof(StrokeEndLineCap), typeof(global::Microsoft.UI.Xaml.Media.PenLineCap), 
 			typeof(global::Microsoft.UI.Xaml.Shapes.Shape), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.PenLineCap)));
 		#endif
@@ -137,7 +137,7 @@ namespace Microsoft.UI.Xaml.Shapes
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StrokeLineJoinProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"StrokeLineJoin", typeof(global::Microsoft.UI.Xaml.Media.PenLineJoin), 
+			nameof(StrokeLineJoin), typeof(global::Microsoft.UI.Xaml.Media.PenLineJoin), 
 			typeof(global::Microsoft.UI.Xaml.Shapes.Shape), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.PenLineJoin)));
 		#endif
@@ -145,7 +145,7 @@ namespace Microsoft.UI.Xaml.Shapes
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StrokeMiterLimitProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"StrokeMiterLimit", typeof(double), 
+			nameof(StrokeMiterLimit), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Shapes.Shape), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -154,7 +154,7 @@ namespace Microsoft.UI.Xaml.Shapes
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StrokeStartLineCapProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"StrokeStartLineCap", typeof(global::Microsoft.UI.Xaml.Media.PenLineCap), 
+			nameof(StrokeStartLineCap), typeof(global::Microsoft.UI.Xaml.Media.PenLineCap), 
 			typeof(global::Microsoft.UI.Xaml.Shapes.Shape), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.PenLineCap)));
 		#endif
@@ -186,7 +186,7 @@ namespace Microsoft.UI.Xaml.Shapes
 		// Forced skipping of method Microsoft.UI.Xaml.Shapes.Shape.GeometryTransform.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Composition.CompositionBrush GetAlphaMask()
+		public  global::Microsoft.UI.Composition.CompositionBrush GetAlphaMask()
 		{
 			throw new global::System.NotImplementedException("The member CompositionBrush Shape.GetAlphaMask() is not implemented in Uno.");
 		}

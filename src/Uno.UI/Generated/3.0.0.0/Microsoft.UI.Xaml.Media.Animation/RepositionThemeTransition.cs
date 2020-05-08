@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsStaggeringEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsStaggeringEnabled", typeof(bool), 
+			nameof(IsStaggeringEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.RepositionThemeTransition), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif

@@ -7,6 +7,11 @@ namespace Microsoft.UI.Xaml.Controls
 	#endif
 	public  partial class TimePickerFlyout 
 	{
+		// Skipping already declared property Time
+		// Skipping already declared property MinuteIncrement
+		// Skipping already declared property ClockIdentifier
+		// Skipping already declared property ClockIdentifierProperty
+		// Skipping already declared property MinuteIncrementProperty
 		// Skipping already declared property TimeProperty
 		// Skipping already declared method Microsoft.UI.Xaml.Controls.TimePickerFlyout.TimePickerFlyout()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.TimePickerFlyout.TimePickerFlyout()

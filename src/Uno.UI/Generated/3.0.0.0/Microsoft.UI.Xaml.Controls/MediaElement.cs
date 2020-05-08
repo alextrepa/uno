@@ -163,15 +163,15 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  bool IsMuted
+		public  bool IsLooping
 		{
 			get
 			{
-				return (bool)this.GetValue(IsMutedProperty);
+				return (bool)this.GetValue(IsLoopingProperty);
 			}
 			set
 			{
-				this.SetValue(IsMutedProperty, value);
+				this.SetValue(IsLoopingProperty, value);
 			}
 		}
 		#endif
@@ -219,20 +219,6 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  bool IsLooping
-		{
-			get
-			{
-				return (bool)this.GetValue(IsLoopingProperty);
-			}
-			set
-			{
-				this.SetValue(IsLoopingProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public  double Balance
 		{
 			get
@@ -247,11 +233,15 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  double DownloadProgressOffset
+		public  bool IsMuted
 		{
 			get
 			{
-				return (double)this.GetValue(DownloadProgressOffsetProperty);
+				return (bool)this.GetValue(IsMutedProperty);
+			}
+			set
+			{
+				this.SetValue(IsMutedProperty, value);
 			}
 		}
 		#endif
@@ -262,6 +252,16 @@ namespace Microsoft.UI.Xaml.Controls
 			get
 			{
 				return (bool)this.GetValue(IsAudioOnlyProperty);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
+		public  global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode ActualStereo3DVideoPackingMode
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode)this.GetValue(ActualStereo3DVideoPackingModeProperty);
 			}
 		}
 		#endif
@@ -312,26 +312,6 @@ namespace Microsoft.UI.Xaml.Controls
 			get
 			{
 				return (int)this.GetValue(NaturalVideoWidthProperty);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Windows.Media.PlayTo.PlayToSource PlayToSource
-		{
-			get
-			{
-				return (global::Windows.Media.PlayTo.PlayToSource)this.GetValue(PlayToSourceProperty);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode ActualStereo3DVideoPackingMode
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode)this.GetValue(ActualStereo3DVideoPackingModeProperty);
 			}
 		}
 		#endif
@@ -417,6 +397,16 @@ namespace Microsoft.UI.Xaml.Controls
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public  double DownloadProgressOffset
+		{
+			get
+			{
+				return (double)this.GetValue(DownloadProgressOffsetProperty);
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Media.Stretch Stretch
 		{
 			get
@@ -426,20 +416,6 @@ namespace Microsoft.UI.Xaml.Controls
 			set
 			{
 				this.SetValue(StretchProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::System.Uri PlayToPreferredSourceUri
-		{
-			get
-			{
-				return (global::System.Uri)this.GetValue(PlayToPreferredSourceUriProperty);
-			}
-			set
-			{
-				this.SetValue(PlayToPreferredSourceUriProperty, value);
 			}
 		}
 		#endif
@@ -489,23 +465,15 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DownloadProgressOffsetProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DownloadProgressOffset", typeof(double), 
+			nameof(DownloadProgressOffset), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty SourceProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Source", typeof(global::System.Uri), 
-			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
-			new FrameworkPropertyMetadata(default(global::System.Uri)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty Stereo3DVideoPackingModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Stereo3DVideoPackingMode", typeof(global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode), 
+			nameof(Stereo3DVideoPackingMode), typeof(global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode)));
 		#endif
@@ -513,7 +481,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty Stereo3DVideoRenderModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Stereo3DVideoRenderMode", typeof(global::Microsoft.UI.Xaml.Media.Stereo3DVideoRenderMode), 
+			nameof(Stereo3DVideoRenderMode), typeof(global::Microsoft.UI.Xaml.Media.Stereo3DVideoRenderMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stereo3DVideoRenderMode)));
 		#endif
@@ -521,7 +489,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ActualStereo3DVideoPackingModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ActualStereo3DVideoPackingMode", typeof(global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode), 
+			nameof(ActualStereo3DVideoPackingMode), typeof(global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode)));
 		#endif
@@ -529,7 +497,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AspectRatioHeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AspectRatioHeight", typeof(int), 
+			nameof(AspectRatioHeight), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -537,7 +505,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AspectRatioWidthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AspectRatioWidth", typeof(int), 
+			nameof(AspectRatioWidth), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -545,7 +513,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AudioCategoryProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AudioCategory", typeof(global::Microsoft.UI.Xaml.Media.AudioCategory), 
+			nameof(AudioCategory), typeof(global::Microsoft.UI.Xaml.Media.AudioCategory), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.AudioCategory)));
 		#endif
@@ -553,7 +521,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AudioDeviceTypeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AudioDeviceType", typeof(global::Microsoft.UI.Xaml.Media.AudioDeviceType), 
+			nameof(AudioDeviceType), typeof(global::Microsoft.UI.Xaml.Media.AudioDeviceType), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.AudioDeviceType)));
 		#endif
@@ -561,7 +529,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AudioStreamCountProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AudioStreamCount", typeof(int), 
+			nameof(AudioStreamCount), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -569,7 +537,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AudioStreamIndexProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AudioStreamIndex", typeof(int?), 
+			nameof(AudioStreamIndex), typeof(int?), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(int?)));
 		#endif
@@ -577,7 +545,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AutoPlayProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AutoPlay", typeof(bool), 
+			nameof(AutoPlay), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -585,7 +553,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BalanceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Balance", typeof(double), 
+			nameof(Balance), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -593,7 +561,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty BufferingProgressProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"BufferingProgress", typeof(double), 
+			nameof(BufferingProgress), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -601,7 +569,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CanPauseProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanPause", typeof(bool), 
+			nameof(CanPause), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -609,7 +577,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CanSeekProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CanSeek", typeof(bool), 
+			nameof(CanSeek), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -617,7 +585,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CurrentStateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"CurrentState", typeof(global::Microsoft.UI.Xaml.Media.MediaElementState), 
+			nameof(CurrentState), typeof(global::Microsoft.UI.Xaml.Media.MediaElementState), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.MediaElementState)));
 		#endif
@@ -625,7 +593,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DefaultPlaybackRateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DefaultPlaybackRate", typeof(double), 
+			nameof(DefaultPlaybackRate), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -633,7 +601,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty VolumeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Volume", typeof(double), 
+			nameof(Volume), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -641,7 +609,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty DownloadProgressProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"DownloadProgress", typeof(double), 
+			nameof(DownloadProgress), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -649,7 +617,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsAudioOnlyProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsAudioOnly", typeof(bool), 
+			nameof(IsAudioOnly), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -657,7 +625,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsLoopingProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsLooping", typeof(bool), 
+			nameof(IsLooping), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -665,7 +633,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsMutedProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsMuted", typeof(bool), 
+			nameof(IsMuted), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -673,7 +641,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty IsStereo3DVideoProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsStereo3DVideo", typeof(bool), 
+			nameof(IsStereo3DVideo), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -681,7 +649,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty NaturalDurationProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"NaturalDuration", typeof(global::Microsoft.UI.Xaml.Duration), 
+			nameof(NaturalDuration), typeof(global::Microsoft.UI.Xaml.Duration), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Duration)));
 		#endif
@@ -689,7 +657,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty NaturalVideoHeightProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"NaturalVideoHeight", typeof(int), 
+			nameof(NaturalVideoHeight), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
@@ -697,23 +665,15 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty NaturalVideoWidthProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"NaturalVideoWidth", typeof(int), 
+			nameof(NaturalVideoWidth), typeof(int), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(int)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlayToSourceProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlayToSource", typeof(global::Windows.Media.PlayTo.PlayToSource), 
-			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
-			new FrameworkPropertyMetadata(default(global::Windows.Media.PlayTo.PlayToSource)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PlaybackRateProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlaybackRate", typeof(double), 
+			nameof(PlaybackRate), typeof(double), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(double)));
 		#endif
@@ -721,7 +681,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PositionProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Position", typeof(global::System.TimeSpan), 
+			nameof(Position), typeof(global::System.TimeSpan), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::System.TimeSpan)));
 		#endif
@@ -729,7 +689,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty PosterSourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PosterSource", typeof(global::Microsoft.UI.Xaml.Media.ImageSource), 
+			nameof(PosterSource), typeof(global::Microsoft.UI.Xaml.Media.ImageSource), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.ImageSource)));
 		#endif
@@ -737,7 +697,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ProtectionManagerProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"ProtectionManager", typeof(global::Windows.Media.Protection.MediaProtectionManager), 
+			nameof(ProtectionManager), typeof(global::Windows.Media.Protection.MediaProtectionManager), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.Media.Protection.MediaProtectionManager)));
 		#endif
@@ -745,31 +705,31 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty RealTimePlaybackProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"RealTimePlayback", typeof(bool), 
+			nameof(RealTimePlayback), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty IsFullWindowProperty { get; } = 
+		public static global::Microsoft.UI.Xaml.DependencyProperty SourceProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"IsFullWindow", typeof(bool), 
-			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
-			new FrameworkPropertyMetadata(default(bool)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty PlayToPreferredSourceUriProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"PlayToPreferredSourceUri", typeof(global::System.Uri), 
+			nameof(Source), typeof(global::System.Uri), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::System.Uri)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public static global::Microsoft.UI.Xaml.DependencyProperty IsFullWindowProperty { get; } = 
+		Microsoft.UI.Xaml.DependencyProperty.Register(
+			nameof(IsFullWindow), typeof(bool), 
+			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
+			new FrameworkPropertyMetadata(default(bool)));
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty StretchProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Stretch", typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
+			nameof(Stretch), typeof(global::Microsoft.UI.Xaml.Media.Stretch), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Stretch)));
 		#endif
@@ -777,7 +737,7 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty AreTransportControlsEnabledProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"AreTransportControlsEnabled", typeof(bool), 
+			nameof(AreTransportControlsEnabled), typeof(bool), 
 			typeof(global::Microsoft.UI.Xaml.Controls.MediaElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -821,7 +781,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PlaybackRate.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.IsLooping.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.IsLooping.set
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PlayToSource.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.DefaultPlaybackRate.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.DefaultPlaybackRate.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.AspectRatioWidth.get
@@ -936,8 +895,6 @@ namespace Microsoft.UI.Xaml.Controls
 			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.MediaElement", "void MediaElement.SetMediaStreamSource(IMediaSource source)");
 		}
 		#endif
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PlayToPreferredSourceUri.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PlayToPreferredSourceUri.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.TransportControls.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.TransportControls.set
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PartialMediaFailureDetected.add
@@ -959,7 +916,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.AreTransportControlsEnabledProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.StretchProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.IsFullWindowProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PlayToPreferredSourceUriProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PosterSourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.SourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.IsMutedProperty.get
@@ -981,7 +937,6 @@ namespace Microsoft.UI.Xaml.Controls
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.AudioStreamIndexProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PlaybackRateProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.IsLoopingProperty.get
-		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.PlayToSourceProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.DefaultPlaybackRateProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.AspectRatioWidthProperty.get
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.MediaElement.AspectRatioHeightProperty.get

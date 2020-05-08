@@ -7,13 +7,7 @@ namespace Microsoft.UI.Xaml.Controls
 	#endif
 	public  partial class DropDownButton : global::Microsoft.UI.Xaml.Controls.Button
 	{
-		#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public DropDownButton() : base()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Controls.DropDownButton", "DropDownButton.DropDownButton()");
-		}
-		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Controls.DropDownButton.DropDownButton()
 		// Forced skipping of method Microsoft.UI.Xaml.Controls.DropDownButton.DropDownButton()
 	}
 }

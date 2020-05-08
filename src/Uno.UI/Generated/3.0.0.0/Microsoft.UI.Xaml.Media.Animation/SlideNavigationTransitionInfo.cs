@@ -25,7 +25,7 @@ namespace Microsoft.UI.Xaml.Media.Animation
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty EffectProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"Effect", typeof(global::Microsoft.UI.Xaml.Media.Animation.SlideNavigationTransitionEffect), 
+			nameof(Effect), typeof(global::Microsoft.UI.Xaml.Media.Animation.SlideNavigationTransitionEffect), 
 			typeof(global::Microsoft.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.Animation.SlideNavigationTransitionEffect)));
 		#endif
