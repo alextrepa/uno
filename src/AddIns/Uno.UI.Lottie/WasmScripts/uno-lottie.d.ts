@@ -1,8 +1,9 @@
 declare const require: any;
 declare namespace Uno.UI {
+    import AnimationData = Lottie.AnimationData;
     interface LottieAnimationProperties {
         elementId: number;
-        jsonPath: string;
+        jsonPath?: string;
         autoplay: boolean;
         stretch: string;
         rate: number;
@@ -15,7 +16,7 @@ declare namespace Uno.UI {
         private static _player;
         private static _runningAnimations;
         private static _numberOfFrames;
-        static setAnimationProperties(newProperties: LottieAnimationProperties): string;
+        static setAnimationProperties(newProperties: LottieAnimationProperties, animationData?: AnimationData): string;
         static stop(elementId: number): string;
         static play(elementId: number, fromProgress: number, toProgress: number, looped: boolean): string;
         static kill(elementId: number): string;

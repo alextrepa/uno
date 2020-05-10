@@ -1,6 +1,8 @@
 ﻿#if __WASM__
 
-namespace Microsoft.UI.Xaml.Controls.Primitives
+using Microsoft.UI.Xaml;
+
+namespace Uno.UI.Controls.Legacy
 {//TODO: Fully implement this class, matching UWP https://github.com/unoplatform/uno/issues/1872
 	public partial class ProgressRingTemplateSettings : DependencyObject
 	{

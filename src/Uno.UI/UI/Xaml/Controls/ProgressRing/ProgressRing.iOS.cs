@@ -6,7 +6,7 @@ using System.Text;
 using CoreGraphics;
 using Microsoft.UI.Xaml.Media;
 
-namespace Microsoft.UI.Xaml.Controls
+namespace Uno.UI.Controls.Legacy
 {
 	/// <summary>
 	/// Represents a control that indicates that an operation is ongoing. The typical visual appearance is a ring-shaped "spinner" that cycles an animation as progress continues.

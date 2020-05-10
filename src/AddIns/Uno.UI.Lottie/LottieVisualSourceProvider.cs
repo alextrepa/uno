@@ -1,8 +1,7 @@
 ﻿using System;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using Microsoft.Toolkit.Uwp.UI.Lottie;
-using Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer;
 using Uno.Foundation.Extensibility;
 
 [assembly: ApiExtension(typeof(ILottieVisualSourceProvider), typeof(Uno.UI.Lottie.LottieVisualSourceProvider))]

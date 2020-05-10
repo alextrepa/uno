@@ -2,15 +2,16 @@
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Metadata;
-using Windows.UI;
-using Windows.UI.Composition;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Imaging;
+using Microsoft.UI;
+using Microsoft.UI.Composition;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Media.Imaging;
 using Uno.UI.Samples.Controls;
 
 using RadialGradientBrush = Microsoft.UI.Xaml.Media.RadialGradientBrush;
+using Windows.UI;
 
 namespace MUXControlsTestApp
 {
@@ -144,7 +145,7 @@ namespace MUXControlsTestApp
 			if (ApiInformation.IsTypePresent("Windows.UI.Composition.CompositionRadialGradientBrush"))
 			{
 				// If CompositionRadialGradientBrush is available then should be rendering a gradient.
-				if (centerColor == Colors.Orange && outerColor == Colors.Green)
+				if (centerColor == Microsoft.UI.Colors.Orange && outerColor == Microsoft.UI.Colors.Green)
 				{
 					ColorMatchTestResult.Text = "Passed";
 				}
@@ -155,7 +156,7 @@ namespace MUXControlsTestApp
 			}
 			else
 			{
-				if (centerColor == Colors.Red && outerColor == Colors.Red)
+				if (centerColor == Microsoft.UI.Colors.Red && outerColor == Microsoft.UI.Colors.Red)
 				{
 					ColorMatchTestResult.Text = "Passed";
 				}

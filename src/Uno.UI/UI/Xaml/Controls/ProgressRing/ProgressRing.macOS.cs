@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
 
-namespace Microsoft.UI.Xaml.Controls
+namespace Uno.UI.Controls.Legacy
 {
     public partial class ProgressRing : Control
 	{

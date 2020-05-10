@@ -31,7 +31,7 @@ namespace SamplesApp.Wasm.Windows_UI_Core
 		{
 #if NET461 || __WASM__ || __MACOS__
 			Box.SelectionChanged -= HandleSelection;
-			Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 0);
+			Microsoft.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 0);
 #endif
 		}
 
@@ -52,7 +52,7 @@ namespace SamplesApp.Wasm.Windows_UI_Core
 		{
 			Txt.Text = "Current selection : " + Box.SelectedItem.ToString();
 
-			Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor((Windows.UI.Core.CoreCursorType)Box.SelectedItem, 0);
+			Microsoft.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor((Windows.UI.Core.CoreCursorType)Box.SelectedItem, 0);
 		}
 
 		private void ResetTapped(object sender, TappedRoutedEventArgs e)
@@ -60,7 +60,7 @@ namespace SamplesApp.Wasm.Windows_UI_Core
 #if NET461 || __WASM__ || __MACOS__
 			Txt.Text = "";
 
-			Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 0);
+			Microsoft.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 0);
 #endif
 		}
 	}

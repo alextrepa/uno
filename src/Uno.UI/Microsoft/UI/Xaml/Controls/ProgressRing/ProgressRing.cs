@@ -1,8 +1,8 @@
 ﻿using System;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation.Peers;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation.Peers;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
 using Uno.Extensions;
 using Uno.Foundation.Extensibility;
 using Uno.Logging;
@@ -12,12 +12,12 @@ namespace Microsoft.UI.Xaml.Controls
 {
 	public partial class ProgressRing : Control
 	{
-		private AnimatedVisualPlayer.ILottieVisualSourceProvider _lottieProvider;
+		private ILottieVisualSourceProvider _lottieProvider;
 
 		public static readonly DependencyProperty IsActiveProperty = DependencyProperty.Register(
 			"IsActive", typeof(bool), typeof(ProgressRing), new PropertyMetadata(true, OnIsActivePropertyChanged));
 
-		private Windows.UI.Xaml.Controls.AnimatedVisualPlayer _player;
+		private AnimatedVisualPlayer _player;
 
 		public bool IsActive
 		{
@@ -44,7 +44,7 @@ namespace Microsoft.UI.Xaml.Controls
 
 		protected override void OnApplyTemplate()
 		{
-			_player = GetTemplateChild("IndeterminateAnimatedVisualPlayer") as Windows.UI.Xaml.Controls.AnimatedVisualPlayer;
+			_player = GetTemplateChild("IndeterminateAnimatedVisualPlayer") as Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer;
 
 			SetAnimatedVisualPlayerSource();
 

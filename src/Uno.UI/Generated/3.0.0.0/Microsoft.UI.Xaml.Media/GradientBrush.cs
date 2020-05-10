@@ -7,7 +7,7 @@ namespace Microsoft.UI.Xaml.Media
 	#endif
 	public  partial class GradientBrush : global::Microsoft.UI.Xaml.Media.Brush
 	{
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Media.GradientSpreadMethod SpreadMethod
 		{
@@ -20,22 +20,10 @@ namespace Microsoft.UI.Xaml.Media
 				this.SetValue(SpreadMethodProperty, value);
 			}
 		}
-#endif
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Media.GradientStopCollection GradientStops
-		{
-			get
-			{
-				return (global::Microsoft.UI.Xaml.Media.GradientStopCollection)this.GetValue(GradientStopsProperty);
-			}
-			set
-			{
-				this.SetValue(GradientStopsProperty, value);
-			}
-		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		// Skipping already declared property MappingMode
+		// Skipping already declared property GradientStops
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Media.ColorInterpolationMode ColorInterpolationMode
 		{
@@ -48,38 +36,26 @@ namespace Microsoft.UI.Xaml.Media
 				this.SetValue(ColorInterpolationModeProperty, value);
 			}
 		}
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ColorInterpolationModeProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
 			nameof(ColorInterpolationMode), typeof(global::Microsoft.UI.Xaml.Media.ColorInterpolationMode), 
 			typeof(global::Microsoft.UI.Xaml.Media.GradientBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.ColorInterpolationMode)));
-#endif
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyProperty GradientStopsProperty { get; } = 
-		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(GradientStops), typeof(global::Microsoft.UI.Xaml.Media.GradientStopCollection), 
-			typeof(global::Microsoft.UI.Xaml.Media.GradientBrush), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.GradientStopCollection)));
-#endif
-#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#endif
+		// Skipping already declared property GradientStopsProperty
+		// Skipping already declared property MappingModeProperty
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty SpreadMethodProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			"SpreadMethod", typeof(global::Microsoft.UI.Xaml.Media.GradientSpreadMethod), 
+			nameof(SpreadMethod), typeof(global::Microsoft.UI.Xaml.Media.GradientSpreadMethod), 
 			typeof(global::Microsoft.UI.Xaml.Media.GradientBrush), 
 			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Media.GradientSpreadMethod)));
-#endif
-#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		protected GradientBrush() : base()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.GradientBrush", "GradientBrush.GradientBrush()");
-		}
-#endif
+		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Media.GradientBrush.GradientBrush()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.GradientBrush.GradientBrush()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.GradientBrush.SpreadMethod.get
 		// Forced skipping of method Microsoft.UI.Xaml.Media.GradientBrush.SpreadMethod.set

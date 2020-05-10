@@ -57,20 +57,8 @@ namespace Microsoft.UI.Xaml.Input
 			throw new global::System.NotImplementedException("The member DependencyObject FocusManager.FindNextElement(FocusNavigationDirection focusNavigationDirection) is not implemented in Uno.");
 		}
 		#endif
-		#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyObject FindFirstFocusableElement( global::Microsoft.UI.Xaml.DependencyObject searchScope)
-		{
-			throw new global::System.NotImplementedException("The member DependencyObject FocusManager.FindFirstFocusableElement(DependencyObject searchScope) is not implemented in Uno.");
-		}
-		#endif
-		#if false || false || false || false || false
-		[global::Uno.NotImplemented]
-		public static global::Microsoft.UI.Xaml.DependencyObject FindLastFocusableElement( global::Microsoft.UI.Xaml.DependencyObject searchScope)
-		{
-			throw new global::System.NotImplementedException("The member DependencyObject FocusManager.FindLastFocusableElement(DependencyObject searchScope) is not implemented in Uno.");
-		}
-		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Input.FocusManager.FindFirstFocusableElement(Microsoft.UI.Xaml.DependencyObject)
+		// Skipping already declared method Microsoft.UI.Xaml.Input.FocusManager.FindLastFocusableElement(Microsoft.UI.Xaml.DependencyObject)
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyObject FindNextElement( global::Microsoft.UI.Xaml.Input.FocusNavigationDirection focusNavigationDirection,  global::Microsoft.UI.Xaml.Input.FindNextElementOptions focusNavigationOptions)

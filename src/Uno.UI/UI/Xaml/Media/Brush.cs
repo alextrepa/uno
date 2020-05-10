@@ -4,6 +4,7 @@ using System.Text;
 using System.ComponentModel;
 using System.Diagnostics.Contracts;
 using Microsoft.UI.Xaml.Controls;
+using Windows.UI;
 
 namespace Microsoft.UI.Xaml.Media
 {

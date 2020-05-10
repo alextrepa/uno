@@ -804,6 +804,11 @@ namespace Uno.UWPSyncGenerator
 
 		protected void BuildMethods(INamedTypeSymbol type, IndentedStringBuilder b, PlatformSymbols<INamedTypeSymbol> types, List<ISymbol> writtenSymbols)
 		{
+			if (type.ToString().Contains("XmlDocument"))
+			{
+
+			}
+
 			foreach (var method in type.GetMembers().OfType<IMethodSymbol>())
 			{
 				var methods = GetAllMatchingMethods(types, method);

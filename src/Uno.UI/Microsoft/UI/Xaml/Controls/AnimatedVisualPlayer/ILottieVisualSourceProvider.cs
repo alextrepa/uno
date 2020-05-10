@@ -1,7 +1,6 @@
 ﻿using System;
-using Windows.UI.Xaml.Controls;
 
-namespace Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer
+namespace Microsoft.UI.Xaml.Controls
 {
 	public interface ILottieVisualSourceProvider
 	{

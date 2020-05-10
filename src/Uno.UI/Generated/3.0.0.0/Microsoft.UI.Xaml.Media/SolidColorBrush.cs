@@ -9,7 +9,7 @@ namespace Microsoft.UI.Xaml.Media
 	{
 		// Skipping already declared property Color
 		// Skipping already declared property ColorProperty
-		#if __ANDROID__ || __IOS__ || false || false || false
+		#if false || __IOS__ || false || false || false
 		[global::Uno.NotImplemented]
 		public SolidColorBrush( global::Windows.UI.Color color) : base()
 		{

@@ -11,14 +11,15 @@ namespace Microsoft.UI.Xaml.Media
 		// Skipping already declared property EndPoint
 		// Skipping already declared property EndPointProperty
 		// Skipping already declared property StartPointProperty
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.LinearGradientBrush(Windows.UI.Xaml.Media.GradientStopCollection, double)
-		// Skipping already declared method Windows.UI.Xaml.Media.LinearGradientBrush.LinearGradientBrush()
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.LinearGradientBrush()
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.StartPoint.get
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.StartPoint.set
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.EndPoint.get
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.EndPoint.set
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.StartPointProperty.get
-		// Forced skipping of method Windows.UI.Xaml.Media.LinearGradientBrush.EndPointProperty.get
+		// Skipping already declared method Microsoft.UI.Xaml.Media.LinearGradientBrush.LinearGradientBrush(Microsoft.UI.Xaml.Media.GradientStopCollection, double)
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.LinearGradientBrush(Microsoft.UI.Xaml.Media.GradientStopCollection, double)
+		// Skipping already declared method Microsoft.UI.Xaml.Media.LinearGradientBrush.LinearGradientBrush()
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.LinearGradientBrush()
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.StartPoint.get
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.StartPoint.set
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.EndPoint.get
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.EndPoint.set
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.StartPointProperty.get
+		// Forced skipping of method Microsoft.UI.Xaml.Media.LinearGradientBrush.EndPointProperty.get
 	}
 }
