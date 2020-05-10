@@ -309,9 +309,9 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty ActionButtonCommandProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(ActionButtonCommand), typeof(global::Microsoft.UI.Xaml.Input.ICommand), 
+			nameof(ActionButtonCommand), typeof(global::System.Windows.Input.ICommand), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TeachingTip), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.ICommand)));
+			new FrameworkPropertyMetadata(default(global::System.Windows.Input.ICommand)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
@@ -341,9 +341,9 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CloseButtonCommandProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(CloseButtonCommand), typeof(global::Microsoft.UI.Xaml.Input.ICommand), 
+			nameof(CloseButtonCommand), typeof(global::System.Windows.Input.ICommand), 
 			typeof(global::Microsoft.UI.Xaml.Controls.TeachingTip), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.ICommand)));
+			new FrameworkPropertyMetadata(default(global::System.Windows.Input.ICommand)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]

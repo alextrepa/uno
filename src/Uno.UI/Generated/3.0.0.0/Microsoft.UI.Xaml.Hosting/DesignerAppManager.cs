@@ -37,7 +37,7 @@ namespace Microsoft.UI.Xaml.Hosting
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::System.Threading.Tasks.Task LoadObjectIntoAppAsync( string dllName,  global::System.Guid classId,  string initializationData)
+		public  global::Windows.Foundation.IAsyncAction LoadObjectIntoAppAsync( string dllName,  global::System.Guid classId,  string initializationData)
 		{
 			throw new global::System.NotImplementedException("The member IAsyncAction DesignerAppManager.LoadObjectIntoAppAsync(string dllName, Guid classId, string initializationData) is not implemented in Uno.");
 		}

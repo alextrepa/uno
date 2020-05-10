@@ -65,13 +65,7 @@ namespace Microsoft.UI.Composition
 		}
 		#endif
 		// Skipping already declared method Microsoft.UI.Composition.Compositor.CreateColorBrush()
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Composition.CompositionColorBrush CreateColorBrush( global::Windows.UI.Color color)
-		{
-			throw new global::System.NotImplementedException("The member CompositionColorBrush Compositor.CreateColorBrush(Color color) is not implemented in Uno.");
-		}
-		#endif
+		// Skipping already declared method Microsoft.UI.Composition.Compositor.CreateColorBrush(Windows.UI.Color)
 		// Skipping already declared method Microsoft.UI.Composition.Compositor.CreateContainerVisual()
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]

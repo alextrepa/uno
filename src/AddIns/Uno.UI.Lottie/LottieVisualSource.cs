@@ -14,6 +14,7 @@ using Uno.Extensions;
 using Uno.Extensions.Specialized;
 using Uno.Logging;
 using Uno.UI;
+using Microsoft.UI.Composition;
 
 namespace Microsoft.Toolkit.Uwp.UI.Lottie
 {
@@ -52,6 +53,11 @@ namespace Microsoft.Toolkit.Uwp.UI.Lottie
 			throw new NotImplementedException();
 		}
 
+		[NotImplemented]
+		public IAnimatedVisual TryCreateAnimatedVisual(Compositor compositor, out object diagnostics)
+		{
+			throw new NotImplementedException();
+		}
 
 		private static void OnUriSourceChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)
 		{
@@ -115,6 +121,7 @@ namespace Microsoft.Toolkit.Uwp.UI.Lottie
 
 		private readonly Size CompositionSize = default;
 #endif
+
 		public void Update(AnimatedVisualPlayer player)
 		{
 			_player = player;

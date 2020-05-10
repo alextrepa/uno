@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class ImplicitAnimationCollection : global::Microsoft.UI.Composition.CompositionObject,global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Composition.ICompositionAnimationBase>>,global::System.Collections.Generic.IDictionary<string, global::Microsoft.UI.Composition.ICompositionAnimationBase>

@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition.Core
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class CompositorController : global::System.IDisposable
@@ -17,7 +17,7 @@ namespace Microsoft.UI.Composition.Core
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public CompositorController() 
 		{

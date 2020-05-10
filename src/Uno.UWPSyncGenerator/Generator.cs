@@ -153,7 +153,7 @@ namespace Uno.UWPSyncGenerator
 			{
 				return @"..\..\..\..\Uno.Foundation\Generated\2.0.0.0";
 			}
-			else if (!(type.ContainingNamespace.ToString().StartsWith("Microsoft.UI.Xaml") || type.ContainingNamespace.ToString().StartsWith("Windows.UI.Xaml") || type.ContainingNamespace.ToString().StartsWith("Microsoft.System") || type.ContainingNamespace.ToString().StartsWith("Microsoft.Composition")))
+			else if (!(type.ContainingNamespace.ToString().StartsWith("Microsoft.UI.Xaml") || type.ContainingNamespace.ToString().StartsWith("Windows.UI.Xaml") || type.ContainingNamespace.ToString().StartsWith("Microsoft.System") || type.ContainingNamespace.ToString().StartsWith("Microsoft.UI.Composition")))
 			{
 				return @"..\..\..\..\Uno.UWP\Generated\3.0.0.0";
 			}
@@ -322,7 +322,8 @@ namespace Uno.UWPSyncGenerator
 
 		protected bool SkippedType(INamedTypeSymbol type)
 		{
-			switch (type.ToString())
+			var v = type.ToString();
+			switch (v)
 			{
 				case "Windows.Foundation.IAsyncOperation<TResult>":
 					// Skipped to include generic variance.
@@ -341,8 +342,8 @@ namespace Uno.UWPSyncGenerator
 					// Skipped because the reported interfaces are mismatched.
 					return true;
 
-				case "Microsoft.UI.ViewManagement.InputPane":
-				case "Microsoft.UI.ViewManagement.InputPaneVisibilityEventArgs":
+				case "Windows.UI.ViewManagement.InputPane":
+				case "Windows.UI.ViewManagement.InputPaneVisibilityEventArgs":
 					// Skipped because a dependency on FocusManager
 					return true;
 
@@ -1148,7 +1149,7 @@ namespace Uno.UWPSyncGenerator
 
 					if (type.TypeKind == TypeKind.Interface)
 					{
-						using (b.BlockInvariant($"{SanitizeType(property.Type)} {property.Name}"))
+						using (b.BlockInvariant($"{MapUWPTypes(SanitizeType(property.Type))} {property.Name}"))
 						{
 							if (property.GetMethod != null)
 							{
@@ -1179,7 +1180,7 @@ namespace Uno.UWPSyncGenerator
 							if (getLocal != null || getAttached != null)
 							{
 								var attachedModifier = getAttached != null ? "Attached" : "";
-								var propertyDisplayType = (getAttached?.ReturnType ?? getLocal?.Type).ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat);
+								var propertyDisplayType = MapUWPTypes((getAttached?.ReturnType ?? getLocal?.Type).ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat));
 
 								b.AppendLineInvariant($"public {staticQualifier} {SanitizeType(property.Type)} {property.Name} {{{{ get; }}}} = ");
 
@@ -1209,13 +1210,13 @@ namespace Uno.UWPSyncGenerator
 							&& property.ContainingType.GetMembers(property.Name + "Property").Any()
 						)
 						{
-							using (b.BlockInvariant($"public {staticQualifier} {SanitizeType(property.Type)} {property.Name}"))
+							using (b.BlockInvariant($"public {staticQualifier} {MapUWPTypes(SanitizeType(property.Type))} {property.Name}"))
 							{
 								if (property.GetMethod != null)
 								{
 									using (b.BlockInvariant($"get"))
 									{
-										b.AppendLineInvariant($"return ({SanitizeType(property.Type)})this.GetValue({property.Name}Property);");
+										b.AppendLineInvariant($"return ({MapUWPTypes(SanitizeType(property.Type))})this.GetValue({property.Name}Property);");
 									}
 								}
 
@@ -1230,7 +1231,7 @@ namespace Uno.UWPSyncGenerator
 						}
 						else
 						{
-							using (b.BlockInvariant($"public {staticQualifier} {SanitizeType(property.Type)} {property.Name}"))
+							using (b.BlockInvariant($"public {staticQualifier} {MapUWPTypes(SanitizeType(property.Type))} {property.Name}"))
 							{
 								if (property.GetMethod != null)
 								{

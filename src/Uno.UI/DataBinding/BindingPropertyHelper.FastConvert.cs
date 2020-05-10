@@ -531,7 +531,7 @@ namespace Uno.UI.DataBinding
 		{
 			if (outputType == typeof(Windows.UI.Color))
 			{
-				output = Windows.UI.Colors.Parse(input);
+				output = Microsoft.UI.Colors.Parse(input);
 				return true;
 			}
 

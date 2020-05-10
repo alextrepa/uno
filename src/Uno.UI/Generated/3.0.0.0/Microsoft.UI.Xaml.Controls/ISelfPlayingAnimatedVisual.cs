@@ -11,7 +11,7 @@ namespace Microsoft.UI.Xaml.Controls
 		void Pause();
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		global::System.Threading.Tasks.Task PlayAsync( double fromProgress,  double toProgress,  bool looped);
+		global::Windows.Foundation.IAsyncAction PlayAsync( double fromProgress,  double toProgress,  bool looped);
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		void Resume();

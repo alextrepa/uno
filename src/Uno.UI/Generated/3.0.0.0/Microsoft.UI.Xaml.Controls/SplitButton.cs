@@ -61,9 +61,9 @@ namespace Microsoft.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Microsoft.UI.Xaml.DependencyProperty CommandProperty { get; } = 
 		Microsoft.UI.Xaml.DependencyProperty.Register(
-			nameof(Command), typeof(global::Microsoft.UI.Xaml.Input.ICommand), 
+			nameof(Command), typeof(global::System.Windows.Input.ICommand), 
 			typeof(global::Microsoft.UI.Xaml.Controls.SplitButton), 
-			new FrameworkPropertyMetadata(default(global::Microsoft.UI.Xaml.Input.ICommand)));
+			new FrameworkPropertyMetadata(default(global::System.Windows.Input.ICommand)));
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]

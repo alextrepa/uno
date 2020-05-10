@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Microsoft.UI.Composition.Scenes
 {
-	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || false
+	#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class SceneComponentCollection : global::Microsoft.UI.Composition.Scenes.SceneObject,global::System.Collections.Generic.IList<global::Microsoft.UI.Composition.Scenes.SceneComponent>,global::System.Collections.Generic.IEnumerable<global::Microsoft.UI.Composition.Scenes.SceneComponent>

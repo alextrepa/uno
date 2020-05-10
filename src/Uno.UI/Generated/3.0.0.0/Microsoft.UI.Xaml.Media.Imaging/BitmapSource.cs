@@ -24,7 +24,7 @@ namespace Microsoft.UI.Xaml.Media.Imaging
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
-		public  global::System.Threading.Tasks.Task SetSourceAsync( global::Windows.Storage.Streams.IRandomAccessStream streamSource)
+		public  global::Windows.Foundation.IAsyncAction SetSourceAsync( global::Windows.Storage.Streams.IRandomAccessStream streamSource)
 		{
 			throw new global::System.NotImplementedException("The member IAsyncAction BitmapSource.SetSourceAsync(IRandomAccessStream streamSource) is not implemented in Uno.");
 		}
