@@ -349,7 +349,7 @@ namespace Uno.UI.Tests.BinderTests.ManualPropagation
 		{
 			var grid = new Grid();
 
-			var brush = new Microsoft.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.Red);
+			var brush = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Red);
 
 			object brushDataContextValue = null;
 			brush.DataContextChanged += (_, e) => {
@@ -363,7 +363,7 @@ namespace Uno.UI.Tests.BinderTests.ManualPropagation
 			brush.SetBinding(Microsoft.UI.Xaml.Media.SolidColorBrush.ColorProperty, new Binding { Path = "a" });
 
 			Assert.IsNotNull(brushDataContextValue);
-			Assert.AreEqual(Windows.UI.Colors.Lime, brush.Color);
+			Assert.AreEqual(Microsoft.UI.Colors.Lime, brush.Color);
 		}
 
 		[TestMethod]

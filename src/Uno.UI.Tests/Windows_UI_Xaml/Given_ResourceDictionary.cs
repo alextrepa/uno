@@ -8,6 +8,8 @@ using Windows.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media;
 
+using Colors = Microsoft.UI.Colors;
+
 namespace Uno.UI.Tests.Windows_UI_Xaml
 {
 	[TestClass]

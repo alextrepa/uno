@@ -80,7 +80,7 @@ namespace Uno.UI.Views.Controls
 			{
 				if (value == null)
 				{
-					SetTitleColor(Windows.UI.Colors.Black, UIControlState.Normal);
+					SetTitleColor(Microsoft.UI.Colors.Black, UIControlState.Normal);
 					return;
 				}
 

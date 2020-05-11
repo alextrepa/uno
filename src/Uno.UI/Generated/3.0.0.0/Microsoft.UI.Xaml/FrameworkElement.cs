@@ -422,20 +422,8 @@ namespace Microsoft.UI.Xaml
 		// Forced skipping of method Microsoft.UI.Xaml.FrameworkElement.EffectiveViewportChanged.add
 		// Forced skipping of method Microsoft.UI.Xaml.FrameworkElement.EffectiveViewportChanged.remove
 		// Skipping already declared method Microsoft.UI.Xaml.FrameworkElement.FindName(string)
-		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
-		[global::Uno.NotImplemented]
-		public  void SetBinding( global::Microsoft.UI.Xaml.DependencyProperty dp,  global::Microsoft.UI.Xaml.Data.BindingBase binding)
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.FrameworkElement", "void FrameworkElement.SetBinding(DependencyProperty dp, BindingBase binding)");
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Microsoft.UI.Xaml.Data.BindingExpression GetBindingExpression( global::Microsoft.UI.Xaml.DependencyProperty dp)
-		{
-			throw new global::System.NotImplementedException("The member BindingExpression FrameworkElement.GetBindingExpression(DependencyProperty dp) is not implemented in Uno.");
-		}
-		#endif
+		// Forced skipping of method Microsoft.UI.Xaml.FrameworkElement.SetBinding(Microsoft.UI.Xaml.DependencyProperty, Microsoft.UI.Xaml.Data.BindingBase)
+		// Forced skipping of method Microsoft.UI.Xaml.FrameworkElement.GetBindingExpression(Microsoft.UI.Xaml.DependencyProperty)
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		protected  void InvalidateViewport()

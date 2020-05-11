@@ -972,8 +972,18 @@ namespace Uno.UWPSyncGenerator
 					case "GetColumnSpan":
 						return true;
 				}
+			}
 
-
+			if (method.ContainingType.Name == "FrameworkElement")
+			{
+				switch (method.Name)
+				{
+					// Those two members are located in DependencyObject but will need to be
+					// moved up.
+					case "GetBindingExpression":
+					case "SetBinding":
+						return true;
+				}
 			}
 
 			return false;
