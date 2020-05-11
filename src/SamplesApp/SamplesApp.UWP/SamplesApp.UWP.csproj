@@ -164,7 +164,11 @@
   </Target>
   -->
 	<ItemGroup>
-		<Page Remove="..\UITests.Shared\Windows_UI_Xaml_Controls\MapPresenter\MapControl.xaml"/>
-		<Compile Remove="..\UITests.Shared\Windows_UI_Xaml_Controls\MapPresenter\MapControl.xaml.cs"/>
+		<Page Remove="..\UITests.Shared\Windows_UI_Xaml_Controls\MapPresenter\*.xaml"/>
+		<Compile Remove="..\UITests.Shared\Windows_UI_Xaml_Controls\MapPresenter\*.cs"/>
+		<Page Remove="..\UITests.Shared\Windows_UI_Xaml_Media\GradientBrushTests\*.xaml"/>
+		<Compile Remove="..\UITests.Shared\Windows_UI_Xaml_Media\GradientBrushTests\*.cs"/>
+		<Page Remove="..\UITests.Shared\Lottie\*.xaml"/>
+		<Compile Remove="..\UITests.Shared\Lottie\*.cs"/>
 	</ItemGroup>
 </Project>
