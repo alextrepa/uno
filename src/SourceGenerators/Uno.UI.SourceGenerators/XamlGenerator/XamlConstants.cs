@@ -87,6 +87,7 @@ namespace Uno.UI.SourceGenerators.XamlGenerator
 			public const string GridUnitType = BaseXamlNamespace + ".GridUnitType";
 			public const string Color = RootWUINamespace + ".Color";
 			public const string Colors = RootMUINamespace + ".Colors";
+			public const string ColorHelper = RootMUINamespace + ".ColorHelper";
 			public const string Thickness = BaseXamlNamespace + ".Thickness";
 			public const string Application = BaseXamlNamespace + ".Application";
 
