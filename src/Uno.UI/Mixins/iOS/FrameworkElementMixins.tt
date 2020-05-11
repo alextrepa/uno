@@ -8,7 +8,7 @@
 	AddClass("Microsoft.UI.Xaml.Controls", "Image", defineLayoutSubviews: false, overridesAttachedToWindow: false, hasAutomationPeer: true, hasLayouter: true);
 	AddClass("Microsoft.UI.Xaml.Controls", "NativeListViewBase", hasAttachedToWindow: false, overridesAttachedToWindow: true, defineSetNeedsLayout: false, defineLayoutSubviews: false);
 	AddClass("Uno.UI.Controls.Legacy", "ListViewBase", hasAttachedToWindow: false, overridesAttachedToWindow: true, defineSetNeedsLayout: false, defineLayoutSubviews: false);
-	AddClass("Microsoft.UI.Xaml.Controls", "ProgressRing", hasAttachedToWindow: false, overridesAttachedToWindow: true);
+	AddClass("Uno.UI.Controls.Legacy", "ProgressRing", hasAttachedToWindow: false, overridesAttachedToWindow: true);
 	AddClass("Microsoft.UI.Xaml.Controls", "ScrollContentPresenter", defineSetNeedsLayout: false, defineLayoutSubviews: false, hasAttachedToWindow: false, overridesAttachedToWindow: false);
 	AddClass("Microsoft.UI.Xaml.Controls", "Picker", hasAttachedToWindow: true);
 #>

@@ -23,10 +23,10 @@ using System.Reflection;
 using Microsoft.UI.Xaml.Markup;
 using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml.Controls.Primitives;
+using Windows.UI.Core;
 
 #if __IOS__
 using UIKit;
-using Windows.UI.Core;
 #endif
 
 namespace Microsoft.UI.Xaml

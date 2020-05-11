@@ -352,6 +352,11 @@
 	    <Generator>TextTemplatingFileGenerator</Generator>
 	    <LastGenOutput>BaseActivity.Callbacks.Implementation.Android.cs</LastGenOutput>
 	  </None>
+	  <None Update="Mixins\Android\FrameworkElementMixins.g.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>FrameworkElementMixins.tt</DependentUpon>
+	  </None>
 	  <None Update="UI\Xaml\Controls\ProgressRing\ProgressRing.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>

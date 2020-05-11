@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using CoreGraphics;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml;
 
 namespace Uno.UI.Controls.Legacy
 {

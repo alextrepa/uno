@@ -40,7 +40,7 @@ namespace Microsoft.UI.Xaml.Media
 			IsAutoPropertyInheritanceEnabled = false;
 		}
 
-		public SolidColorBrush(Color color) : this()
+		public SolidColorBrush(Windows.UI.Color color) : this()
 		{
 			Color = color;
 			UpdateColorWithOpacity(color);
