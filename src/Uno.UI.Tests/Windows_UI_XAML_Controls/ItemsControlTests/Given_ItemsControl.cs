@@ -7,9 +7,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Uno.Extensions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Data;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Data;
 
 namespace Uno.UI.Tests.ItemsControlTests
 {
@@ -19,7 +19,7 @@ namespace Uno.UI.Tests.ItemsControlTests
 		[TestMethod]
 		public void When_EarlyItems()
 		{
-			var style = new Style(typeof(Windows.UI.Xaml.Controls.ItemsControl))
+			var style = new Style(typeof(Microsoft.UI.Xaml.Controls.ItemsControl))
 			{
 				Setters =  {
 					new Setter<ItemsControl>("Template", t =>

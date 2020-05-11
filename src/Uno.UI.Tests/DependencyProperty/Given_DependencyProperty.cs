@@ -1,11 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Windows.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Windows.UI.Xaml;
+using Microsoft.UI.Xaml;
 using System.Threading;
-using Windows.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls;
 using FluentAssertions;
 
 namespace Uno.UI.Tests.BinderTests
@@ -1329,12 +1329,12 @@ namespace Uno.UI.Tests.BinderTests
 		[TestMethod]
 		public void When_NullablePropertyBinding()
 		{
-			var SUT = new Windows.UI.Xaml.Controls.Border();
+			var SUT = new Microsoft.UI.Xaml.Controls.Border();
 			SUT.Tag = new NullablePropertyOwner() { MyNullable = 42 };
 
-			var o2 = new Windows.UI.Xaml.Controls.Border();
+			var o2 = new Microsoft.UI.Xaml.Controls.Border();
 			o2.SetBinding(
-				Windows.UI.Xaml.Controls.Border.TagProperty,
+				Microsoft.UI.Xaml.Controls.Border.TagProperty,
 				new Binding() {
 					Path = "Tag.MyNullable.Value",
 					CompiledSource = SUT

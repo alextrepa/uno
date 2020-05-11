@@ -42,6 +42,7 @@
 	<ItemGroup>
 	  <UpToDateCheckInput Remove="Storage\IStorageFile.cs" />
 	  <UpToDateCheckInput Remove="Storage\IStorageFile2.cs" />
+	  <UpToDateCheckInput Remove="UI\Core\CoreProcessEventsOption.cs" />
 	</ItemGroup>
 	
 	<ItemGroup>

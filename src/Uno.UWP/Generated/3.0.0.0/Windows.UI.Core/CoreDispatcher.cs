@@ -10,7 +10,7 @@ namespace Windows.UI.Core
 		// Skipping already declared property HasThreadAccess
 		// Skipping already declared property CurrentPriority
 		// Forced skipping of method Windows.UI.Core.CoreDispatcher.HasThreadAccess.get
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		#if __ANDROID__ || __IOS__ || false || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  void ProcessEvents( global::Windows.UI.Core.CoreProcessEventsOption options)
 		{

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Uno.Extensions;
 using Uno.Logging;
+using Windows.UI;
 
 namespace Microsoft.UI.Xaml.Media.Animation
 {

@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Data;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Data;
 
 namespace Uno.UI.Tests.BinderTests
 {
@@ -24,7 +24,7 @@ namespace Uno.UI.Tests.BinderTests
 
 			target.SetBinding(
 				MyControl.MyPropertyProperty,
-				new Windows.UI.Xaml.Data.Binding()
+				new Microsoft.UI.Xaml.Data.Binding()
 				{
 					Path = new PropertyPath("TestDynamicProperty")
 				}
@@ -46,7 +46,7 @@ namespace Uno.UI.Tests.BinderTests
 
 			target.SetBinding(
 				MyControl.MyPropertyProperty,
-				new Windows.UI.Xaml.Data.Binding()
+				new Microsoft.UI.Xaml.Data.Binding()
 				{
 					Path = new PropertyPath("TestDynamicProperty")
 				}
@@ -70,7 +70,7 @@ namespace Uno.UI.Tests.BinderTests
 
 			target.SetBinding(
 				MyControl.MyPropertyProperty,
-				new Windows.UI.Xaml.Data.Binding()
+				new Microsoft.UI.Xaml.Data.Binding()
 				{
 					Path = new PropertyPath("TestDynamicProperty")
 					,
@@ -96,7 +96,7 @@ namespace Uno.UI.Tests.BinderTests
 
 			target.SetBinding(
 				MyControl.MyPropertyProperty,
-				new Windows.UI.Xaml.Data.Binding()
+				new Microsoft.UI.Xaml.Data.Binding()
 				{
 					Path = new PropertyPath("UnknownProperty")
 					,
@@ -113,13 +113,13 @@ namespace Uno.UI.Tests.BinderTests
 			Assert.AreEqual("42", source.UnknownProperty);
 		}
 
-		public class MyDynamicObject : DynamicObject, INotifyPropertyChanged
+		public class MyDynamicObject : DynamicObject, System.ComponentModel.INotifyPropertyChanged
 		{
 			Dictionary<string, object> dictionary = new Dictionary<string, object>();
 
 			public int Count => dictionary.Count;
 
-			public event PropertyChangedEventHandler PropertyChanged;
+			public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 
 			public override bool TryGetMember(GetMemberBinder binder, out object result)
 				=> dictionary.TryGetValue(binder.Name, out result);
@@ -127,7 +127,7 @@ namespace Uno.UI.Tests.BinderTests
 			public override bool TrySetMember(SetMemberBinder binder, object value)
 			{
 				dictionary[binder.Name] = value;
-				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(binder.Name));
+				PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(binder.Name));
 				return true;
 			}
 		}

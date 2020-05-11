@@ -1,6 +1,6 @@
 ﻿using CommonServiceLocator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Windows.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
-using Windows.UI.Xaml;
+using Microsoft.UI.Xaml;
 using System.Threading;
 using System.Diagnostics;
 using System.Globalization;
@@ -27,7 +27,7 @@ namespace Uno.UI.Tests.BinderTests.Inversion
 
 			BindingOperations.SetBinding(b,
 				MyDependencyObject.MyIntegerProperty,
-				new Windows.UI.Xaml.Data.Binding
+				new Microsoft.UI.Xaml.Data.Binding
 				{
 					Path = new PropertyPath(nameof(b.MyInteger)),
 					Converter = converter,

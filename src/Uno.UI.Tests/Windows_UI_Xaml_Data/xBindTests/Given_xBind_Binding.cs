@@ -362,8 +362,8 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Data.xBindTests
 
 			SUT.ForceLoaded();
 
-			var myTextBlock = SUT.FindName("myTextBlock") as Windows.UI.Xaml.Controls.TextBlock;
-			var myTextBlock2 = SUT.FindName("myTextBlock2") as Windows.UI.Xaml.Controls.TextBlock;
+			var myTextBlock = SUT.FindName("myTextBlock") as Microsoft.UI.Xaml.Controls.TextBlock;
+			var myTextBlock2 = SUT.FindName("myTextBlock2") as Microsoft.UI.Xaml.Controls.TextBlock;
 
 			Assert.AreEqual("v:0 p:test", myTextBlock.Text);
 			Assert.AreEqual("v:Uno.UI.Tests.Windows_UI_Xaml_Data.xBindTests.Controls.Binding_Converter_DataTempate_Model p:test", myTextBlock2.Text);
@@ -583,7 +583,7 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Data.xBindTests
 
 			SUT.ForceLoaded();
 
-			var inner = SUT.root.FindName("inner") as Windows.UI.Xaml.Controls.TextBlock;
+			var inner = SUT.root.FindName("inner") as Microsoft.UI.Xaml.Controls.TextBlock;
 
 			Assert.IsNull(inner.Text);
 

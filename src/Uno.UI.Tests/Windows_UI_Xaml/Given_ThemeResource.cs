@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Uno.UI.Tests.App.Xaml;
 using Windows.UI;
-using Windows.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Media;
 
 namespace Uno.UI.Tests.Windows_UI_Xaml
 {
@@ -30,7 +30,7 @@ namespace Uno.UI.Tests.Windows_UI_Xaml
 			var app = UnitTestsApp.App.EnsureApplication();
 			try
 			{
-				app.ForceSetRequestedTheme(Windows.UI.Xaml.ApplicationTheme.Dark);
+				app.ForceSetRequestedTheme(Microsoft.UI.Xaml.ApplicationTheme.Dark);
 
 				var control = new Test_Control();
 				app.HostView.Children.Add(control);
@@ -40,7 +40,7 @@ namespace Uno.UI.Tests.Windows_UI_Xaml
 			finally
 			{
 				//ensure the light theme is reset
-				app.ForceSetRequestedTheme(Windows.UI.Xaml.ApplicationTheme.Light);
+				app.ForceSetRequestedTheme(Microsoft.UI.Xaml.ApplicationTheme.Light);
 			}
 		}
 	}

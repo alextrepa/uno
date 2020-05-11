@@ -6,13 +6,13 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
+using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Input;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -74,9 +74,9 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Data.xBindTests.Controls
 		}
 	}
 
-	public class MyxBindClass : INotifyPropertyChanged
+	public class MyxBindClass : System.ComponentModel.INotifyPropertyChanged
 	{
-		public event PropertyChangedEventHandler PropertyChanged;
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 
 		private string _myproperty = "Initial";
 		private int _myIntProperty = -3;
@@ -87,7 +87,7 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Data.xBindTests.Controls
 			set
 			{
 				_myproperty = value;
-				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MyProperty)));
+				PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(MyProperty)));
 			}
 		}
 
@@ -97,7 +97,7 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Data.xBindTests.Controls
 			set
 			{
 				_myIntProperty = value;
-				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MyIntProperty)));
+				PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(MyIntProperty)));
 			}
 		}
 	}

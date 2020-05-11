@@ -2,8 +2,8 @@
 using Uno;
 using Uno.Extensions;
 using Uno.Logging;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -11,7 +11,7 @@ using System.Linq;
 using Uno.Disposables;
 using System.Text;
 using System.Threading.Tasks;
-using View = Windows.UI.Xaml.FrameworkElement;
+using View = Microsoft.UI.Xaml.FrameworkElement;
 
 
 namespace Uno.UI.Tests.GridTests

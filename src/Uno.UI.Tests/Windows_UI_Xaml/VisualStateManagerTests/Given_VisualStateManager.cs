@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Windows.Foundation;
 using Windows.UI.Core;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media.Animation;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media.Animation;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
