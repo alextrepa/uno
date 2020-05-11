@@ -80,8 +80,10 @@ namespace Uno.UWPSyncGenerator
 
 			var unoUINamespaces = new[] {
 				"Microsoft.UI.Xaml",
+#if HAS_UNO_WINUI
 				"Microsoft.UI.Composition",
 				"Microsoft.System"
+#endif
 			};
 
 			var q = from asm in origins
@@ -153,7 +155,14 @@ namespace Uno.UWPSyncGenerator
 			{
 				return @"..\..\..\..\Uno.Foundation\Generated\2.0.0.0";
 			}
-			else if (!(type.ContainingNamespace.ToString().StartsWith("Microsoft.UI.Xaml") || type.ContainingNamespace.ToString().StartsWith("Windows.UI.Xaml") || type.ContainingNamespace.ToString().StartsWith("Microsoft.System") || type.ContainingNamespace.ToString().StartsWith("Microsoft.UI.Composition")))
+			else if (!(
+				type.ContainingNamespace.ToString().StartsWith("Windows.UI.Xaml")
+				|| type.ContainingNamespace.ToString().StartsWith("Windows.UI.Xaml")
+#if HAS_UNO_WINUI
+				|| type.ContainingNamespace.ToString().StartsWith("Microsoft.System")
+				|| type.ContainingNamespace.ToString().StartsWith("Windows.UI.Composition")
+#endif
+			))
 			{
 				return @"..\..\..\..\Uno.UWP\Generated\3.0.0.0";
 			}
