@@ -8,7 +8,7 @@ namespace Microsoft.UI.Xaml.Controls
 	public  partial class ProgressRing 
 	{
 		// Skipping already declared property IsActive
-		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings TemplateSettings
 		{

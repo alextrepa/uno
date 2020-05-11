@@ -9,13 +9,7 @@ namespace Microsoft.UI.Xaml.Media
 	{
 		// Skipping already declared property Color
 		// Skipping already declared property ColorProperty
-		#if false || __IOS__ || false || false || false
-		[global::Uno.NotImplemented]
-		public SolidColorBrush( global::Windows.UI.Color color) : base()
-		{
-			global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.Media.SolidColorBrush", "SolidColorBrush.SolidColorBrush(Color color)");
-		}
-		#endif
+		// Skipping already declared method Microsoft.UI.Xaml.Media.SolidColorBrush.SolidColorBrush(Windows.UI.Color)
 		// Forced skipping of method Microsoft.UI.Xaml.Media.SolidColorBrush.SolidColorBrush(Windows.UI.Color)
 		// Skipping already declared method Microsoft.UI.Xaml.Media.SolidColorBrush.SolidColorBrush()
 		// Forced skipping of method Microsoft.UI.Xaml.Media.SolidColorBrush.SolidColorBrush()
