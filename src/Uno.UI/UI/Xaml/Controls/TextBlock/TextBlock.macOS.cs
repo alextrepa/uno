@@ -9,6 +9,7 @@ using Foundation;
 using CoreGraphics;
 using Windows.UI.Text;
 using AppKit;
+using Windows.UI;
 
 namespace Microsoft.UI.Xaml.Controls
 {

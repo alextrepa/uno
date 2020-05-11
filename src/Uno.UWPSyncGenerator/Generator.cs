@@ -804,13 +804,13 @@ namespace Uno.UWPSyncGenerator
 
 		protected void BuildMethods(INamedTypeSymbol type, IndentedStringBuilder b, PlatformSymbols<INamedTypeSymbol> types, List<ISymbol> writtenSymbols)
 		{
-			if (type.ToString().Contains("XmlDocument"))
-			{
-
-			}
-
 			foreach (var method in type.GetMembers().OfType<IMethodSymbol>())
 			{
+
+				if (method.ToString().Contains("GetStringForUri"))
+				{
+
+				}
 				var methods = GetAllMatchingMethods(types, method);
 
 				var parameters = string.Join(", ", method.Parameters.Select(p => $"{GetParameterRefKind(p)} {SanitizeType(p.Type)} {SanitizeParameter(p.Name)}"));
