@@ -11,7 +11,7 @@ using System.Windows;
 using System.Windows.Controls;
 using CefSharp;
 using CefSharp.Wpf;
-using Windows.UI.Xaml;
+using Microsoft.UI.Xaml;
 
 namespace Uno.UI.WpfHost
 {
@@ -223,7 +223,7 @@ namespace Uno.UI.WpfHost
 					var sizeParts = newSize.Split(';');
 
 					// Console.WriteLine($"Resize {size}");
-					Windows.UI.Xaml.Window.Resize(double.Parse(sizeParts[0]), double.Parse(sizeParts[1]));
+					Microsoft.UI.Xaml.Window.Resize(double.Parse(sizeParts[0]), double.Parse(sizeParts[1]));
 				});
 		}
 
@@ -236,8 +236,8 @@ namespace Uno.UI.WpfHost
                     // parse htmlId to IntPtr
                     if (int.TryParse(htmlIdStr, out var handle))
                     {
-                        // Console.WriteLine($"Dispatch {htmlIdStr} {eventNameStr} {eventPayloadStr}");
-                        Windows.UI.Xaml.UIElement.DispatchEvent(handle, eventNameStr, eventPayloadStr);
+						// Console.WriteLine($"Dispatch {htmlIdStr} {eventNameStr} {eventPayloadStr}");
+						Microsoft.UI.Xaml.UIElement.DispatchEvent(handle, eventNameStr, eventPayloadStr);
                     }
                     else
                     {
