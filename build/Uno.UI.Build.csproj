@@ -51,7 +51,7 @@
 
 	<Target Name="UnoBuild" AfterTargets="Build" Condition="'$(BuildingInsideVisualStudio)'==''">
 
-		<Message Text="Building for $(Configuration) and $(Platform) BuildReason:$(BUILD_REASON) Version:$(GitVersion_FullSemVer)" />
+		<Message Text="Building for $(Configuration) and $(Platform) BuildReason:$(BUILD_REASON) Version:$(GitVersion_FullSemVer) UNO_UWP_BUILD:$(UNO_UWP_BUILD)" />
 
 		<!--
     Use NuGet 4.3.0 or later for the restore
@@ -61,7 +61,7 @@
 		
 		<CallTarget Targets="UpdateFileVersions;UpdateTasksSHA" Condition="$(_isWindows)" />
 
-		<CallTarget Targets="RunAPISyncTool" Condition="'$(HAS_UNO_UWP)'=='true'" />
+		<CallTarget Targets="RunAPISyncTool" Condition="'$(UNO_UWP_BUILD)'=='true'" />
 
 		<CallTarget Targets="BuildCI" Condition="'$(Configuration)'=='Release' and $(_isWindows)" />
 		<CallTarget Targets="BuildCImacOS" Condition="'$(Configuration)'=='Release' and !$(_isWindows)" />
