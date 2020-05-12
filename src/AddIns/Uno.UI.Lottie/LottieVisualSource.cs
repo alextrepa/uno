@@ -53,11 +53,13 @@ namespace Microsoft.Toolkit.Uwp.UI.Lottie
 			throw new NotImplementedException();
 		}
 
+#if HAS_UNO_WINUI
 		[NotImplemented]
 		public IAnimatedVisual TryCreateAnimatedVisual(Compositor compositor, out object diagnostics)
 		{
 			throw new NotImplementedException();
 		}
+#endif
 
 		private static void OnUriSourceChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)
 		{
