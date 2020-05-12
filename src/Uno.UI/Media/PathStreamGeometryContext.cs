@@ -12,6 +12,7 @@ using Path = UIKit.UIBezierPath;
 #elif __MACOS__
 using AppKit;
 using Path = AppKit.NSBezierPath;
+using CoreGraphics;
 #elif XAMARIN_ANDROID
 using Android.Graphics.Drawables.Shapes;
 using Path = Android.Graphics.Path;
@@ -35,7 +36,7 @@ namespace Uno.Media
 
 		public override void BeginFigure(Point startPoint, bool isFilled, bool isClosed)
 		{
-#if XAMARIN_IOS_UNIFIED || XAMARIN_IOS
+#if XAMARIN_IOS_UNIFIED || XAMARIN_IOS || __MACOS__
 			bezierPath.MoveTo(startPoint);
 #elif XAMARIN_ANDROID
 			var physicalStartPoint = LogicalToPhysicalNoRounding(startPoint);
@@ -49,6 +50,8 @@ namespace Uno.Media
 		{
 #if XAMARIN_IOS_UNIFIED || XAMARIN_IOS
 			bezierPath.AddLineTo(point);
+#elif __MACOS__
+			bezierPath.LineTo(point);
 #elif XAMARIN_ANDROID
 			var physicalPoint = LogicalToPhysicalNoRounding(point);
 			bezierPath.LineTo((float)physicalPoint.X, (float)physicalPoint.Y);
@@ -61,13 +64,14 @@ namespace Uno.Media
 		{
 #if XAMARIN_IOS_UNIFIED || XAMARIN_IOS
 			bezierPath.AddCurveToPoint(point3, point1, point2);
+#elif __MACOS__
+			bezierPath.CurveTo(point3, point1, point2);
 #elif XAMARIN_ANDROID
 			var physicalPoint1 = LogicalToPhysicalNoRounding(point1);
 			var physicalPoint2 = LogicalToPhysicalNoRounding(point2);
 			var physicalPoint3 = LogicalToPhysicalNoRounding(point3);
 			bezierPath.CubicTo((float)physicalPoint1.X, (float)physicalPoint1.Y, (float)physicalPoint2.X, (float)physicalPoint2.Y, (float)physicalPoint3.X, (float)physicalPoint3.Y);
 #endif
-
 			_points.Add(point3);
 		}
 
@@ -75,6 +79,15 @@ namespace Uno.Media
 		{
 #if XAMARIN_IOS_UNIFIED || XAMARIN_IOS
 			bezierPath.AddQuadCurveToPoint(point2, point1);
+#elif __MACOS__
+			// Convert a Quadratic Curve to cubic curve to draw it.
+			// https://stackoverflow.com/a/52569210/1771254
+			var startPoint = bezierPath.CurrentPoint;
+			var endPoint = point1;
+
+			var controlPoint1 = new CGPoint(startPoint.X + ((point2.X - startPoint.X) * 2.0 / 3.0),  startPoint.Y + (point2.Y - startPoint.Y) * 2.0 / 3.0);
+			var controlPoint2 = new CGPoint(endPoint.X + ((point2.X - endPoint.X) * 2.0 / 3.0), endPoint.Y + (point2.Y - endPoint.Y) * 2.0 / 3.0);
+			bezierPath.CurveTo(point1, controlPoint1, controlPoint2);
 #elif XAMARIN_ANDROID
 			var physicalPoint1 = LogicalToPhysicalNoRounding(point1);
 			var physicalPoint2 = LogicalToPhysicalNoRounding(point2);
@@ -108,6 +121,13 @@ namespace Uno.Media
 				(nfloat)endAngle, 
 				sweepDirection == SweepDirection.Clockwise
 			);
+
+#elif __MACOS__
+			bezierPath.AppendPathWithArc(center,
+										 (nfloat)radius,
+										 (nfloat)startAngle,
+										 (nfloat)endAngle,
+										 sweepDirection == SweepDirection.Clockwise);
 #elif XAMARIN_ANDROID
 			var sweepAngle = endAngle - startAngle;
 
