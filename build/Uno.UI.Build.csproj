@@ -153,6 +153,12 @@
 			<MixinTargetFrameworks Include="net461" />
 			<MixinTargetFrameworks Include="netstandard2.0" />
 		</ItemGroup>
+		
+		<MSBuild Properties="Configuration=Release;InformationalVersion=$(GITVERSION_InformationalVersion);CI_Build=true;_IsCIBuild=true"
+						 Projects="..\src\UnoT4Generator\T4Generator.csproj"
+						 Targets="Build"
+						 RebaseOutputs="false"
+						 BuildInParallel="true" />
 
 		<MSBuild Properties="Configuration=Release;InformationalVersion=$(GITVERSION_InformationalVersion);CI_Build=true;_IsCIBuild=true;TargetFramework=%(MixinTargetFrameworks.Identity)"
 						 Projects="..\src\Uno.UI\Uno.UI.csproj"
