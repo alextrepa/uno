@@ -43,6 +43,7 @@ namespace UnoWinUIRevert
 				("Microsoft.UI.ColorHelper", "Windows.UI.ColorHelper"),
 				("Microsoft.UI.Xaml", "Windows.UI.Xaml"),
 				("Uno.UI.Controls.Legacy\", \"ProgressRing", "Windows.UI.Xaml.Controls\", \"ProgressRing"),
+				("<!-- UNO_UWP_BUILD MARKER DO NOT REMOVE OR CHANGE -->", "<UNO_UWP_BUILD>true</UNO_UWP_BUILD>"),
 			};
 
 			ReplaceInFolders(basePath, genericReplacements);

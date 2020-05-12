@@ -33,7 +33,8 @@
 
     <!-- Disable source link when not building on GitHub -->
     <SourceLinkEnabled Condition="'$(BUILD_REPOSITORY_PROVIDER)'!='GitHub'">false</SourceLinkEnabled>
-	
+
+	<!-- UNO_UWP_BUILD MARKER DO NOT REMOVE OR CHANGE -->
 	<DefineConstants Condition="'$(UNO_UWP_BUILD)'!='true'">$(DefineConstants);HAS_UNO_WINUI</DefineConstants>
   </PropertyGroup>
 
