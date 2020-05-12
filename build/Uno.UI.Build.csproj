@@ -205,7 +205,7 @@
 		<Exec Command="$(NuGetBin) pack Uno.WinUI.RemoteControl.nuspec -Verbosity Detailed -Version &quot;$(GITVERSION_FullSemVer)&quot;" />
 	</Target>
 
-	<Target Name="ValidatePackage" AfterTargets="UnoBuild" Condition="'$(BuildingInsideVisualStudio)'==''">
+	<Target Name="ValidatePackage" AfterTargets="UnoBuild" Condition="'$(BuildingInsideVisualStudio)'=='' and '$(UNO_UWP_BUILD)'=='true'">
 		<Exec Command="dotnet tool install --global Uno.PackageDiff --version 1.0.0-dev.32" IgnoreExitCode="true" />
 		<Exec Command="generatepkgdiff --base=Uno.WinUI --other=Uno.WinUI.$(GITVERSION_FullSemVer).nupkg --diffignore=PackageDiffIgnore.xml --outfile=$(OutputDir)\ApiDiff.$(GITVERSION_FullSemVer).md" />
 	</Target>
