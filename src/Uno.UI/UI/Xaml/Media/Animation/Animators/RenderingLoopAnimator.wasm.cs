@@ -80,8 +80,8 @@ namespace Microsoft.UI.Xaml.Media.Animation
 
 			// Note: This should be written in TypeScript and embedded in the package.
 			private const string _prototype = @"(function() {
-	var Windows = window.Windows;
-	(function (Windows) {
+	var Microsoft = window.Microsoft;
+	(function (Microsoft) {
 		var UI = window.UI;
 		(function (UI) {
 			var Xaml = window.Xaml;
@@ -190,9 +190,9 @@ namespace Microsoft.UI.Xaml.Media.Animation
 					})(Animation = Media.Animation || (Media.Animation = {}));
 				})(Media = Xaml.Media || (Xaml.Media = {}));
 			})(Xaml = UI.Xaml || (UI.Xaml = {}));
-		})(UI = Windows.UI || (Windows.UI = {}));
-	})(Windows || (Windows = {}));
-window.Windows = Windows;
+		})(UI = Microsoft.UI || (Microsoft.UI = {}));
+	})(Microsoft || (Microsoft = {}));
+window.Microsoft = Microsoft;
 
 return ""ok"";})();";
 		}
