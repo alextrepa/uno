@@ -48,6 +48,7 @@ jobs:
         cd $(build.sourcesdirectory)\src\Uno.WinUIRevert
         dotnet run "$(build.sourcesdirectory)"
 
+    condition: and(succeeded(), eq(variables['UNO_UWP_BUILD'], 'true'))
     displayName: Revert source tree to UWP structure
 
   - task: MSBuild@1
