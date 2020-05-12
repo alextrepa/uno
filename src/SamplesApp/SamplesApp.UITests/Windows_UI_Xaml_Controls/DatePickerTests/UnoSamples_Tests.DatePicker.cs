@@ -25,7 +25,7 @@ namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.DatePickerTests
 			_app.WaitForElement(_app.Marked("theDatePicker"));
 
 			var theDatePicker = _app.Marked("theDatePicker");
-			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Windows_UI_Xaml_Controls_DatePickerSelector"));
+			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Microsoft_UI_Xaml_Controls_DatePickerSelector"));
 
 			Console.WriteLine($"1: {theDatePicker.GetDependencyPropertyValue<string>("DataContext")}");
 
@@ -51,7 +51,7 @@ namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.DatePickerTests
 			_app.WaitForElement(_app.Marked("theDatePicker"));
 
 			var theDatePicker = _app.Marked("theDatePicker");
-			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Windows_UI_Xaml_Controls_DatePickerFlyoutPresenter"));
+			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Microsoft_UI_Xaml_Controls_DatePickerFlyoutPresenter"));
 
 			// Open flyout
 			theDatePicker.Tap();
@@ -91,7 +91,7 @@ namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.DatePickerTests
 			_app.WaitForElement(_app.Marked("theDatePicker"));
 
 			var theDatePicker = _app.Marked("theDatePicker");
-			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Windows_UI_Xaml_Controls_DatePickerSelector"));
+			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Microsoft_UI_Xaml_Controls_DatePickerSelector"));
 
 			_app.WaitFor(
 				() => theDatePicker.GetDependencyPropertyValue<string>("MinYear") != null,
@@ -118,7 +118,7 @@ namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.DatePickerTests
 			_app.WaitForElement(_app.Marked("theDatePicker"));
 
 			var theDatePicker = _app.Marked("theDatePicker");
-			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Windows_UI_Xaml_Controls_DatePickerSelector"));
+			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Microsoft_UI_Xaml_Controls_DatePickerSelector"));
 
 			_app.WaitFor(
 				() => theDatePicker.GetDependencyPropertyValue<string>("MaxYear") != null,
@@ -144,7 +144,7 @@ namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.DatePickerTests
 			Run("UITests.Shared.Windows_UI_Xaml_Controls.DatePicker.DatePickerFlyout_Unloaded", skipInitialScreenshot: true);
 
 			var TestDatePickerFlyoutButton = _app.Marked("TestDatePickerFlyoutButton");
-			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Windows_UI_Xaml_Controls_DatePickerSelector"));
+			var datePickerFlyout = _app.CreateQuery(q => q.WithClass("Microsoft_UI_Xaml_Controls_DatePickerSelector"));
 
 			_app.WaitForElement(TestDatePickerFlyoutButton);
 
