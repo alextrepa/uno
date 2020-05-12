@@ -20,10 +20,24 @@ namespace UnoWinUIRevert
 			DeleteFolder(Path.Combine(basePath, @"src\Uno.UWP\Generated"));
 			DeleteFolder(Path.Combine(basePath, @"src\Uno.UWP\UI\Composition"));
 
-			Console.WriteLine(@"Moving composition");
-			Directory.Move(Path.Combine(basePath, @"src\Uno.UI\UI\Composition"), Path.Combine(basePath, @"src\Uno.UWP\UI\Composition"));
-			File.Move(Path.Combine(basePath, @"src\Uno.UI\UI\Colors.cs"), Path.Combine(basePath, @"src\Uno.uwp\UI\Colors.cs"));
-			File.Move(Path.Combine(basePath, @"src\Uno.UI\UI\ColorHelper.cs"), Path.Combine(basePath, @"src\Uno.uwp\UI\ColorHelper.cs"));
+			var compositionPath = Path.Combine(basePath, @"src\Uno.UI\UI\Composition");
+			if (Directory.Exists(compositionPath))
+			{
+				Console.WriteLine(@"Moving composition");
+				Directory.Move(compositionPath, Path.Combine(basePath, @"src\Uno.UWP\UI\Composition"));
+			}
+
+			var colorsFilepath = Path.Combine(basePath, @"src\Uno.UI\UI\Colors.cs");
+			if (File.Exists(colorsFilepath))
+			{
+				File.Move(colorsFilepath, Path.Combine(basePath, @"src\Uno.uwp\UI\Colors.cs"));
+			}
+
+			var colorHelperFilePath = Path.Combine(basePath, @"src\Uno.UI\UI\ColorHelper.cs");
+			if (File.Exists(colorHelperFilePath))
+			{
+				File.Move(colorHelperFilePath, Path.Combine(basePath, @"src\Uno.uwp\UI\ColorHelper.cs"));
+			}
 
 			foreach (var file in Directory.EnumerateFiles(basePath, "*.*", SearchOption.AllDirectories))
 			{
@@ -65,6 +79,12 @@ namespace UnoWinUIRevert
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UWP\UI\ColorHelper.cs"), "Microsoft.UI", "Windows.UI");
 			ReplaceInFile(Path.Combine(basePath, @"src\SourceGenerators\Uno.UI.SourceGenerators\XamlGenerator\XamlConstants.cs"), "Microsoft.UI", "Windows.UI");
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Markup\Reader\XamlConstants.cs"), "Microsoft.UI", "Windows.UI");
+
+			// Revert partial changes for WinUI 2.4 imported controls
+			foreach (var file in Directory.EnumerateFiles(Path.Combine(basePath, @"src\Uno.UI\Microsoft\UI\Xaml\Controls"), "*.*", SearchOption.AllDirectories))
+			{
+				ReplaceInFile(file, "namespace Windows.UI.Xaml.Controls", "namespace Microsoft.UI.Xaml.Controls");
+			}
 		}
 
 		private static void DeleteFolder(string path)
@@ -76,11 +96,13 @@ namespace UnoWinUIRevert
 			}
 		}
 
-		private static void ReplaceInFile(string colorsClassPath, string from, string to)
+		private static void ReplaceInFile(string filePath, string from, string to)
 		{
-			var txt = File.ReadAllText(colorsClassPath);
+			Console.WriteLine($"Updating [{filePath}]");
+
+			var txt = File.ReadAllText(filePath);
 			txt = txt.Replace(from, to);
-			File.WriteAllText(colorsClassPath, txt);
+			File.WriteAllText(filePath, txt);
 		}
 	}
 }
