@@ -14,7 +14,7 @@ using Private.Infrastructure;
 #if HAS_UNO_WINUI && !WINDOWS_UWP
 using ProgressRing = Uno.UI.Controls.Legacy.ProgressRing;
 #else
-using ProgressRing = Windows.UI.Xaml.Controls.ProgressRing;
+using ProgressRing = Microsoft.UI.Xaml.Controls.ProgressRing;
 #endif
 
 namespace Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Controls
