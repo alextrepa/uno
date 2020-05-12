@@ -43,25 +43,25 @@
 	<references>
 	  <!-- .NET Standard 2.0 -->
 	  <group targetFramework="netstandard2.0">
-		<reference file="Uno.WinUI.Lottie.dll" />
+		<reference file="Uno.UI.Lottie.dll" />
 	  </group>
 	  <group targetFramework="xamarinios10">
-		<reference file="Uno.WinUI.Lottie.dll" />
+		<reference file="Uno.UI.Lottie.dll" />
 	  </group>
 	  <group targetFramework="xamarinmac20">
-		<reference file="Uno.WinUI.Lottie.dll" />
+		<reference file="Uno.UI.Lottie.dll" />
 	  </group>
 	  <group targetFramework="MonoAndroid90">
-		<reference file="Uno.WinUI.Lottie.dll" />
+		<reference file="Uno.UI.Lottie.dll" />
 	  </group>
 	  <!-- For UAP (UWP), the reference to Microsoft.Toolkit.Uwp.UI.Lottie will be added manually -->
 	</references>
   </metadata>
   <files>
-	<file src="..\src\AddIns\Uno.WinUI.Lottie\bin\Release\netstandard2.0\Uno.WinUI.Lottie.dll" target="lib\netstandard2.0" />
-	<file src="..\src\AddIns\Uno.WinUI.Lottie\bin\Release\xamarinios10\Uno.WinUI.Lottie.dll" target="lib\xamarinios10" />
-	<file src="..\src\AddIns\Uno.WinUI.Lottie\bin\Release\xamarinmac20\Uno.WinUI.Lottie.dll" target="lib\xamarinmac20" />
-	<file src="..\src\AddIns\Uno.WinUI.Lottie\bin\Release\MonoAndroid90\Uno.WinUI.Lottie.dll" target="lib\MonoAndroid90" />
-	<file src="..\src\AddIns\Uno.WinUI.Lottie\bin\Release\MonoAndroid10.0\Uno.WinUI.Lottie.dll" target="lib\MonoAndroid10.0" />
+	<file src="..\src\AddIns\Uno.UI.Lottie\bin\Release\netstandard2.0\Uno.UI.Lottie.dll" target="lib\netstandard2.0" />
+	<file src="..\src\AddIns\Uno.UI.Lottie\bin\Release\xamarinios10\Uno.UI.Lottie.dll" target="lib\xamarinios10" />
+	<file src="..\src\AddIns\Uno.UI.Lottie\bin\Release\xamarinmac20\Uno.UI.Lottie.dll" target="lib\xamarinmac20" />
+	<file src="..\src\AddIns\Uno.UI.Lottie\bin\Release\MonoAndroid90\Uno.UI.Lottie.dll" target="lib\MonoAndroid90" />
+	<file src="..\src\AddIns\Uno.UI.Lottie\bin\Release\MonoAndroid10.0\Uno.UI.Lottie.dll" target="lib\MonoAndroid10.0" />
   </files>
 </package>
