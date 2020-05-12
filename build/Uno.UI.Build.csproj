@@ -146,6 +146,20 @@
 	</Target>
 
 	<Target Name="RunAPISyncTool" DependsOnTargets="BuildSyncGenerator">
+		<ItemGroup>
+			<MixinTargetFrameworks Include="xamarinios10" />
+			<MixinTargetFrameworks Include="monoandroid10.0" />
+			<MixinTargetFrameworks Include="xamarinmac20" />
+			<MixinTargetFrameworks Include="net461" />
+			<MixinTargetFrameworks Include="netstandard2.0" />
+		</ItemGroup>
+
+		<MSBuild Properties="Configuration=Release;InformationalVersion=$(GITVERSION_InformationalVersion);CI_Build=true;_IsCIBuild=true;TargetFramework=%(MixinTargetFrameworks.Identity)"
+						 Projects="..\src\Uno.UI\Uno.UI.csproj"
+						 Targets="GenerateMixins"
+						 RebaseOutputs="false"
+						 BuildInParallel="true" />
+		
 		<Exec Command="..\src\Uno.UWPSyncGenerator\Bin\Release\net461\Uno.UWPSyncGenerator.exe &quot;sync&quot;" />
 	</Target>
 
