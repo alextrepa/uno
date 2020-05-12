@@ -747,7 +747,7 @@ namespace Uno.UWPSyncGenerator
 		{
 			foreach (var eventMember in type.GetMembers().OfType<IEventSymbol>())
 			{
-				if (!IsNotUWPMapping(type, eventMember))
+				if (!IsNotUWPMapping(type, eventMember) || SkipEvent(type, eventMember))
 				{
 					return;
 				}
@@ -995,6 +995,21 @@ namespace Uno.UWPSyncGenerator
 				}
 			}
 
+			return false;
+		}
+
+		private bool SkipEvent(INamedTypeSymbol type, IEventSymbol eventMember)
+		{
+			if (eventMember.ContainingType.Name == "FrameworkElement")
+			{
+				switch (eventMember.Name)
+				{
+					// Those two members are located in DependencyObject but will need to be
+					// moved up.
+					case "DataContextChanged":
+						return true;
+				}
+			}
 			return false;
 		}
 

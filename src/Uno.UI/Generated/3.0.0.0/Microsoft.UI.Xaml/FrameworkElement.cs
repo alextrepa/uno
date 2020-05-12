@@ -484,22 +484,6 @@ namespace Microsoft.UI.Xaml
 			}
 		}
 		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || false || __MACOS__
-		[global::Uno.NotImplemented]
-		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.FrameworkElement, global::Microsoft.UI.Xaml.DataContextChangedEventArgs> DataContextChanged
-		{
-			[global::Uno.NotImplemented]
-			add
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.FrameworkElement", "event TypedEventHandler<FrameworkElement, DataContextChangedEventArgs> FrameworkElement.DataContextChanged");
-			}
-			[global::Uno.NotImplemented]
-			remove
-			{
-				global::Windows.Foundation.Metadata.ApiInformation.TryRaiseNotImplemented("Microsoft.UI.Xaml.FrameworkElement", "event TypedEventHandler<FrameworkElement, DataContextChangedEventArgs> FrameworkElement.DataContextChanged");
-			}
-		}
-		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.FrameworkElement, global::Microsoft.UI.Xaml.EffectiveViewportChangedEventArgs> EffectiveViewportChanged
