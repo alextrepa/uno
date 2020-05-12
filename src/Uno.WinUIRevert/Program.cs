@@ -54,6 +54,8 @@ namespace UnoWinUIRevert
 
 			ReplaceInFolders(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Controls\ProgressRing"), progressRingReplacements);
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Controls\ProgressRing\ProgressRing.xaml"), "legacy:", "");
+			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Style\Generic\Generic.Native.xaml"), "legacy:ProgressRing", "ProgressRing");
+			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\Microsoft\UI\Xaml\Controls\ProgressRing\ProgressRing.xaml"), "using:Windows.UI.Xaml.Controls", "using:Microsoft.UI.Xaml.Controls");
 
 			// Adjust Colors
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UWP\UI\Colors.cs"), "Microsoft.UI", "Windows.UI");
