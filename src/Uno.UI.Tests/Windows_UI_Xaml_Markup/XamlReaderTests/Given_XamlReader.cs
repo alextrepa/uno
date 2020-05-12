@@ -95,8 +95,8 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Markup.XamlReaderTests
 			var border1 = grid.Children.ElementAt(0) as Border;
 			var border2 = grid.Children.ElementAt(1) as Border;
 
-			Assert.AreEqual((border1.Background as SolidColorBrush).Color, Colors.Red);
-			Assert.AreEqual((border2.Background as SolidColorBrush).Color, Colors.Blue);
+			Assert.AreEqual((border1.Background as SolidColorBrush).Color, Microsoft.UI.Colors.Red);
+			Assert.AreEqual((border2.Background as SolidColorBrush).Color, Microsoft.UI.Colors.Blue);
 		}
 
         [TestMethod]
@@ -133,8 +133,8 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Markup.XamlReaderTests
 			Assert.IsNotNull(border01);
 			var stops = (border01.Background as LinearGradientBrush).GradientStops;
 			Assert.AreEqual(2, stops.Count);
-			Assert.AreEqual(Colors.Transparent, stops[0].Color);
-			Assert.AreEqual(ColorHelper.FromARGB(0x33, 0, 0, 0), stops[1].Color);
+			Assert.AreEqual(Microsoft.UI.Colors.Transparent, stops[0].Color);
+			Assert.AreEqual(Microsoft.UI.ColorHelper.FromARGB(0x33, 0, 0, 0), stops[1].Color);
 			Assert.AreEqual(0.0, stops[0].Offset);
 			Assert.AreEqual(1.0, stops[1].Offset);
 

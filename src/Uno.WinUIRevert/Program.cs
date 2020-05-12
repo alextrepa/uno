@@ -8,10 +8,6 @@ namespace UnoWinUIRevert
 {
 	class Program
 	{
-		static Regex _WUXReplace = new Regex(@"Microsoft\.UI\.Xaml");
-		static Regex _WUCReplace = new Regex(@"Microsoft\.UI\.Composition");
-		static Regex _ColorsReplace = new Regex(@"Microsoft\.UI\.Colors");
-
 		static void Main(string[] args)
 		{
 			var basePath = args[0];
@@ -51,19 +47,25 @@ namespace UnoWinUIRevert
 
 				if (content.Contains("Microsoft.UI.Xaml"))
 				{
-					content = _WUXReplace.Replace(content, "Windows.UI.Xaml");
+					content = content.Replace("Microsoft.UI.Xaml", "Windows.UI.Xaml");
 					updated = true;
 				}
 
 				if (content.Contains("Microsoft.UI.Composition"))
 				{
-					content = _WUCReplace.Replace(content, "Windows.UI.Composition");
+					content = content.Replace("Microsoft.UI.Composition", "Windows.UI.Composition");
 					updated = true;
 				}
 
 				if (content.Contains("Microsoft.UI.Colors"))
 				{
-					content = _ColorsReplace.Replace(content, "Windows.UI.Colors");
+					content = content.Replace("Microsoft.UI.Colors", "Windows.UI.Colors");
+					updated = true;
+				}
+
+				if (content.Contains("Microsoft.UI.ColorHelper"))
+				{
+					content = content.Replace("Microsoft.UI.ColorHelper", "Windows.UI.ColorHelper");
 					updated = true;
 				}
 
