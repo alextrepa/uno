@@ -155,7 +155,7 @@
 		</ItemGroup>
 		
 		<MSBuild Properties="Configuration=Release;InformationalVersion=$(GITVERSION_InformationalVersion);CI_Build=true;_IsCIBuild=true"
-						 Projects="..\src\UnoT4Generator\T4Generator.csproj"
+						 Projects="..\src\T4Generator\T4Generator.csproj"
 						 Targets="Build"
 						 RebaseOutputs="false"
 						 BuildInParallel="true" />
@@ -178,13 +178,24 @@
 
 		<PropertyGroup>
 			<NugetNamespace>http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd</NugetNamespace>
+			<PackageNamePrefix>Uno.WinUI</PackageNamePrefix>
+			<PackageNamePrefix Condition="'$(UNO_UWP_BUILD)'=='true'">Uno.UI</PackageNamePrefix>
 		</PropertyGroup>
 
 		<XmlUpdate XmlFileName=".\Uno.WinUI.nuspec" XPath="/x:package/x:metadata/x:dependencies/x:dependency/@version" Value="$(GITVERSION_FullSemVer)" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.Lottie.nuspec" XPath="/x:package/x:metadata/x:dependencies//x:dependency[@id='Uno.WinUI']/@version" Value="$(GITVERSION_FullSemVer)" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.RemoteControl.nuspec" XPath="/x:package/x:metadata/x:dependencies//x:dependency[@id='Uno.WinUI']/@version" Value="$(GITVERSION_FullSemVer)" Namespace="$(NugetNamespace)" Prefix="x" />
+		
+		<XmlUpdate XmlFileName=".\Uno.WinUI.Lottie.nuspec" XPath="/x:package/x:metadata/x:dependencies//x:dependency[@id='Uno.WinUI']/@id" Value="$(PackageNamePrefix)" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.RemoteControl.nuspec" XPath="/x:package/x:metadata/x:dependencies//x:dependency[@id='Uno.WinUI']/@id" Value="$(PackageNamePrefix)" Namespace="$(NugetNamespace)" Prefix="x" />
 
-		<XmlUpdate XmlFileName=".\Uno.WinUI.Lottie.nuspec" XPath="/x:package/x:metadata/x:dependencies//x:dependency[@id='Uno.UI']/@version" Value="$(GITVERSION_FullSemVer)" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.nuspec" XPath="/x:package/x:metadata/x:id" Value="$(PackageNamePrefix)" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.Lottie.nuspec" XPath="/x:package/x:metadata/x:id" Value="$(PackageNamePrefix).Lottie" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.RemoteControl.nuspec" XPath="/x:package/x:metadata/x:id" Value="$(PackageNamePrefix).RemoteControl" Namespace="$(NugetNamespace)" Prefix="x" />
 
-		<XmlUpdate XmlFileName=".\Uno.WinUI.RemoteControl.nuspec" XPath="/x:package/x:metadata/x:dependencies//x:dependency[@id='Uno.UI']/@version" Value="$(GITVERSION_FullSemVer)" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.nuspec" XPath="/x:package/x:metadata/x:title" Value="$(PackageNamePrefix)" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.Lottie.nuspec" XPath="/x:package/x:metadata/x:title" Value="$(PackageNamePrefix).Lottie" Namespace="$(NugetNamespace)" Prefix="x" />
+		<XmlUpdate XmlFileName=".\Uno.WinUI.RemoteControl.nuspec" XPath="/x:package/x:metadata/x:title" Value="$(PackageNamePrefix).RemoteControl" Namespace="$(NugetNamespace)" Prefix="x" />
 
 		<!-- Create the packages -->
 		<Exec Command="$(NuGetBin) pack Uno.WinUI.nuspec -Verbosity Detailed -Version &quot;$(GITVERSION_FullSemVer)&quot;" />
