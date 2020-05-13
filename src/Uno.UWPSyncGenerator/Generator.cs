@@ -749,7 +749,7 @@ namespace Uno.UWPSyncGenerator
 			{
 				if (!IsNotUWPMapping(type, eventMember) || SkipEvent(type, eventMember))
 				{
-					return;
+					continue;
 				}
 
 				var allMembers = GetAllMatchingEvents(types, eventMember);

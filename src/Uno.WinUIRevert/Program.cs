@@ -58,6 +58,9 @@ namespace UnoWinUIRevert
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Style\Generic\Generic.Native.xaml"), "legacy:ProgressRing", "ProgressRing");
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\Microsoft\UI\Xaml\Controls\ProgressRing\ProgressRing.xaml"), "using:Windows.UI.Xaml.Controls", "using:Microsoft.UI.Xaml.Controls");
 
+			// Restore DualPaneView XAML
+			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\Microsoft\UI\Xaml\Controls\TwoPaneView\TwoPaneView.xaml"), "using:Windows.UI.Xaml.Controls", "using:Microsoft.UI.Xaml.Controls");
+
 			// Adjust Colors
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UWP\UI\Colors.cs"), "Microsoft.UI", "Windows.UI");
 			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UWP\UI\ColorHelper.cs"), "Microsoft.UI", "Windows.UI");
@@ -72,6 +75,12 @@ namespace UnoWinUIRevert
 			{
 				ReplaceInFile(file, "namespace Windows.UI.Xaml.Controls", "namespace Microsoft.UI.Xaml.Controls");
 			}
+
+			// Restore RadialGradientBrush
+			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Media\RadialGradientBrush.Android.cs"), "namespace Windows.UI.Xaml.Controls", "namespace Microsoft.UI.Xaml.Controls");
+			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Media\RadialGradientBrush.cs"), "namespace Windows.UI.Xaml.Controls", "namespace Microsoft.UI.Xaml.Controls");
+			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Media\RadialGradientBrush.iOSmacOS.cs"), "namespace Windows.UI.Xaml.Controls", "namespace Microsoft.UI.Xaml.Controls");
+			ReplaceInFile(Path.Combine(basePath, @"src\Uno.UI\UI\Xaml\Media\RadialGradientBrush.wasm.cs"), "namespace Windows.UI.Xaml.Controls", "namespace Microsoft.UI.Xaml.Controls");
 		}
 
 		private static void ReplaceInFolders(string basePath, (string from, string to)[] replacements, string searchPattern = "*.*")

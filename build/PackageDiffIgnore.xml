@@ -967,5 +967,23 @@
 					reason="GradientStops/MappingMode moved to base GradientBrush to follow UWP/WinUI hierarchy"/>
 			</Properties>
 		</IgnoreSet>
-	</IgnoreSets>
-</DiffIgnore>
+
+
+  </IgnoreSets>
+
+  <IgnoreSet baseVersion="2.3.2">
+	<Types>
+	  <Member
+			fullName="Windows.Gaming.UI.GameMonitor"
+			reason="Removed UWP type"/>
+	  <Member
+			fullName="Windows.Gaming.UI.GameMonitoringPermission"
+			reason="Removed UWP type"/>
+	  <Member
+			fullName="Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.ILottieVisualSourceProvider"
+			reason="Incorrect namespace"/>
+	</Types>
+  </IgnoreSet>
+
+
+  </DiffIgnore>
