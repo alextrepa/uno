@@ -2,12 +2,12 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Windows.UI.Xaml.Controls
 {
-	#if false || false || NET461 || __WASM__ || __MACOS__
+	#if false || false || NET461 || __WASM__ || false
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class MediaPlayerElement : global::Windows.UI.Xaml.Controls.Control
 	{
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  global::Windows.UI.Xaml.Controls.MediaTransportControls TransportControls
 		{
@@ -21,7 +21,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  global::Windows.UI.Xaml.Media.Stretch Stretch
 		{
@@ -35,7 +35,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  global::Windows.Media.Playback.IMediaPlaybackSource Source
 		{
@@ -49,7 +49,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  global::Windows.UI.Xaml.Media.ImageSource PosterSource
 		{
@@ -63,7 +63,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  bool IsFullWindow
 		{
@@ -77,7 +77,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  bool AutoPlay
 		{
@@ -91,7 +91,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  bool AreTransportControlsEnabled
 		{
@@ -105,7 +105,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  global::Windows.Media.Playback.MediaPlayer MediaPlayer
 		{
@@ -115,63 +115,63 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty AreTransportControlsEnabledProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"AreTransportControlsEnabled", typeof(bool), 
+			nameof(AreTransportControlsEnabled), typeof(bool), 
 			typeof(global::Windows.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty AutoPlayProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"AutoPlay", typeof(bool), 
+			nameof(AutoPlay), typeof(bool), 
 			typeof(global::Windows.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty IsFullWindowProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"IsFullWindow", typeof(bool), 
+			nameof(IsFullWindow), typeof(bool), 
 			typeof(global::Windows.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty MediaPlayerProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"MediaPlayer", typeof(global::Windows.Media.Playback.MediaPlayer), 
+			nameof(MediaPlayer), typeof(global::Windows.Media.Playback.MediaPlayer), 
 			typeof(global::Windows.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.Media.Playback.MediaPlayer)));
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty PosterSourceProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"PosterSource", typeof(global::Windows.UI.Xaml.Media.ImageSource), 
+			nameof(PosterSource), typeof(global::Windows.UI.Xaml.Media.ImageSource), 
 			typeof(global::Windows.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.Media.ImageSource)));
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty SourceProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"Source", typeof(global::Windows.Media.Playback.IMediaPlaybackSource), 
+			nameof(Source), typeof(global::Windows.Media.Playback.IMediaPlaybackSource), 
 			typeof(global::Windows.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.Media.Playback.IMediaPlaybackSource)));
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty StretchProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"Stretch", typeof(global::Windows.UI.Xaml.Media.Stretch), 
+			nameof(Stretch), typeof(global::Windows.UI.Xaml.Media.Stretch), 
 			typeof(global::Windows.UI.Xaml.Controls.MediaPlayerElement), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.Media.Stretch)));
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || false || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public MediaPlayerElement() : base()
 		{
@@ -194,7 +194,7 @@ namespace Windows.UI.Xaml.Controls
 		// Forced skipping of method Windows.UI.Xaml.Controls.MediaPlayerElement.IsFullWindow.get
 		// Forced skipping of method Windows.UI.Xaml.Controls.MediaPlayerElement.IsFullWindow.set
 		// Forced skipping of method Windows.UI.Xaml.Controls.MediaPlayerElement.MediaPlayer.get
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || NET461 || __WASM__ || false
 		[global::Uno.NotImplemented]
 		public  void SetMediaPlayer( global::Windows.Media.Playback.MediaPlayer mediaPlayer)
 		{

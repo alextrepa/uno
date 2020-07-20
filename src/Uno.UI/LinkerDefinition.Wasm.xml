@@ -13,9 +13,16 @@
 	<type fullname="Windows.UI.Xaml.Input.FocusManager">
 	  <method name="ReceiveFocusNative" />
 	</type>
+	<type fullname="Windows.UI.Xaml.Application">
+	  <method name="DispatchSuspending" />
+      <method name="DispatchSystemThemeChange" />
+	</type>
   </assembly>
   
   <assembly fullname="Uno">
+    <type fullname="Windows.ApplicationModel.DataTransfer.Clipboard">
+      <method name="DispatchContentChanged" />
+    </type>
     <type fullname="Windows.UI.Core.CoreDispatcher" />
     <type fullname="Windows.UI.Core.SystemNavigationManager" />
     <type fullname="Windows.Devices.Sensors.Accelerometer">
@@ -24,6 +31,9 @@
     <type fullname="Windows.Devices.Sensors.Magnetometer">
       <method name="DispatchReading" />
     </type>
+    <type fullname="Windows.Networking.Connectivity.NetworkInformation">
+      <method name="DispatchStatusChanged" />
+    </type>
     <type fullname="Windows.Devices.Sensors.Gyrometer">
       <method name="DispatchReading" />
     </type>
@@ -31,7 +41,10 @@
       <method name="DispatchAccessRequest" />
       <method name="DispatchGeoposition" />
       <method name="DispatchError" />      
-    </type>    
+    </type>
+	<type fullname="Windows.Storage.StorageFolder">
+	  <method name="DispatchStorageInitialized" />
+	</type>
   </assembly>
   
   <assembly fullname="Uno.Foundation">

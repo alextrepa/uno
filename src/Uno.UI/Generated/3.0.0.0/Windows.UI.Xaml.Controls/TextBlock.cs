@@ -7,118 +7,14 @@ namespace Windows.UI.Xaml.Controls
 	#endif
 	public  partial class TextBlock 
 	{
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.TextWrapping TextWrapping
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.TextWrapping)this.GetValue(TextWrappingProperty);
-			}
-			set
-			{
-				this.SetValue(TextWrappingProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.TextTrimming TextTrimming
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.TextTrimming)this.GetValue(TextTrimmingProperty);
-			}
-			set
-			{
-				this.SetValue(TextTrimmingProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.TextAlignment TextAlignment
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.TextAlignment)this.GetValue(TextAlignmentProperty);
-			}
-			set
-			{
-				this.SetValue(TextAlignmentProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  string Text
-		{
-			get
-			{
-				return (string)this.GetValue(TextProperty);
-			}
-			set
-			{
-				this.SetValue(TextProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.Thickness Padding
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.Thickness)this.GetValue(PaddingProperty);
-			}
-			set
-			{
-				this.SetValue(PaddingProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.Media.Brush Foreground
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.Media.Brush)this.GetValue(ForegroundProperty);
-			}
-			set
-			{
-				this.SetValue(ForegroundProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Text.FontWeight FontWeight
-		{
-			get
-			{
-				return (global::Windows.UI.Text.FontWeight)this.GetValue(FontWeightProperty);
-			}
-			set
-			{
-				this.SetValue(FontWeightProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Text.FontStyle FontStyle
-		{
-			get
-			{
-				return (global::Windows.UI.Text.FontStyle)this.GetValue(FontStyleProperty);
-			}
-			set
-			{
-				this.SetValue(FontStyleProperty, value);
-			}
-		}
-		#endif
+		// Skipping already declared property TextWrapping
+		// Skipping already declared property TextTrimming
+		// Skipping already declared property TextAlignment
+		// Skipping already declared property Text
+		// Skipping already declared property Padding
+		// Skipping already declared property Foreground
+		// Skipping already declared property FontWeight
+		// Skipping already declared property FontStyle
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  global::Windows.UI.Text.FontStretch FontStretch
@@ -132,92 +28,14 @@ namespace Windows.UI.Xaml.Controls
 				this.SetValue(FontStretchProperty, value);
 			}
 		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  double FontSize
-		{
-			get
-			{
-				return (double)this.GetValue(FontSizeProperty);
-			}
-			set
-			{
-				this.SetValue(FontSizeProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.Media.FontFamily FontFamily
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.Media.FontFamily)this.GetValue(FontFamilyProperty);
-			}
-			set
-			{
-				this.SetValue(FontFamilyProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.LineStackingStrategy LineStackingStrategy
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.LineStackingStrategy)this.GetValue(LineStackingStrategyProperty);
-			}
-			set
-			{
-				this.SetValue(LineStackingStrategyProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  double LineHeight
-		{
-			get
-			{
-				return (double)this.GetValue(LineHeightProperty);
-			}
-			set
-			{
-				this.SetValue(LineHeightProperty, value);
-			}
-		}
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  int CharacterSpacing
-		{
-			get
-			{
-				return (int)this.GetValue(CharacterSpacingProperty);
-			}
-			set
-			{
-				this.SetValue(CharacterSpacingProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  bool IsTextSelectionEnabled
-		{
-			get
-			{
-				return (bool)this.GetValue(IsTextSelectionEnabledProperty);
-			}
-			set
-			{
-				this.SetValue(IsTextSelectionEnabledProperty, value);
-			}
-		}
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+#endif
+		// Skipping already declared property FontSize
+		// Skipping already declared property FontFamily
+		// Skipping already declared property LineStackingStrategy
+		// Skipping already declared property LineHeight
+		// Skipping already declared property CharacterSpacing
+		// Skipping already declared property IsTextSelectionEnabled
+#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  string SelectedText
 		{
@@ -334,20 +152,7 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public  int MaxLines
-		{
-			get
-			{
-				return (int)this.GetValue(MaxLinesProperty);
-			}
-			set
-			{
-				this.SetValue(MaxLinesProperty, value);
-			}
-		}
-		#endif
+		// Skipping already declared property MaxLines
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  bool IsColorFontEnabled
@@ -377,20 +182,7 @@ namespace Windows.UI.Xaml.Controls
 		}
 		#endif
 		// Skipping already declared property TextDecorations
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public  global::Windows.UI.Xaml.TextAlignment HorizontalTextAlignment
-		{
-			get
-			{
-				return (global::Windows.UI.Xaml.TextAlignment)this.GetValue(HorizontalTextAlignmentProperty);
-			}
-			set
-			{
-				this.SetValue(HorizontalTextAlignmentProperty, value);
-			}
-		}
-		#endif
+		// Skipping already declared property HorizontalTextAlignment
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public  bool IsTextTrimmed
@@ -425,155 +217,50 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty CharacterSpacingProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"CharacterSpacing", typeof(int), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(int)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty FontFamilyProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"FontFamily", typeof(global::Windows.UI.Xaml.Media.FontFamily), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.Media.FontFamily)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty FontSizeProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"FontSize", typeof(double), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(double)));
-		#endif
+		// Skipping already declared property CharacterSpacingProperty
+		// Skipping already declared property FontFamilyProperty
+		// Skipping already declared property FontSizeProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty FontStretchProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"FontStretch", typeof(global::Windows.UI.Text.FontStretch), 
+			nameof(FontStretch), typeof(global::Windows.UI.Text.FontStretch), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStretch)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty FontStyleProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"FontStyle", typeof(global::Windows.UI.Text.FontStyle), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontStyle)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty FontWeightProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"FontWeight", typeof(global::Windows.UI.Text.FontWeight), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Text.FontWeight)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty ForegroundProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"Foreground", typeof(global::Windows.UI.Xaml.Media.Brush), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.Media.Brush)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty IsTextSelectionEnabledProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"IsTextSelectionEnabled", typeof(bool), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(bool)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty LineHeightProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"LineHeight", typeof(double), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(double)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty LineStackingStrategyProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"LineStackingStrategy", typeof(global::Windows.UI.Xaml.LineStackingStrategy), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.LineStackingStrategy)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty PaddingProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"Padding", typeof(global::Windows.UI.Xaml.Thickness), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.Thickness)));
-		#endif
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+#endif
+		// Skipping already declared property FontStyleProperty
+		// Skipping already declared property FontWeightProperty
+		// Skipping already declared property ForegroundProperty
+		// Skipping already declared property IsTextSelectionEnabledProperty
+		// Skipping already declared property LineHeightProperty
+		// Skipping already declared property LineStackingStrategyProperty
+		// Skipping already declared property PaddingProperty
+#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty SelectedTextProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"SelectedText", typeof(string), 
+			nameof(SelectedText), typeof(string), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(string)));
 		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty TextAlignmentProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"TextAlignment", typeof(global::Windows.UI.Xaml.TextAlignment), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.TextAlignment)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty TextProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"Text", typeof(string), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(string)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty TextTrimmingProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"TextTrimming", typeof(global::Windows.UI.Xaml.TextTrimming), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.TextTrimming)));
-		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty TextWrappingProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"TextWrapping", typeof(global::Windows.UI.Xaml.TextWrapping), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.TextWrapping)));
-		#endif
+		// Skipping already declared property TextAlignmentProperty
+		// Skipping already declared property TextProperty
+		// Skipping already declared property TextTrimmingProperty
+		// Skipping already declared property TextWrappingProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty IsColorFontEnabledProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"IsColorFontEnabled", typeof(bool), 
+			nameof(IsColorFontEnabled), typeof(bool), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
-		#if false || false || NET461 || false || false
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty MaxLinesProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"MaxLines", typeof(int), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(int)));
-		#endif
+		// Skipping already declared property MaxLinesProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty OpticalMarginAlignmentProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"OpticalMarginAlignment", typeof(global::Windows.UI.Xaml.OpticalMarginAlignment), 
+			nameof(OpticalMarginAlignment), typeof(global::Windows.UI.Xaml.OpticalMarginAlignment), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.OpticalMarginAlignment)));
 		#endif
@@ -581,7 +268,7 @@ namespace Windows.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty SelectionHighlightColorProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"SelectionHighlightColor", typeof(global::Windows.UI.Xaml.Media.SolidColorBrush), 
+			nameof(SelectionHighlightColor), typeof(global::Windows.UI.Xaml.Media.SolidColorBrush), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.Media.SolidColorBrush)));
 		#endif
@@ -589,7 +276,7 @@ namespace Windows.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty TextLineBoundsProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"TextLineBounds", typeof(global::Windows.UI.Xaml.TextLineBounds), 
+			nameof(TextLineBounds), typeof(global::Windows.UI.Xaml.TextLineBounds), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.TextLineBounds)));
 		#endif
@@ -597,7 +284,7 @@ namespace Windows.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty TextReadingOrderProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"TextReadingOrder", typeof(global::Windows.UI.Xaml.TextReadingOrder), 
+			nameof(TextReadingOrder), typeof(global::Windows.UI.Xaml.TextReadingOrder), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.TextReadingOrder)));
 		#endif
@@ -605,24 +292,17 @@ namespace Windows.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty IsTextScaleFactorEnabledProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"IsTextScaleFactorEnabled", typeof(bool), 
+			nameof(IsTextScaleFactorEnabled), typeof(bool), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
 		// Skipping already declared property TextDecorationsProperty
-		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
-		[global::Uno.NotImplemented]
-		public static global::Windows.UI.Xaml.DependencyProperty HorizontalTextAlignmentProperty { get; } = 
-		Windows.UI.Xaml.DependencyProperty.Register(
-			"HorizontalTextAlignment", typeof(global::Windows.UI.Xaml.TextAlignment), 
-			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
-			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.TextAlignment)));
-		#endif
+		// Skipping already declared property HorizontalTextAlignmentProperty
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty IsTextTrimmedProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"IsTextTrimmed", typeof(bool), 
+			nameof(IsTextTrimmed), typeof(bool), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(bool)));
 		#endif
@@ -630,7 +310,7 @@ namespace Windows.UI.Xaml.Controls
 		[global::Uno.NotImplemented]
 		public static global::Windows.UI.Xaml.DependencyProperty SelectionFlyoutProperty { get; } = 
 		Windows.UI.Xaml.DependencyProperty.Register(
-			"SelectionFlyout", typeof(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase), 
+			nameof(SelectionFlyout), typeof(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase), 
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock), 
 			new FrameworkPropertyMetadata(default(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)));
 		#endif

@@ -6,6 +6,7 @@ using Windows.UI.Xaml.Automation;
 using Windows.UI.Xaml.Automation.Peers;
 using Windows.UI.Xaml.Controls;
 using Uno.UI.Xaml.Controls;
+using System.ComponentModel;
 
 namespace Uno.UI
 {
@@ -34,6 +35,20 @@ namespace Uno.UI
 			/// Note: This is incompatible with the way accessibility works on UWP.
 			/// </remarks>
 			public static bool UseSimpleAccessibility { get; set; } = false;
+		}
+
+		public static class ComboBox
+		{
+			/// <summary>
+			/// This defines the default value of the <see cref="UI.Xaml.Controls.ComboBox.DropDownPreferredPlacementProperty"/>. (cf. Remarks.)
+			/// </summary>
+			/// <remarks>
+			/// As this value is read only once when initializing the dependency property,
+			/// make sure to define it in the early stages of you application initialization,
+			/// before any UI related initialization (like generic styles init) and even before
+			/// referencing the ** type ** ComboBox in any way.
+			/// </remarks>
+			public static Uno.UI.Xaml.Controls.DropDownPlacement DefaultDropDownPreferredPlacement { get; set; } = Uno.UI.Xaml.Controls.DropDownPlacement.Auto;
 		}
 
 		public static class CompositionTarget
@@ -72,6 +87,20 @@ namespace Uno.UI
 			/// in the constructor of a control.
 			/// </summary>
 			public static bool UseLegacyLazyApplyTemplate { get; set; } = false;
+
+			/// <summary>
+			/// If the call to "OnApplyTemplate" should be deferred to mimic UWP sequence of events.
+			/// </summary>
+			/// <remarks>
+			/// Will never be deferred when .ApplyTemplate() is called explicitly.
+			/// More information there: https://github.com/unoplatform/uno/issues/3519
+			/// </remarks>
+			public static bool UseDeferredOnApplyTemplate { get; set; }
+#if __ANDROID__ || __IOS__ || __MACOS__
+				= false; // opt-in for iOS/Android/macOS
+#else
+				= true;
+#endif
 		}
 
 		public static class DataTemplateSelector
@@ -103,18 +132,13 @@ namespace Uno.UI
 
 		public static class FrameworkElement
 		{
-			/// <summary>
-			/// Enables the behavior for which the style is applied before the inherited
-			/// FrameworkElement instances constructors. The UWP behavior is to apply
-			/// </summary>
-			public static bool UseLegacyApplyStylePhase { get; set; } = false;
+			[Obsolete("This flag is no longer used.")]
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public static bool UseLegacyApplyStylePhase { get; set; }
 
-			/// <summary>
-			/// When changing a style on a <see cref="Windows.UI.Xaml.FrameworkElement"/> clears
-			/// the previous style setters. This property is applicable only when <see cref="UseLegacyApplyStylePhase"/>
-			/// is set to <see cref="false"/>.
-			/// </summary>
-			public static bool ClearPreviousOnStyleChange { get; set; } = true;
+			[Obsolete("This flag is no longer used.")]
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public static bool ClearPreviousOnStyleChange { get; set; }
 
 #if __ANDROID__
 			/// <summary>
@@ -152,6 +176,26 @@ namespace Uno.UI
 			public static bool LegacyIosAlignment { get; set; } = false;
 		}
 
+		public static class Interop
+		{
+#if __WASM__
+			/// <summary>
+			/// Used to control the behavior of the C#/Javascript interop. Setting this
+			/// flag to true forces the use of the Javascript eval mode, instead of binary interop.
+			/// This flag has no effect when running in hosted mode.
+			/// </summary>
+			public static bool ForceJavascriptInterop { get; set; } = false;
+#endif
+		}
+
+		public static class Binding
+		{
+			/// <summary>
+			/// Determines if the binding engine should ignore identical references in binding paths.
+			/// </summary>
+			public static bool IgnoreINPCSameReferences { get; set; } = false;
+		}
+
 		public static class Popup
 		{
 #if __ANDROID__
@@ -165,18 +209,6 @@ namespace Uno.UI
 		public static class ProgressRing
 		{
 			public static Uri ProgressRingAsset { get; set; } = new Uri("embedded://Uno.UI/Uno.UI.Microsoft.UI.Xaml.Controls.ProgressRing.ProgressRingIntdeterminate.json");
-		}
-
-		public static class Interop
-		{
-#if __WASM__
-			/// <summary>
-			/// Used to control the behavior of the C#/Javascript interop. Setting this
-			/// flag to true forces the use of the Javascript eval mode, instead of binary interop.
-			/// This flag has no effect when running in hosted mode.
-			/// </summary>
-			public static bool ForceJavascriptInterop { get; set; } = false;
-#endif
 		}
 
 		public static class ListViewBase
@@ -243,6 +275,16 @@ namespace Uno.UI
 			/// a native counterpart. (e.g. Button, Slider, ComboBox, ...)
 			/// </summary>
 			public static bool UseUWPDefaultStyles { get; set; } = true;
+
+			/// <summary>
+			/// Override the native styles usage per control type.
+			/// </summary>
+			/// <remarks>
+			/// Usage: 'UseUWPDefaultStylesOverride[typeof(Frame)] = false;' will result in the native style always being the default for Frame, irrespective
+			/// of the value of <see cref="UseUWPDefaultStyles"/>. This is useful when an app uses the UWP default look for most controls but the native
+			/// appearance/comportment for a few particular controls, or vice versa.
+			/// </remarks>
+			public static IDictionary<Type, bool> UseUWPDefaultStylesOverride { get; } = new Dictionary<Type, bool>();
 		}
 
 		public static class TextBlock
@@ -260,6 +302,51 @@ namespace Uno.UI
 			/// </summary>
 			/// <remarks>This feature is used to avoid screenshot comparisons false positives</remarks>
 			public static bool HideCaret { get; set; } = false;
+		}
+
+		public static class ScrollViewer
+		{
+			/// <summary>
+			/// This defines the default value of the <see cref="Uno.UI.Xaml.Controls.ScrollViewer.UpdatesModeProperty"/>.
+			/// For backward compatibility, you should set it to Synchronous.
+			/// For better compatibility with Windows, you should keep the default value 'AsynchronousIdle'.
+			/// </summary>
+			/// <remarks>
+			/// As this value is read only once when initializing the dependency property,
+			/// make sure to define it in the early stages of you application initialization,
+			/// before any UI related initialization (like generic styles init) and even before
+			/// referencing the ** type ** ScrollViewer in any way.
+			/// </remarks>
+			public static ScrollViewerUpdatesMode DefaultUpdatesMode { get; set; } = ScrollViewerUpdatesMode.AsynchronousIdle;
+
+#if __ANDROID__
+			/// <summary>
+			/// This value defines an optional delay to be set for native ScrollBar thumbs to disapear. The
+			/// platform default is 300ms, which can make the thumbs appear on screenshots, changing this value
+			/// to <see cref="TimeSpan.Zero"/> makes those disapear faster.
+			/// </summary>
+			public static TimeSpan? AndroidScrollbarFadeDelay { get; set; }
+#endif
+		}
+
+		public static class ThemeAnimation
+		{
+			/// <summary>
+			/// Default duration for xxxThemeAnimation
+			/// </summary>
+			public static TimeSpan DefaultThemeAnimationDuration { get; set; } = TimeSpan.FromSeconds(0.75);
+		}
+
+		public static class ToolTip
+		{
+			public static bool UseToolTips { get; set; }
+#if __WASM__
+				= true;
+#endif
+
+			public static int ShowDelay { get; set; } = 1000;
+
+			public static int ShowDuration { get; set; } = 7000;
 		}
 
 		public static class UIElement
@@ -315,41 +402,18 @@ namespace Uno.UI
 #endif
 		}
 
-		public static class ScrollViewer
+		public static class WebView
 		{
-			/// <summary>
-			/// This defines the default value of the <see cref="Uno.UI.Xaml.Controls.ScrollViewer.UpdatesModeProperty"/>.
-			/// For backward compatibility, you should set it to Synchronous.
-			/// For better compatibility with Windows, you should keep the default value 'AsynchronousIdle'.
-			/// </summary>
-			/// <remarks>
-			/// As this value is read only once when initializing the dependency property,
-			/// make sure to define it in the early stages of you application initialization,
-			/// before any UI related initialization (like generic styles init) and even before
-			/// referencing the ** type ** ScrollViewer in any way.
-			/// </remarks>
-			public static ScrollViewerUpdatesMode DefaultUpdatesMode { get; set; } = ScrollViewerUpdatesMode.AsynchronousIdle;
-
 #if __ANDROID__
 			/// <summary>
-			/// This value defines an optional delay to be set for native ScrollBar thumbs to disapear. The
-			/// platform default is 300ms, which can make the thumbs appear on screenshots, changing this value
-			/// to <see cref="TimeSpan.Zero"/> makes those disapear faster.
+			/// Prevent the WebView from using hardware rendering.
+			/// This was previously the default behavior in Uno to work around a keyboard-related visual glitch in Android 5.0 (http://stackoverflow.com/questions/27172217/android-systemui-glitches-in-lollipop), however it prevents video and 3d content from being rendered.
 			/// </summary>
-			public static TimeSpan? AndroidScrollbarFadeDelay { get; set; }
+			/// <remarks>
+			/// See this for more info: https://github.com/unoplatform/uno/blob/26c5cc5992cae3c8c25adf51eb77ca4b0dd34e93/src/Uno.UI/UI/Xaml/Controls/WebView/WebView.Android.cs#L251_L255
+			/// </remarks>
+			public static bool ForceSoftwareRendering { get; set; } = false;
 #endif
-		}
-
-		public static class ToolTip
-		{
-			public static bool UseToolTips { get; set; }
-#if __WASM__
-				= true;
-#endif
-
-			public static int ShowDelay { get; set; } = 1000;
-
-			public static int ShowDuration { get; set; } = 7000;
 		}
 
 		public static class Xaml
@@ -360,21 +424,9 @@ namespace Uno.UI
 			/// <remarks>
 			/// This is a mechanism to prevent hard-to-diagnose stack overflow when a resource name is not found.
 			/// </remarks>
+			[Obsolete("This flag is no longer used.")]
+			[EditorBrowsable(EditorBrowsableState.Never)]
 			public static int MaxRecursiveResolvingDepth { get; set; } = 12;
-		}
-
-		public static class ComboBox
-		{
-			/// <summary>
-			/// This defines the default value of the <see cref="UI.Xaml.Controls.ComboBox.DropDownPreferredPlacementProperty"/>. (cf. Remarks.)
-			/// </summary>
-			/// <remarks>
-			/// As this value is read only once when initializing the dependency property,
-			/// make sure to define it in the early stages of you application initialization,
-			/// before any UI related initialization (like generic styles init) and even before
-			/// referencing the ** type ** ComboBox in any way.
-			/// </remarks>
-			public static Uno.UI.Xaml.Controls.DropDownPlacement DefaultDropDownPreferredPlacement { get; set; } = Uno.UI.Xaml.Controls.DropDownPlacement.Auto;
 		}
 	}
 }

@@ -18,7 +18,7 @@ namespace Windows.UI.Xaml
 		private Size? _lastLayoutSize;
 		private Size _actualSize;
 
-		internal Size ActualSize => _actualSize;
+		internal Size InternalActualSize => _actualSize;
 
 		/// <summary>
 		/// The parent of the <see cref="FrameworkElement"/> in the visual tree, which may differ from its <see cref="Parent"/> (ie if it's a child of a native view).
@@ -183,8 +183,8 @@ namespace Windows.UI.Xaml
 		}
 
 		// Using a DependencyProperty as the backing store for StretchAffectsMeasure.  This enables animation, styling, binding, etc...
-		public static readonly DependencyProperty StretchAffectsMeasureProperty =
-			DependencyProperty.Register("StretchAffectsMeasure", typeof(bool), typeof(FrameworkElement), new PropertyMetadata(false));
+		public static DependencyProperty StretchAffectsMeasureProperty { get ; } =
+			DependencyProperty.Register("StretchAffectsMeasure", typeof(bool), typeof(FrameworkElement), new FrameworkPropertyMetadata(false));
 
 		#endregion
 

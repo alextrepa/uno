@@ -657,7 +657,7 @@ namespace Uno.UI.SourceGenerators.DependencyObject
 					}}
 
 					// Using a DependencyProperty as the backing store for DataContext.  This enables animation, styling, binding, etc...
-					public static readonly DependencyProperty DataContextProperty =
+					public static DependencyProperty DataContextProperty {{ get ; }} =
 						DependencyProperty.Register(
 							name: nameof(DataContext),
 							propertyType: typeof(object),
@@ -686,7 +686,7 @@ namespace Uno.UI.SourceGenerators.DependencyObject
 					}}
 
 					// Using a DependencyProperty as the backing store for TemplatedParent.  This enables animation, styling, binding, etc...
-					public static readonly DependencyProperty TemplatedParentProperty =
+					public static DependencyProperty TemplatedParentProperty {{ get ; }} =
 						DependencyProperty.Register(
 							name: nameof(TemplatedParent),
 							propertyType: typeof(DependencyObject),
@@ -782,6 +782,10 @@ namespace Uno.UI.SourceGenerators.DependencyObject
 			{
 				builder.AppendLineInvariant(@"private DependencyObjectStore __storeBackingField;");
 				builder.AppendLineInvariant(@"public Windows.UI.Core.CoreDispatcher Dispatcher => Windows.UI.Core.CoreDispatcher.Main;");
+
+				builder.AppendLineInvariant(@"#if HAS_UNO_WINUI");
+				builder.AppendLineInvariant(@"public global::Microsoft.System.DispatcherQueue DispatcherQueue => global::Microsoft.System.DispatcherQueue.GetForCurrentThread();");
+				builder.AppendLineInvariant(@"#endif");
 
 				using (builder.BlockInvariant($"private DependencyObjectStore __Store"))
 				{

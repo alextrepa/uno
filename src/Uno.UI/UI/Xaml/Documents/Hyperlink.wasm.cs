@@ -25,11 +25,11 @@ namespace Windows.UI.Xaml.Documents
 			set => SetValue(NavigationTargetProperty, value);
 		}
 
-		public static readonly DependencyProperty NavigationTargetProperty = DependencyProperty.Register(
+		public static DependencyProperty NavigationTargetProperty { get ; } = DependencyProperty.Register(
 			"NavigationTarget",
 			typeof(NavigationTarget),
 			typeof(Hyperlink),
-			new PropertyMetadata(_defaultNavigationTarget, (s, e) => ((Hyperlink)s).OnNavigationTargetChanged(e)));
+			new FrameworkPropertyMetadata(_defaultNavigationTarget, (s, e) => ((Hyperlink)s).OnNavigationTargetChanged(e)));
 
 		private void OnNavigationTargetChanged(DependencyPropertyChangedEventArgs e)
 			=> UpdateNavigationProperties(NavigateUri, (NavigationTarget)e.NewValue);

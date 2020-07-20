@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Windows.Devices.Sensors
 {
-	#if false || false || NET461 || __WASM__ || __MACOS__
+	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class Barometer 
@@ -67,6 +67,16 @@ namespace Windows.Devices.Sensors
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public  global::Windows.Devices.Sensors.BarometerDataThreshold ReportThreshold
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member BarometerDataThreshold Barometer.ReportThreshold is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public  global::Windows.Devices.Sensors.BarometerReading GetCurrentReading()
 		{
 			throw new global::System.NotImplementedException("The member BarometerReading Barometer.GetCurrentReading() is not implemented in Uno.");
@@ -81,6 +91,7 @@ namespace Windows.Devices.Sensors
 		// Forced skipping of method Windows.Devices.Sensors.Barometer.ReportLatency.set
 		// Forced skipping of method Windows.Devices.Sensors.Barometer.ReportLatency.get
 		// Forced skipping of method Windows.Devices.Sensors.Barometer.MaxBatchSize.get
+		// Forced skipping of method Windows.Devices.Sensors.Barometer.ReportThreshold.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Sensors.Barometer> FromIdAsync( string deviceId)
@@ -95,7 +106,7 @@ namespace Windows.Devices.Sensors
 			throw new global::System.NotImplementedException("The member string Barometer.GetDeviceSelector() is not implemented in Uno.");
 		}
 		#endif
-		#if false || false || NET461 || __WASM__ || __MACOS__
+		#if false || false || false || false || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.Devices.Sensors.Barometer GetDefault()
 		{

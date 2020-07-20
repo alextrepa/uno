@@ -25,6 +25,7 @@ namespace Windows.UI.Xaml.Controls
 
 			// When a Radio button is checked, clicking it again won't uncheck it.
 			CanRevertState = false;
+			DefaultStyleKey = typeof(RadioButton);
 		}
 
 		protected override void OnIsCheckedChanged(bool? oldValue, bool? newValue)
@@ -73,12 +74,12 @@ namespace Windows.UI.Xaml.Controls
 		}
 
 		// Using a DependencyProperty as the backing store for GroupName.  This enables animation, styling, binding, etc...
-		public static readonly DependencyProperty GroupNameProperty =
+		public static DependencyProperty GroupNameProperty { get ; } =
 			DependencyProperty.Register(
 				"GroupName", 
 				typeof(string), 
 				typeof(RadioButton), 
-				new PropertyMetadata(
+				new FrameworkPropertyMetadata(
 					(string)null, 
 					propertyChangedCallback: (s, e) => (s as RadioButton)?.OnGroupNameChanged((string)e.OldValue, (string)e.NewValue)
 				)
@@ -120,14 +121,14 @@ namespace Windows.UI.Xaml.Controls
 			}
 		}
 
-		protected override void OnLoaded()
+		private protected override void OnLoaded()
 		{
 			base.OnLoaded();
 
 			RegisterInGroup(this, GroupName).DisposeWith(_groupMembership);
 		}
 
-		protected override void OnUnloaded()
+		private protected override void OnUnloaded()
 		{
 			base.OnUnloaded();
 

@@ -2,7 +2,7 @@
 #pragma warning disable 114 // new keyword hiding
 namespace Windows.Devices.Sensors
 {
-	#if false || false || NET461 || false || __MACOS__
+	#if false || false || false || false || false
 	[global::Uno.NotImplemented]
 	#endif
 	public  partial class Gyrometer 
@@ -71,6 +71,16 @@ namespace Windows.Devices.Sensors
 		#endif
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
+		public  global::Windows.Devices.Sensors.GyrometerDataThreshold ReportThreshold
+		{
+			get
+			{
+				throw new global::System.NotImplementedException("The member GyrometerDataThreshold Gyrometer.ReportThreshold is not implemented in Uno.");
+			}
+		}
+		#endif
+		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
+		[global::Uno.NotImplemented]
 		public  string DeviceId
 		{
 			get
@@ -97,6 +107,7 @@ namespace Windows.Devices.Sensors
 		// Forced skipping of method Windows.Devices.Sensors.Gyrometer.ReportLatency.set
 		// Forced skipping of method Windows.Devices.Sensors.Gyrometer.ReportLatency.get
 		// Forced skipping of method Windows.Devices.Sensors.Gyrometer.MaxBatchSize.get
+		// Forced skipping of method Windows.Devices.Sensors.Gyrometer.ReportThreshold.get
 		#if __ANDROID__ || __IOS__ || NET461 || __WASM__ || __MACOS__
 		[global::Uno.NotImplemented]
 		public static string GetDeviceSelector()
@@ -111,7 +122,7 @@ namespace Windows.Devices.Sensors
 			throw new global::System.NotImplementedException("The member IAsyncOperation<Gyrometer> Gyrometer.FromIdAsync(string deviceId) is not implemented in Uno.");
 		}
 		#endif
-		#if false || false || NET461 || false || __MACOS__
+		#if false || false || false || false || false
 		[global::Uno.NotImplemented]
 		public static global::Windows.Devices.Sensors.Gyrometer GetDefault()
 		{
