@@ -17,8 +17,6 @@ namespace Windows.Storage.Pickers
 	{
 		public PickerLocationId SuggestedStartLocation { get; set; }
 
-		private const string LocalCachePath = "/LocalCache";
-
 		public IAsyncOperation<StorageFile> PickSaveFileAsync() => PickFilesTask().AsAsyncOperation();
 
 		private async Task<StorageFile> PickFilesTask()
@@ -30,8 +28,8 @@ namespace Windows.Storage.Pickers
 
 			if (SuggestedSaveFile == null)
 			{
-				var temporaryFolder = new StorageFolder(LocalCachePath);
-				if (!Directory.Exists(LocalCachePath))
+				var temporaryFolder = ApplicationData.Current.LocalCacheFolder;
+				if (!Directory.Exists(temporaryFolder.Path))
 				{
 					temporaryFolder.MakePersistent();
 				}

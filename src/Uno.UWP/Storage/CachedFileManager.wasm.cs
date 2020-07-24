@@ -23,7 +23,7 @@ namespace Windows.Storage
 		private async static Task<FileUpdateStatus> DownloadFile(IStorageFile file)
 		{
 			var stream = await file.OpenStreamForReadAsync();
-			var data = new byte[(int)stream.Length];
+			byte[] data;
 
 			using (var reader = new BinaryReader(stream))
 			{

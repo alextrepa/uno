@@ -44,7 +44,7 @@
 	<ItemGroup>
 	  <UpToDateCheckInput Remove="Graphics\Class1.cs" />
 	</ItemGroup>
-	
+
 	<ItemGroup>
 		<PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
 		<PackageReference Include="Uno.SourceGenerationTasks" />
