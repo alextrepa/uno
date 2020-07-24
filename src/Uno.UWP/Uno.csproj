@@ -50,6 +50,7 @@
 		<PackageReference Include="Uno.SourceGenerationTasks" />
 		<PackageReference Include="Uno.Core" />
 		<PackageReference Include="Uno.MonoAnalyzers" />
+		<PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
 	</ItemGroup>
 	
 	<ItemGroup Condition=" '$(TargetFramework)' == 'MonoAndroid90'">
